@@ -287,9 +287,19 @@ Inductive sub : env -> typ -> typ -> Prop :=
 
 
 (* TODO: add [wf_env] and [wf_typ] as premises *)
-Fixpoint sub_check (e : env) (T1 T2 : typ) : bool :=
+
+Fixpoint typ_measure (T : typ) : nat :=
+  match T with
+  | tvar _ => 1
+  | top => 1
+  | arrow T1 T2 => typ_measure T1 + typ_measure T2 + 1 
+  | all T1 T2 => typ_measure T1 + typ_measure T2 + 1 
+  end. 
+
+Program Fixpoint sub_check (e : env) (T1 T2 : typ)
+        {measure (measure T1 + measure T2)} : bool :=
   match T1, T2 with
-  | _, true => true
+  | _, top => true
   | tvar X1, tvar X2 => X1 = X2 ?
   | tvar X1, _ =>
       match get_bound e X1 with
@@ -301,7 +311,9 @@ Fixpoint sub_check (e : env) (T1 T2 : typ) : bool :=
       sub_check e T1 S1 && sub_check e S2 T2
   | all S1 S2, all T1 T2 =>
       sub_check e T1 S1 && sub_check (ebound e T1) S2 T2
-
+  | _, _ => false
+  end
+.
 (****)
 
 (** ** Typing relation ***)
