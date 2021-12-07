@@ -26,6 +26,10 @@ Instance Dec_eq_opt (A : Type) (m n : option A)
 Proof. dec_eq. Defined.
 
 
+Inductive result {X : Type} : Type :=
+| Result (v : X)
+| OutOfFuel
+.
 
 (*************************************************************************)
 (*                          Definition of Fsub                           *)
@@ -105,9 +109,10 @@ Fixpoint subst (t : term) (x : nat) (t' : term) {struct t} : term :=
   match t with
   | var y =>
       match lt_eq_lt_dec y x with
-      | inleft (left _)  => var y
-      | inleft (right _) => t'
+      | inleft (left _)  => var y (* x > y : does not affect *)
+      | inleft (right _) => t'    (* x = y : target for substitution *)
       | inright _        => var (y - 1)
+                                (* x < y : var disappears, shift by 1 *)
       end
   | abs T1 t2  => abs T1 (subst t2 (1 + x) (shift 0 t'))
   | app t1 t2  => app (subst t1 x t') (subst t2 x t')
@@ -181,7 +186,6 @@ Fixpoint wf_typ (e : env) (T : typ) {struct T} : Prop :=
 
 Check ((get_bound empty 1) = None ?).
 
-
 Fixpoint dc_wf_typ (e : env) (T : typ) {struct T} : bool :=
   match T with
   | tvar X      => ((get_bound e X) <> None ?)
@@ -241,7 +245,6 @@ Proof with intuition.
       destruct t; cbv in H; congruence.
 Qed. 
 
-
 Fixpoint wf_env (e : env) : Prop :=
   match e with
     empty      => True
@@ -279,6 +282,18 @@ Fixpoint show_typ' (T : typ) :=
 Instance show_typ : Show typ :=
   { show := show_typ' }.
 
+Fixpoint show_term' (t : term) :=
+  match t with
+  | var n => ("[id " ++ show n ++  " ]")%string
+  | abs T t => ("(λ : " ++ show T ++". " ++ show_term' t ++ " )")%string
+  | app t1 t2 => ("(" ++ show_term' t1 ++ " " ++ show_term' t2 ++ ")")%string
+  | tabs T1 t2 => ("(Λ " ++  show T1 ++ ". " ++ show_term' t2 ++ ")")%string
+  | tapp t1 T2 => ("(" ++ show_term' t1 ++ " " ++ show T2 ++ ")")%string
+  end.
+
+Instance show_term : Show term :=
+  { show := show_term' }.
+
 
 (** ** Subtyping relation ***)
 
@@ -311,6 +326,23 @@ Inductive sub : env -> typ -> typ -> Prop :=
 
 (* TODO: add [wf_env] and [wf_typ] as premises, prove [sub_check] terminates *)
 
+(* Fixpoint measure_simp_typ (e : env) (T : typ) : nat := *)
+(*   match T with *)
+(*   | tvar _ => 1 *)
+(*   | top => 1 *)
+(*   | arrow T1 T2 => measure_typ e T1 + measure_typ e T2 + 1  *)
+(*   | all T1 T2 => measure_typ e T1 + measure_typ e T2 + 1  *)
+(*   end. *)
+
+
+(* Fixpoint measure_typ (e : env) (T : typ) : nat := *)
+(*   match T with *)
+(*   | tvar _ => 1 *)
+(*   | top => 1 *)
+(*   | arrow T1 T2 => measure_typ e T1 + measure_typ e T2 + 1  *)
+(*   | all T1 T2 => measure_typ e T1 + measure_typ e T2 + 1  *)
+(*   end. *)
+
 Fixpoint count_tvar (e : env) : nat :=
   match e with
   | empty => O
@@ -318,81 +350,42 @@ Fixpoint count_tvar (e : env) : nat :=
   | ebound e t => S (count_tvar e)
   end.
 
-Fixpoint measure_typ (e : env) (T : typ) : nat :=
-  match T with
-  | tvar _ => 1 + count_tvar e
-  | top => 1
-  | arrow T1 T2 => measure_typ e T1 + measure_typ e T2 + 1 
-  | all T1 T2 => measure_typ e T1 + measure_typ e T2 + 1 
-  end. 
-
-
-(* Program Fixpoint sub_check (e : env) (T1 T2 : typ)  *)
-(*         {measure (measure_typ e T1 + measure_typ e T2) le} *)
-(*   : option bool := *)
-(*   match T1, T2 with *)
-(*   | _, top => Some true *)
-(*   | tvar X1, tvar X2 => Some (X1 = X2 ?) *)
-(*   | tvar X1, _ => *)
-(*       match get_bound e X1 with *)
-(*       | None => Some false  *)
-(*       | Some T1' => *)
-(*           sub_check e T1' T2  *)
-(*       end *)
-(*   | arrow S1 S2, arrow T1 T2 => *)
-(*       match sub_check e T1 S1 with *)
-(*       | Some b1 => match sub_check e S2 T2 with *)
-(*                    | Some b2 => Some (b1 && b2)%bool *)
-(*                    | _ => None *)
-(*                    end *)
-(*       | _ => None *)
-(*       end *)
-(*   | all S1 S2, all T1 T2 =>  *)
-(*       match sub_check e T1 S1 with *)
-(*       | Some b1 => match sub_check (ebound e T1) S2 T2 with *)
-(*                    | Some b2 => Some (b1 && b2)%bool *)
-(*                    | _ => None *)
-(*                    end *)
-(*       | _ => None *)
-(*       end *)
-(*   | _, _ => Some false *)
-(*   end. *)
 
 Fixpoint sub_check (e : env) (T1 T2 : typ) (n : nat)
-  : option bool :=
+  : @result bool :=
   match n with
-  | O => None
+  | O => OutOfFuel 
   | S n =>  
       match T1, T2 with
-      | _, top => Some true
-      | tvar X1, tvar X2 => Some (X1 = X2 ?)
+      | _, top => Result (dc_wf_env e && dc_wf_typ e T1)%bool
+      | tvar X1, tvar X2 =>
+          Result (dc_wf_env e && (X1 = X2 ?) && dc_wf_typ e (tvar X1))%bool
       | tvar X1, _ =>
           match get_bound e X1 with
-          | None => Some false 
+          | None => Result false 
           | Some T1' =>
               sub_check e T1' T2 n
           end
       | arrow S1 S2, arrow T1 T2 =>
           match sub_check e T1 S1 n with
-          | Some b1 => match sub_check e S2 T2 n with
-                       | Some b2 => Some (b1 && b2)%bool
-                       | _ => None
-                       end
-          | _ => None
+          | Result b1 => match sub_check e S2 T2 n with
+                         | Result b2 => Result (b1 && b2)%bool
+                         | _ => OutOfFuel
+                         end
+          | _ => OutOfFuel
           end
       | all S1 S2, all T1 T2 => 
           match sub_check e T1 S1 n with
-          | Some b1 => match sub_check  (ebound e T1) S2 T2 n with
-                       | Some b2 => Some (b1 && b2)%bool
-                       | _ => None
+          | Result b1 => match sub_check  (ebound e T1) S2 T2 n with
+                       | Result b2 => Result (b1 && b2)%bool
+                       | _ => OutOfFuel
                        end
-          | _ => None
+          | _ => OutOfFuel
           end
-      | _, _ => Some false
+      | _, _ => Result false
       end
   end.
 
-(****)
 
 (** ** Typing relation ***)
 
@@ -419,50 +412,47 @@ Inductive typing : env -> term -> typ -> Prop :=
   forall (e : env) (t : term) (T1 T2 : typ),
     typing e t T1 -> sub e T1 T2 -> typing e t T2.
 
-Fixpoint get_typ (e : env) (t : term) : option typ :=
+Fixpoint get_typ (e : env) (t : term) (fuel : nat) : @result (option typ) :=
   match t with
-  | var x => get_var e x
+  | var x => Result (get_var e x)
   | abs T1 t2 =>
-      match get_typ (evar e T1) t2 with
-      | Some T2 => Some (arrow T1 T2)
-      | None => None
+      match get_typ (evar e T1) t2 fuel with
+      | Result (Some T2) => Result (Some (arrow T1 T2))
+      | rst => rst
       end
   | app t1 t2 =>
-      match get_typ e t1 with
-      | Some (arrow T11 T12) =>
-          match get_typ e t2 with
-          | Some T2 => if T11 = T2 ?
-                       then Some T12
-                       else None
-          | _ => None
+      match get_typ e t1 fuel with
+      | Result (Some (arrow T11 T12)) =>
+          match get_typ e t2 fuel with
+          | Result (Some T2) => Result (if T11 = T2 ? then Some T12 else None)
+          | rst => rst
           end
-      | _ => None
+      | rst => rst
       end
   | tabs T1 t2 =>
-      match get_typ (ebound e T1) t2 with
-      | Some T2 => Some (all T1 T2)
-      | None => None
+      match get_typ (ebound e T1) t2 fuel with
+      | Result (Some T2) => Result (Some (all T1 T2))
+      | rst => rst
       end
   | tapp t1 T2 => 
-      match get_typ e t1 with
-      | Some (all T11 T12) =>
-          match sub_check e T2 T11 (measure_typ e T2 + measure_typ e T11) with
-          | Some true => Some (tsubst T12 0 T2)
-          | _ => None
+      match get_typ e t1 fuel with
+      | Result (Some (all T11 T12)) =>
+          match sub_check e T2 T11 fuel with
+          | Result true => Result (Some (tsubst T12 0 T2))
+          | Result false => Result None
+          | _ => OutOfFuel
           end
-      | _ => None
+      | rst => rst
       end
   end.
 
 
-Definition type_check (e : env) (t : term) (T : typ) : bool :=
-  match get_typ e t with
-  | Some T' =>
-      match sub_check e T' T (measure_typ e T' + measure_typ e T) with
-      | Some true => true
-      | _ => false
-      end
-  | None => false
+Definition type_check (e : env) (t : term) (T : typ) (fuel : nat) :
+  @result bool :=
+  match get_typ e t fuel with
+  | Result (Some T') => sub_check e T' T fuel 
+  | Result None => Result false
+  | _ => OutOfFuel
   end.
 
 (****)
@@ -513,8 +503,7 @@ Inductive red : term -> term -> Prop :=
     red t1 t1' -> red (ctx_app c t1) (ctx_app c t1').
 
 
-(** reduction semantics per step  *)
-
+(** computable reduction semantics per step  *)
 Program Definition ctx_inj (t : term) : option (ctx * term) :=
   match t with
   | app t1 t2 =>
@@ -532,7 +521,6 @@ Qed.
 Solve All Obligations with easy.
 
 Eval cbn in (ctx_inj (tapp (var 0) top)).
-
 
 Fixpoint measure_term (t : term) : nat :=
   match t with
@@ -582,6 +570,16 @@ Next Obligation.
 Qed.
 Solve All Obligations with easy.
 
+Lemma step_is_red : forall t t', step t = Some t' -> red t t'.
+Admitted.
+
+Lemma red_is_step : forall t t', red t t' -> step t = Some t'.
+Admitted.
+    
+Lemma red_iff_step : forall t t', red t t' <-> step t = Some t'.
+Proof.
+  split. apply red_is_step. apply step_is_red.
+Qed.
 (*************************************************************************)
 (*                            General lemmas                             *)
 (*************************************************************************)
@@ -900,8 +898,8 @@ Definition gen_base_typ (E : env) : G typ:=
 
 
 (** ** Type Generator *)
-Fixpoint gen_typ (fuel : nat) (E : env) : G typ :=
-  match fuel with
+Fixpoint gen_typ (n : nat) (E : env) : G typ :=
+  match n with
   | O => gen_base_typ E
   | S n =>
       let gen_arrow :=
@@ -916,13 +914,100 @@ Fixpoint gen_typ (fuel : nat) (E : env) : G typ :=
   end.
 
 
-Sample (gen_typ 4 empty).
-
-Fixpoint gen_term (fuel : nat) (E : env) (T : typ) : G term :=
-  match fuel with
-  | O => gen_base_from_typ T
-  | S n => ret (var 0)
+(** Try to generate something, if it fails then use [top] *)
+Definition gen_top_comb (g : G (option typ)) : G (option typ) := 
+  a <- g ;;
+  match a with
+  | Some T => returnGen a
+  | None => returnGen (Some top)
   end.
+
+
+(** There's no term of type [top]. Thus, [top] should only be generated 
+    in parametric type lambda [all].
+  *)   
+Fixpoint gen_concrete_typ (n : nat) (E : env) : G (option typ) :=
+  match n with
+  | O => gen_typ_from_env E
+  | S n =>
+      (** Chances are that there's is no enough [tvar] to generate [arrow].
+       *)
+      let gen_arrow :=
+        T1 <- gen_concrete_typ n E ;;
+        T2 <- gen_concrete_typ n (evar E T1) ;;
+        ret (arrow T1 T2) in
+      let gen_all :=
+        T1 <- gen_top_comb (gen_concrete_typ n E) ;;
+        T2 <- gen_concrete_typ n (ebound E T1) ;;
+        ret (all T1 T2) in
+      backtrack [(1, gen_arrow) ; (2, gen_all) ; (1, gen_typ_from_env E)]
+  end.
+
+(** ** [C1] generated concrete [typ]s are well-formed *)
+Definition prop_gen_concrete_typ_wf :=
+  forAllMaybe (gen_concrete_typ 5 empty) (fun T =>
+  whenFail ("Type is: " ++ show T ++ nl)
+           (dc_wf_typ empty T)).
+
+QuickChick prop_gen_concrete_typ_wf.
+
+Locate "elems".
+
+Check (Some var).
+
+
+(** It should work *)
+Definition sub_check_100 (e : env) (T1 T2 : typ) : bool :=
+  match sub_check e T1 T2 100 with
+  | Result true => true
+  | _ => false
+  end.
+
+Fixpoint get_exact_typed_vars (x : nat) (E : env) (T : typ) : list nat :=
+  match E with
+  | empty => []
+  | evar E' T' => 
+      let rst := get_exact_typed_vars E' T in 
+      if T = T' ? then (var x) :: rst else rst
+  | ebound e' _ => 
+
+Fixpoint gen_base_term (E : env) (T : typ) : G (option typ) :=
+  match T with
+  | top | tvar _ => ret None
+  | arrow T1 T2 =>
+      abs T1 (gen_base_term  
+  end.
+
+
+(** Generate terms from concrete types *)
+Fixpoint gen_term (fuel : nat) (E : env) (T : typ) :  :=
+  match fuel with
+  | O =>
+      match T with
+      | gen_term 
+
+Fixpoint gen_sup_typ (fuel : nat) (E : env) (T : typ) : G typ :=
+
+
+
+Lemma get_bound_insert_bound_lt :
+  forall (X X' : nat) (e e' : env),
+    insert_bound X' e e' -> X < X' ->
+    get_bound e' X = opt_map (tshift X') (get_bound e X).
+
+
+    
+
+(* (** generate subtype of [T] *) *)
+(* Fixpoint gen_sub (fuel : nat) (E : env) (T : typ) : G typ. *)
+(*   match fuel with *)
+(*   | O => (** [sub] is reflexive *) *)
+(*       ret T                   *)
+(*   | S fuel => *)
+(*       match T with *)
+(*       | (** anything can be the subtype of [] *) *)
+(*         top => gen_typ fuel E *)
+(*       | *)
 
 (*************************************************************************)
 (*                       Transitivity of subtyping                       *)
@@ -942,7 +1027,7 @@ Qed.
 Definition prop_gen_wt :=
   let fuel_type := 4 in
   let fuel_expr := 4 in
-  forAll (gen_type fuel_type) (fun T =>
+  forAll (gen_typ fuel_type) (fun T =>
   forAllMaybe (gen_expr fuel_expr [] T) (fun t => 
   whenFail ("Type was " ++ show T ++ nl ++ 
             "Term was " ++ show t ++ nl ++
