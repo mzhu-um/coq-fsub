@@ -98,3 +98,20 @@ Definition prop_gen_sub_trans :=
 
 QuickChick prop_gen_sub_trans.
 
+
+(** ** [C7] Weak Progress *)
+Definition prop_gen_progress :=
+  let fuel_type := 6 in
+  forAllMaybe (gen_exact_typ fuel_type empty) (fun T =>
+  forAllMaybe (gen_exact_term fuel_type empty T) (fun t =>
+  forAll (gen_sup_typ fuel_type empty T) (fun R =>
+  whenFail ("Gened Typ [T] is " ++ show T ++ nl ++ 
+            "Gened Sup [R] is " ++ show R ++ nl ++ 
+            "Gened Term [t] is " ++ show t ++ nl)
+           (((type_check' empty t T) = (Result true) ?) &&
+              (match multistep 40 step t dc_value with
+               | Result (true, t) => ((type_check' empty t T) = (Result true) ?)
+               | _ => false
+               end))%bool))).
+
+QuickChick prop_gen_progress.
