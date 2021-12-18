@@ -37,14 +37,23 @@ Proof. dec_eq. Defined.
 Instance dec_eq_term (t1 t2 : term) : Dec (t1 = t2).
 Proof. dec_eq. Defined.
 
-
-
-
+(** ** Fuel Result *)
 Inductive result {X : Type} : Type :=
 | Result (v : X)
 | OutOfFuel
 .
+Instance Dec_eq_result (A : Type) (m n : @result A)
+         `{_ : forall (x y : A), Dec (x = y)} : Dec (m = n).
+Proof. dec_eq. Defined.
 
+Definition show_result' {A} `{Show A} (r : @result A) : string :=
+  match r with
+  | Result v => show v
+  | _ => "Out Of Fuel"%string
+  end.
+
+Instance show_result : Show result :=
+  { show := show_result' }.
 
 (** ** Well Formedness *)
 Fixpoint dc_wf_typ (e : env) (T : typ) {struct T} : bool :=
@@ -118,7 +127,7 @@ Fixpoint count_tvar (e : env) : nat :=
   match e with
   | empty => O
   | evar e _ => count_tvar e
-  | ebound e t => S (count_tvar e)
+  | ebound e _ => S (count_tvar e)
   end.
 
 Fixpoint sub_check (e : env) (T1 T2 : typ) (n : nat)
