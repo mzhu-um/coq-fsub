@@ -2,3 +2,7 @@
 FSub.v
 Reduction.v
 Generator.v
+GeneratorSub.v
+PropertiesSub.v
+MutantSub.v
+MutantInterface.v

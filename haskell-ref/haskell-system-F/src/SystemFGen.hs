@@ -129,7 +129,7 @@ oneofMaybe [] = return Nothing
 oneofMaybe gs = oneof gs
 
 -- "Replace (some occurrences of) closed type s in type t by (TVar n)"
-dc replaceSubType :: Int -> Type -> Type -> Gen Type
+replaceSubType :: Int -> Type -> Type -> Gen Type
 replaceSubType n s t =
   oneof $
     [return t]

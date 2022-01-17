@@ -3,19 +3,18 @@ From FSUB Require Import
      FSub
      Decidable
      MutantInterface
-     Generator
+     GeneratorSub
 .
-(** * MutantSub : Testing Properties with (Old) Generator *)
 
+(** * MutantSub : Testing Properties with (New) GeneratorSub *)
 (** ** Properties *)
 (** ** [C7'] Weak Progress NF
     Only support parallel reduction!
  *)
-Definition prop_gen_progress_nf (m : Mutant) :=
-  let fuel_type := 4 in
+Definition prop_gen_progress_nf_f  (fuel_type : nat) (m : Mutant) :=
   let step' := pstep' in
-  forAllMaybe (gen_exact_typ fuel_type empty) (fun T =>
-  forAllMaybe (gen_exact_term fuel_type empty T) (fun t =>
+  forAllMaybe (gen_opt_typ fuel_type empty true) (fun T =>
+  forAllMaybe (gen_sub_term fuel_type empty T) (fun t =>
   forAll (gen_sup_typ fuel_type empty T) (fun T =>
   whenFail ("Generated" ++ nl ++
             "[T]: " ++ show T ++ nl ++ 
@@ -34,6 +33,8 @@ Definition prop_gen_progress_nf (m : Mutant) :=
                | _ => false
                end))%bool))).
 
+
+Definition prop_gen_progress_nf := prop_gen_progress_nf_f 5.
 (* QuickChick (prop_gen_progress_nf NoMutant). (* Correct ! *) *)
 
 (** Okay for WHNF *)
@@ -45,26 +46,27 @@ Definition prop_gen_progress_nf (m : Mutant) :=
 (* QuickChick (prop_gen_progress_nf ShiftVarAll).         (* 4 *) *)
 (* QuickChick (prop_gen_progress_nf ShiftAbsNoIncr).      (* 4 *) *)
 (* QuickChick (prop_gen_progress_nf ShiftTypTAbsNoIncr).  (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf TShiftAllNoIncr).     (* 4 *) *)
 
 (** Okay for NF *)
 (* QuickChick (prop_gen_progress_nf TShiftTVarNoIncr).  (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf SubstTAbsNoShift).  (* 4 *) *)
 (* QuickChick (prop_gen_progress_nf TSubstTVarNoShift). (* 4 *) *)
 (* QuickChick (prop_gen_progress_nf SubstVarNoDecr).    (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf SubstAbsNoShift).   (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf ShiftVarNoIncr).    (* 4 *) *)
 
-(** Nope!  *)
+(* Definition prop_gen_progress_nf' := prop_gen_progress_nf_f 6. *)
+(** Need Luck for NF *)
+(* QuickChick (prop_gen_progress_nf SubstAbsNoShift).   (* 4 *) *)
+(* QuickChick (prop_gen_progress_nf TShiftAllNoIncr).   (* 4 *) *)
+(* QuickChick (prop_gen_progress_nf ShiftVarNoIncr).    (* 4 *) *)
+(* QuickChick (prop_gen_progress_nf SubstTAbsNoShift).  (* 4 *) *)
 (* QuickChick (prop_gen_progress_nf TSubstAllNoTShift). (* Nope *) *)
 
 
 (** ** [C7] Weak Progress *)
 Definition prop_gen_progress (m : Mutant) :=
-  let fuel_type := 4 in
+  let fuel_type := 5 in
   let step' := step'' in
-  forAllMaybe (gen_exact_typ fuel_type empty) (fun T =>
-  forAllMaybe (gen_exact_term fuel_type empty T) (fun t =>
+  forAllMaybe (gen_opt_typ fuel_type empty true) (fun T =>
+  forAllMaybe (gen_sub_term fuel_type empty T) (fun t =>
   forAll (gen_sup_typ fuel_type empty T) (fun T =>
   whenFail ("Generated" ++ nl ++
             "[T]: " ++ show T ++ nl ++ 
@@ -86,15 +88,15 @@ Definition prop_gen_progress (m : Mutant) :=
 (* QuickChick (prop_gen_progress NoMutant). (* Correct ! *) *)
 
 (** Should be detectable *)
-(* QuickChick (prop_gen_progress TShiftTVarAll).       (* 4 *) *)
-(* QuickChick (prop_gen_progress TSubstTVarFlip).      (* 4 *) *)
-(* QuickChick (prop_gen_progress TSubstTVarOverShift). (* 4 *) *)
-(* QuickChick (prop_gen_progress SubstVarFlip).        (* 4 *) *)
-(* QuickChick (prop_gen_progress SubstAbsNoIncr).      (* 4 *) *)
-(* QuickChick (prop_gen_progress ShiftVarAll).         (* 4 *) *)
-(* QuickChick (prop_gen_progress ShiftAbsNoIncr).      (* 4 *) *)
-(* QuickChick (prop_gen_progress ShiftTypTAbsNoIncr).  (* 4 *) *)
-(* QuickChick (prop_gen_progress TShiftAllNoIncr).     (* 4 *) *)
+(* QuickChick (prop_gen_progress TShiftTVarAll).       (* 5 *) *)
+(* QuickChick (prop_gen_progress TSubstTVarFlip).      (* 5 *) *)
+(* QuickChick (prop_gen_progress TSubstTVarOverShift). (* 5 *) *)
+(* QuickChick (prop_gen_progress SubstVarFlip).        (* 5 *) *)
+(* QuickChick (prop_gen_progress SubstAbsNoIncr).      (* 5 *) *)
+(* QuickChick (prop_gen_progress ShiftVarAll).         (* 5 *) *)
+(* QuickChick (prop_gen_progress ShiftAbsNoIncr).      (* 5 *) *)
+(* QuickChick (prop_gen_progress ShiftTypTAbsNoIncr).  (* 5 *) *)
+(* QuickChick (prop_gen_progress TShiftAllNoIncr).     (* 5 *) *)
 
 (** Should only work under NF *)
 (* QuickChick (prop_gen_progress TShiftTVarNoIncr).  (* Nope *) *)
@@ -103,5 +105,4 @@ Definition prop_gen_progress (m : Mutant) :=
 (* QuickChick (prop_gen_progress SubstVarNoDecr).    (* Nope *) *)
 (* QuickChick (prop_gen_progress TSubstAllNoTShift). (* Nope *) *)
 (* QuickChick (prop_gen_progress SubstAbsNoShift).   (* Nope *) *)
-(* QuickChick (prop_gen_progress ShiftVarNoIncr).    (* Nope *) *)
 (* QuickChick (prop_gen_progress ShiftVarNoIncr).    (* Nope *) *)

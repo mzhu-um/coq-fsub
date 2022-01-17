@@ -1,10 +1,12 @@
-From FSUB Require Import QCLibs.
-From FSUB Require Import FSub.
-From FSUB Require Import Decidable.
-From FSUB Require Import Generator.
-From FSUB Require Import Reduction.
+From FSUB Require Import
+     QCLibs
+     FSub
+     Decidable
+     Generator
+     Reduction.
+ 
 
-(** * Properties: Decidable Properties for Checking  *)
+(** * PropertiesSub: Decidable Properties for Checking  *)
 
 Definition type_check' :=
   fun E t T => type_check E t T 100. 
@@ -20,36 +22,33 @@ Definition prop_gen_exact_typ_wf :=
 QuickChick prop_gen_exact_typ_wf.
 
 
-(** ** [C2-0] generated exact [term]s (base case) are well-typed *)
-Definition prop_gen_exact0_wt :=
+(** ** [C2-0] generated sub [term]s (base case) are well-typed *)
+Definition prop_gen_sub0_wt :=
   let fuel_type := 4 in
   let fuel_expr := 4 in
   forAllMaybe (gen_exact_typ fuel_type empty) (fun T =>
-  forAllMaybe (gen_exact_term0 empty T) (fun t => 
+  forAllMaybe (gen_sub_term0 empty T) (fun t => 
   whenFail ("Gened Type is" ++ show T ++ nl ++ 
             "Gened Term is" ++ show t ++ nl ++
             "Checked Type is" ++ show_result' (get_typ' empty t)
            )
            ((type_check' empty t T) = (Result true) ?))).
 
-QuickChick prop_gen_exact0_wt.
+QuickChick prop_gen_sub0_wt.
 
-(** ** [C2] generated exact [term]s are well-typed *)
-Definition prop_gen_exact_wt :=
-  let fuel_type := 6 in
-  let fuel_expr := 6 in
+(** ** [C2] generated sub [term]s are well-typed *)
+Definition prop_gen_sub_wt :=
+  let fuel_type := 4 in
+  let fuel_expr := 4 in
   forAllMaybe (gen_exact_typ fuel_type empty) (fun T =>
-  forAllMaybe (gen_exact_term fuel_expr empty T) (fun t => 
-  whenFail ("Gened Type is" ++ show T ++ nl ++ 
-            "Gened Term is" ++ show t ++ nl ++
-            "Type of Term is" ++ show_result' (get_typ' empty t)
+  forAllMaybe (gen_sub_term fuel_expr empty T) (fun t => 
+  whenFail ("Gened Type is " ++ show T ++ nl ++ 
+            "Gened Term is " ++ show t ++ nl ++
+            "Type of Term is " ++ show_result' (get_typ' empty t)
            )
            ((type_check' empty t T) = (Result true) ?))).
 
-
-QuickChick prop_gen_exact_wt.
-
-
+QuickChick prop_gen_sub_wt.
 
 (** ** [C3] generated subtype [term]s are well-formed *)
 Definition prop_gen_sub_typ_wf :=
@@ -61,7 +60,6 @@ Definition prop_gen_sub_typ_wf :=
            (dc_wf_typ empty T))).
 
 QuickChick prop_gen_sub_typ_wf.
-
 
 (** ** [C4] generated sub [typ]s are subtypes *)
 Definition prop_gen_sub_typ_sub :=
@@ -104,7 +102,7 @@ QuickChick prop_gen_sub_trans.
 Definition prop_gen_progress :=
   let fuel_type := 6 in
   forAllMaybe (gen_exact_typ fuel_type empty) (fun T =>
-  forAllMaybe (gen_exact_term fuel_type empty T) (fun t =>
+  forAllMaybe (gen_sub_term fuel_type empty T) (fun t =>
   forAll (gen_sup_typ fuel_type empty T) (fun R =>
   whenFail ("Gened Typ [T] is " ++ show T ++ nl ++ 
             "Gened Sup [R] is " ++ show R ++ nl ++ 

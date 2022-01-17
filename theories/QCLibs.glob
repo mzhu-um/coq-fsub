@@ -1,0 +1,16 @@
+DIGEST 0eb6208536defdcd70b7daf618ccfa62
+FFSUB.QCLibs
+R29:33 Coq.Arith.Arith <> <> lib
+R35:37 Coq.micromega.Lia <> <> lib
+R39:42 Coq.Lists.List <> <> lib
+R44:49 Coq.Strings.String <> <> lib
+R51:60 Coq.Program.Wf <> <> lib
+R62:77 Coq.Program.Equality <> <> lib
+R109:114 Coq.funind.Recdef <> <> lib
+R116:124 Coq.ssr.ssreflect <> <> lib
+R126:131 Coq.ssr.ssrfun <> <> lib
+R133:139 Coq.ssr.ssrbool <> <> lib
+R173:182 QuickChick.QuickChick <> <> lib
+R212:216 ExtLib.Structures.Monad <> <> lib
+R218:228 ExtLib.Data.Monads.OptionMonad <> <> lib
+R230:238 ExtLib.Data.Monads.ListMonad <> <> lib

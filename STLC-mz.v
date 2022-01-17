@@ -1,3 +1,4 @@
+
 (** 838 Midterm:
 
 In this file, you will find an implementation of a simply typed
@@ -11,7 +12,7 @@ Look at the TODO at the bottom of this file. But you should
 probably also take a look at everything in between to understand
 what you will be testing :) 
 
-*)
+ *)
 
 (* Imports. 
    If these don't work, make sure you have quickchick installed!
@@ -19,7 +20,7 @@ what you will be testing :)
      opam install coq-quickchick 
  
    should do the trick. I've tested this with coq 8.12 + 8.13.
-*)
+ *)
 Require Import Arith List String.
 From QuickChick Require Import QuickChick.
 From ExtLib Require Import Monad.
@@ -330,7 +331,7 @@ Fixpoint showExpr' prec (e : Term) :=
       parens prec POuter ("P " ++ showExpr' POuter e')
   | Plus e1 e2 =>
       parens prec PApp (showExpr' PApp e1 ++ "+" ++ showExpr' PInner e2)
-  | Var x => show x
+  | Var x => "ID" ++ show x
   | Lam τ e' => parens prec POuter ("λ" ++ show τ ++ ". " ++ showExpr' POuter e')
   | App e1 e2 => parens prec PApp (showExpr' PApp e1 ++ " " ++ showExpr' PInner e2)
   end.
@@ -356,137 +357,133 @@ Fixpoint shrink_expr (τ : Typ) (t : Term) : list Term :=
   List.filter (fun t' => typeOf [] t' = Some τ?)
               (shrink t ++ List.concat (List.map shrink (shrink t))).
 
-(* TODO: Implement the following two generators: *)
+(** Given a size, generate a type.  *)
 
-Locate "oneOf".
-
-(* Given a size, generate a type. *)
-Fixpoint gen_type (n : nat) : G Typ :=
+(* Axiom gen_type : nat -> G Typ. *)
+Fixpoint gen_type (n : nat) {struct n} : G Typ :=
   match n with
-  | O => (* Base *)
-    elems [TBase ; TInt]
-  | S n' =>
-    oneOf [ ret TBase; ret TInt;
-            t1 <- gen_type n';;
-            t2 <- gen_type n';;
-            ret (TFun t1 t2)
-          ] 
+  | O => oneOf [ret TBase; ret TInt]
+  | S n' => freq
+             [
+               (1, oneOf [ret TBase; ret TInt]); 
+               (2, liftM2 TFun (gen_type n') (gen_type n'))
+             ]
   end.
 
-(* Given a size, a type environment, and a type, generate a term of the given type. You can allow this to fail if you want to backtrack. *)
+(** Given a size, a type environment, and a type, generate a term of the given
+    type. You can allow this to fail if you want to backtrack. *)    
+(* Axiom gen_expr : nat -> env -> Typ -> G (option Term). *)
 
-Fixpoint gen_base (t : Typ) :=
-  match t with
-  | TBase =>
-    ret Unit
-  | TInt  =>
-    n <- choose (0, 10);;
-    ret (Const n)
-  | TFun t1 t2 =>
-    e <- gen_base t2;;
-    ret (Lam t1 e)
+
+Fixpoint get_var (t : Typ) (ρ : env) (n : nat) : list (G (option Term))  :=
+  match ρ with
+  | [] => []
+  | t' :: ρ' =>
+      let cand := get_var t ρ' (S n) in
+      if (t' = t)? then (ret (Var n)) :: cand else cand
   end.
 
-Definition gen_var (E : env) (t : Typ) : G (option Term) :=
-  oneOf_ (returnGen None)
-         (List.map (fun '(x,t) => returnGen (Some (Var x)))
-                   (List.filter (fun '(x, t') => t = t' ?)
-                                (List.combine (List.seq O (List.length E)) E))).
-  
-Fixpoint gen_expr (n : nat) (E : env) (t : Typ) :
-  G (option Term) :=
+
+(* It's super annoying here that type error leads to infinite loop in type *)
+(* checker *) 
+Fixpoint gen_simple (ρ : env) (t : Typ) : G (option Term) :=
+  let gen_var := get_var t ρ 0 in
+  let gen_case := 
+    match t with
+    | TBase => ret (Some Unit)
+    | TInt => i <- choose (0, 20);; ret (Some (Const i))
+    | TFun t1 t2 =>
+        (* any better way to do this? *)
+        liftM (fun oe2 =>
+                 match oe2 with
+                 | Some e2 => Some (Lam t1 e2)
+                 | None => None
+                 end)
+              (gen_simple (t1 :: ρ) t2)
+    end in
+  oneOf_ (ret None) (gen_case :: gen_var).
+
+Definition liftOption {A B} (f : A -> B)  (o : option A) : option B :=
+  match o with
+  | Some x => Some (f x) 
+  | _ => None
+  end. 
+
+
+Definition liftOption2 {A B} (f : A -> A -> B)  (o1 o2 : option A) : option B :=
+  match o1, o2 with
+  | Some x1, Some x2 => Some (f x1 x2)
+  | _, _ => None
+  end. 
+
+Fixpoint gen_expr (n : nat) (ρ : env) (t : Typ) : G (option Term) :=
+  let gen_sim := gen_simple ρ t in
   match n with
-  | O =>
-    backtrack [ (1, liftGen Some (gen_base t))
-              ; (List.length E, gen_var E t)
-              ]
+  | O => gen_sim
   | S n' =>
-    let gen_arith :=
-        [ (1, bindGenOpt (gen_expr n' E TInt) (fun e =>
-                                                 returnGen (Some (Pred e))))
-        ; (1, bindGenOpt (gen_expr n' E TInt) (fun e1 =>
-
-             bindGenOpt (gen_expr n' E TInt) (fun e2 =>                                                   
-                                                returnGen (Some (Plus e1 e2)))))]
-    in
-    backtrack ([ (1, liftGen Some (gen_base t))
-               ; (List.length E, gen_var E t)
-              ]
-              ++
-              (match t with
-               | TBase => []
-               | TInt => gen_arith
-               | TFun t1 t2 =>
-                 [(1, bindGenOpt (gen_expr n' (t1 :: E) t2)
-                            (fun e =>
-                               returnGen (Some (Lam t1 e))))]
-               end)
-              ++
-              [ (1, bindGen (oneOf_ ((List.map returnGen E) ++ [gen_type 2])) (fun t1 =>
-                    bindGenOpt (gen_expr n' E (TFun t1 t)) (fun e1 =>
-
-                    bindGenOpt (gen_expr n' E t1) (fun e2 =>                                                   
-                    returnGen (Some (App e1 e2))))))])
-                
+      let gen_app := 
+            t' <- gen_type n';;
+            oe1 <- gen_expr n' ρ (TFun t' t);; (* Operator *)
+            oe2 <- gen_expr n' ρ t';;          (* Operand *)
+            ret (liftOption2 App oe1 oe2) in
+      match t with
+      | TInt =>
+          let gen_plus :=
+                oi1 <- gen_expr n' ρ TInt;;
+                oi2 <- gen_expr n' ρ TInt;;
+                ret (liftOption2 Plus oi1 oi2) in
+          let gen_pred :=
+                oi <- gen_expr n' ρ TInt;;
+                ret (liftOption Pred oi) in 
+          freq [(1, gen_sim); (1, gen_pred); (2, gen_plus) ; (2, gen_app)]
+      | TBase => oneOf [gen_sim; gen_app]
+      | TFun t1 t2 =>
+          let gen_fun :=
+            oe1 <- gen_expr n' (t1 :: ρ) t2;;
+            ret (liftOption (Lam t1) oe1) in
+          freq [(1, gen_sim); (2, gen_fun); (1, gen_app)]
+      end
   end.
-
 
 (* Here is a sample way of using these, assuming you 
    have the generators implemented. You are welcome to 
    change the above signatures, but you'd have to change
    the invocation below accordingly: *)
 
-Fixpoint count_vars (e : Term) : nat :=
-  match e with
-  | Unit => 0
-  | Const _ => 0
-  | Pred e => count_vars e
-  | Plus e1 e2 => count_vars e1 + count_vars e2
-  | Var _ => 1 
-  | Lam _ e => count_vars e
-  | App e1 e2 => count_vars e1 + count_vars e2
-  end.
-
-Definition prop_gen_wt :=
-  forAll (gen_type 4) (fun τ =>
-  forAllMaybe (gen_expr 7 [] τ) (fun e =>
-  collect (count_vars e) (
-  whenFail ("Type was: " ++ show τ ++ nl ++
-            "Term was: " ++ show e ++ nl ++
-            "With Type: " ++ show (typeOf [] e) ++ nl)
-           (typeOf [] e = Some τ?)))).
-
-QuickChick prop_gen_wt.
-
-
 Definition prop_soundness (c : Mutant) :=
   (* Feel free to change the fuel constants based on the 
      behavior of your generator! These represent my choices
      for reasonable "depth" limits for the generated
      types and terms. *)
-  let type_fuel := 4 in
-  let expr_fuel := 9 in
+  let type_fuel := 3 in
+  let expr_fuel := 7 in
   forAll (gen_type type_fuel) (fun τ =>
   forAllMaybe (gen_expr expr_fuel [] τ) (fun e =>
   whenFail ("Type was: " ++ show τ ++ nl ++
             "Term was: " ++ show e ++ nl ++
             "With Type: " ++ show (typeOf [] e) ++ nl ++
-            show_trace (snd (multistep 42 c e)))
-           (soundness 42 c e))).
+            show_trace (snd (multistep 37 c e)))
+           (soundness 37 c e))).
+
 
 (* This should succeed *)
-(* QuickChick (prop_soundness NoMutant). 
+QuickChick (prop_soundness NoMutant).
 
 (* These should fail *)
 
-(*
 QuickChick (prop_soundness SubstNoLift).
+
 QuickChick (prop_soundness SubstNoIncr).
-QuickChick (prop_soundness SubstNoDecr). 
-QuickChick (prop_soundness LiftAllVar).
-QuickChick (prop_soundness LiftLamNoIncr).
-QuickChick (prop_soundness LiftLamNoLift).
+
+QuickChick (prop_soundness SubstNoDecr).
+
 QuickChick (prop_soundness SubstNoPred).
+
 QuickChick (prop_soundness PlusBottom).
-*)
+
+QuickChick (prop_soundness LiftAllVar).
+
+QuickChick (prop_soundness LiftLamNoIncr).
+
+QuickChick (prop_soundness LiftLamNoLift).
 

@@ -1,0 +1,4230 @@
+DIGEST 2c45d77dbfb0088f4633ef5140d0f73b
+FFSUB.FSub
+R293:295 Coq.micromega.Lia <> <> lib
+R322:326 Coq.Arith.Arith <> <> lib
+R328:331 Coq.Lists.List <> <> lib
+R333:338 Coq.Strings.String <> <> lib
+R365:374 Coq.Program.Wf <> <> lib
+ind 687:689 <> typ
+constr 702:705 <> tvar
+constr 722:724 <> top
+constr 734:738 <> arrow
+constr 762:764 <> all
+R712:715 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R709:711 Coq.Init.Datatypes <> nat ind
+R716:718 FSUB.FSub <> typ:1 ind
+R728:730 FSUB.FSub <> typ:1 ind
+R745:748 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R742:744 FSUB.FSub <> typ:1 ind
+R752:755 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R749:751 FSUB.FSub <> typ:1 ind
+R756:758 FSUB.FSub <> typ:1 ind
+R771:774 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R768:770 FSUB.FSub <> typ:1 ind
+R778:781 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R775:777 FSUB.FSub <> typ:1 ind
+R782:784 FSUB.FSub <> typ:1 ind
+ind 798:801 <> term
+constr 814:816 <> var
+constr 834:836 <> abs
+constr 862:864 <> app
+constr 891:894 <> tabs
+constr 920:923 <> tapp
+R823:826 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R820:822 Coq.Init.Datatypes <> nat ind
+R827:830 FSUB.FSub <> term:3 ind
+R843:846 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R840:842 FSUB.FSub <> typ ind
+R851:854 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R847:850 FSUB.FSub <> term:3 ind
+R855:858 FSUB.FSub <> term:3 ind
+R872:875 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R868:871 FSUB.FSub <> term:3 ind
+R880:883 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R876:879 FSUB.FSub <> term:3 ind
+R884:887 FSUB.FSub <> term:3 ind
+R901:904 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R898:900 FSUB.FSub <> typ ind
+R909:912 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R905:908 FSUB.FSub <> term:3 ind
+R913:916 FSUB.FSub <> term:3 ind
+R931:934 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R927:930 FSUB.FSub <> term:3 ind
+R938:941 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R935:937 FSUB.FSub <> typ ind
+R942:945 FSUB.FSub <> term:3 ind
+def 1004:1009 <> tshift
+R1016:1018 Coq.Init.Datatypes <> nat ind
+binder 1012:1012 <> X:5
+R1026:1028 FSUB.FSub <> typ ind
+binder 1022:1022 <> T:6
+R1044:1046 FSUB.FSub <> typ ind
+R1059:1059 FSUB.FSub <> T:6 var
+R1070:1073 FSUB.FSub <> tvar constr
+R1085:1088 FSUB.FSub <> tvar constr
+R1094:1102 Coq.Arith.Compare_dec <> le_gt_dec def
+R1104:1104 FSUB.FSub <> X:5 var
+R1114:1116 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1131:1133 FSUB.FSub <> top constr
+R1146:1148 FSUB.FSub <> top constr
+R1154:1158 FSUB.FSub <> arrow constr
+R1169:1173 FSUB.FSub <> arrow constr
+R1190:1195 FSUB.FSub <> tshift:7 def
+R1197:1197 FSUB.FSub <> X:5 var
+R1176:1181 FSUB.FSub <> tshift:7 def
+R1183:1183 FSUB.FSub <> X:5 var
+R1207:1209 FSUB.FSub <> all constr
+R1222:1224 FSUB.FSub <> all constr
+R1241:1246 FSUB.FSub <> tshift:7 def
+R1250:1252 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1253:1253 FSUB.FSub <> X:5 var
+R1227:1232 FSUB.FSub <> tshift:7 def
+R1234:1234 FSUB.FSub <> X:5 var
+def 1277:1281 <> shift
+R1288:1290 Coq.Init.Datatypes <> nat ind
+binder 1284:1284 <> x:9
+R1298:1301 FSUB.FSub <> term ind
+binder 1294:1294 <> t:10
+R1317:1320 FSUB.FSub <> term ind
+R1333:1333 FSUB.FSub <> t:10 var
+R1344:1346 FSUB.FSub <> var constr
+R1358:1360 FSUB.FSub <> var constr
+R1366:1374 Coq.Arith.Compare_dec <> le_gt_dec def
+R1376:1376 FSUB.FSub <> x:9 var
+R1386:1388 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1403:1405 FSUB.FSub <> abs constr
+R1417:1419 FSUB.FSub <> abs constr
+R1425:1429 FSUB.FSub <> shift:11 def
+R1433:1435 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1436:1436 FSUB.FSub <> x:9 var
+R1447:1449 FSUB.FSub <> app constr
+R1461:1463 FSUB.FSub <> app constr
+R1479:1483 FSUB.FSub <> shift:11 def
+R1485:1485 FSUB.FSub <> x:9 var
+R1466:1470 FSUB.FSub <> shift:11 def
+R1472:1472 FSUB.FSub <> x:9 var
+R1495:1498 FSUB.FSub <> tabs constr
+R1509:1512 FSUB.FSub <> tabs constr
+R1518:1522 FSUB.FSub <> shift:11 def
+R1524:1524 FSUB.FSub <> x:9 var
+R1534:1537 FSUB.FSub <> tapp constr
+R1548:1551 FSUB.FSub <> tapp constr
+R1554:1558 FSUB.FSub <> shift:11 def
+R1560:1560 FSUB.FSub <> x:9 var
+def 1586:1594 <> shift_typ
+R1601:1603 Coq.Init.Datatypes <> nat ind
+binder 1597:1597 <> X:13
+R1611:1614 FSUB.FSub <> term ind
+binder 1607:1607 <> t:14
+R1630:1633 FSUB.FSub <> term ind
+R1646:1646 FSUB.FSub <> t:14 var
+R1657:1659 FSUB.FSub <> var constr
+R1671:1673 FSUB.FSub <> var constr
+R1681:1683 FSUB.FSub <> abs constr
+R1695:1697 FSUB.FSub <> abs constr
+R1714:1722 FSUB.FSub <> shift_typ:15 def
+R1724:1724 FSUB.FSub <> X:13 var
+R1700:1705 FSUB.FSub <> tshift def
+R1707:1707 FSUB.FSub <> X:13 var
+R1734:1736 FSUB.FSub <> app constr
+R1748:1750 FSUB.FSub <> app constr
+R1770:1778 FSUB.FSub <> shift_typ:15 def
+R1780:1780 FSUB.FSub <> X:13 var
+R1753:1761 FSUB.FSub <> shift_typ:15 def
+R1763:1763 FSUB.FSub <> X:13 var
+R1790:1793 FSUB.FSub <> tabs constr
+R1804:1807 FSUB.FSub <> tabs constr
+R1824:1832 FSUB.FSub <> shift_typ:15 def
+R1836:1838 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1839:1839 FSUB.FSub <> X:13 var
+R1810:1815 FSUB.FSub <> tshift def
+R1817:1817 FSUB.FSub <> X:13 var
+R1850:1853 FSUB.FSub <> tapp constr
+R1864:1867 FSUB.FSub <> tapp constr
+R1887:1892 FSUB.FSub <> tshift def
+R1894:1894 FSUB.FSub <> X:13 var
+R1870:1878 FSUB.FSub <> shift_typ:15 def
+R1880:1880 FSUB.FSub <> X:13 var
+def 1917:1922 <> tsubst
+R1929:1931 FSUB.FSub <> typ ind
+binder 1925:1925 <> T:17
+R1939:1941 Coq.Init.Datatypes <> nat ind
+binder 1935:1935 <> X:18
+R1950:1952 FSUB.FSub <> typ ind
+binder 1945:1946 <> T':19
+R1968:1970 FSUB.FSub <> typ ind
+R1983:1983 FSUB.FSub <> T:17 var
+R1994:1997 FSUB.FSub <> tvar constr
+R2016:2027 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R2031:2031 FSUB.FSub <> X:18 var
+R2046:2051 Coq.Init.Specif <> inleft constr
+R2054:2057 Coq.Init.Specif <> left constr
+R2066:2069 FSUB.FSub <> tvar constr
+R2081:2086 Coq.Init.Specif <> inleft constr
+R2089:2093 Coq.Init.Specif <> right constr
+R2101:2102 FSUB.FSub <> T':19 var
+R2112:2118 Coq.Init.Specif <> inright constr
+R2132:2135 FSUB.FSub <> tvar constr
+R2139:2141 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R2159:2161 FSUB.FSub <> top constr
+R2174:2176 FSUB.FSub <> top constr
+R2182:2186 FSUB.FSub <> arrow constr
+R2197:2201 FSUB.FSub <> arrow constr
+R2221:2226 FSUB.FSub <> tsubst:20 def
+R2233:2234 FSUB.FSub <> T':19 var
+R2231:2231 FSUB.FSub <> X:18 var
+R2204:2209 FSUB.FSub <> tsubst:20 def
+R2216:2217 FSUB.FSub <> T':19 var
+R2214:2214 FSUB.FSub <> X:18 var
+R2241:2243 FSUB.FSub <> all constr
+R2256:2258 FSUB.FSub <> all constr
+R2278:2283 FSUB.FSub <> tsubst:20 def
+R2297:2302 FSUB.FSub <> tshift def
+R2306:2307 FSUB.FSub <> T':19 var
+R2290:2292 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2293:2293 FSUB.FSub <> X:18 var
+R2261:2266 FSUB.FSub <> tsubst:20 def
+R2273:2274 FSUB.FSub <> T':19 var
+R2271:2271 FSUB.FSub <> X:18 var
+def 2328:2332 <> subst
+R2339:2342 FSUB.FSub <> term ind
+binder 2335:2335 <> t:22
+R2350:2352 Coq.Init.Datatypes <> nat ind
+binder 2346:2346 <> x:23
+R2361:2364 FSUB.FSub <> term ind
+binder 2356:2357 <> t':24
+R2380:2383 FSUB.FSub <> term ind
+R2396:2396 FSUB.FSub <> t:22 var
+R2407:2409 FSUB.FSub <> var constr
+R2428:2439 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R2443:2443 FSUB.FSub <> x:23 var
+R2458:2463 Coq.Init.Specif <> inleft constr
+R2466:2469 Coq.Init.Specif <> left constr
+R2478:2480 FSUB.FSub <> var constr
+R2522:2527 Coq.Init.Specif <> inleft constr
+R2530:2534 Coq.Init.Specif <> right constr
+R2542:2543 FSUB.FSub <> t':24 var
+R2594:2600 Coq.Init.Specif <> inright constr
+R2614:2616 FSUB.FSub <> var constr
+R2620:2622 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R2713:2715 FSUB.FSub <> abs constr
+R2727:2729 FSUB.FSub <> abs constr
+R2735:2739 FSUB.FSub <> subst:25 def
+R2753:2757 FSUB.FSub <> shift def
+R2761:2762 FSUB.FSub <> t':24 var
+R2746:2748 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R2749:2749 FSUB.FSub <> x:23 var
+R2770:2772 FSUB.FSub <> app constr
+R2784:2786 FSUB.FSub <> app constr
+R2805:2809 FSUB.FSub <> subst:25 def
+R2816:2817 FSUB.FSub <> t':24 var
+R2814:2814 FSUB.FSub <> x:23 var
+R2789:2793 FSUB.FSub <> subst:25 def
+R2800:2801 FSUB.FSub <> t':24 var
+R2798:2798 FSUB.FSub <> x:23 var
+R2824:2827 FSUB.FSub <> tabs constr
+R2838:2841 FSUB.FSub <> tabs constr
+R2847:2851 FSUB.FSub <> subst:25 def
+R2859:2867 FSUB.FSub <> shift_typ def
+R2871:2872 FSUB.FSub <> t':24 var
+R2856:2856 FSUB.FSub <> x:23 var
+R2880:2883 FSUB.FSub <> tapp constr
+R2894:2897 FSUB.FSub <> tapp constr
+R2900:2904 FSUB.FSub <> subst:25 def
+R2911:2912 FSUB.FSub <> t':24 var
+R2909:2909 FSUB.FSub <> x:23 var
+def 2935:2943 <> subst_typ
+R2950:2953 FSUB.FSub <> term ind
+binder 2946:2946 <> t:27
+R2961:2963 Coq.Init.Datatypes <> nat ind
+binder 2957:2957 <> X:28
+R2971:2973 FSUB.FSub <> typ ind
+binder 2967:2967 <> T:29
+R2989:2992 FSUB.FSub <> term ind
+R3005:3005 FSUB.FSub <> t:27 var
+R3016:3018 FSUB.FSub <> var constr
+R3030:3032 FSUB.FSub <> var constr
+R3040:3042 FSUB.FSub <> abs constr
+R3054:3056 FSUB.FSub <> abs constr
+R3075:3083 FSUB.FSub <> subst_typ:30 def
+R3090:3090 FSUB.FSub <> T:29 var
+R3088:3088 FSUB.FSub <> X:28 var
+R3059:3064 FSUB.FSub <> tsubst def
+R3071:3071 FSUB.FSub <> T:29 var
+R3069:3069 FSUB.FSub <> X:28 var
+R3097:3099 FSUB.FSub <> app constr
+R3111:3113 FSUB.FSub <> app constr
+R3135:3143 FSUB.FSub <> subst_typ:30 def
+R3150:3150 FSUB.FSub <> T:29 var
+R3148:3148 FSUB.FSub <> X:28 var
+R3116:3124 FSUB.FSub <> subst_typ:30 def
+R3131:3131 FSUB.FSub <> T:29 var
+R3129:3129 FSUB.FSub <> X:28 var
+R3157:3160 FSUB.FSub <> tabs constr
+R3171:3174 FSUB.FSub <> tabs constr
+R3193:3201 FSUB.FSub <> subst_typ:30 def
+R3215:3220 FSUB.FSub <> tshift def
+R3224:3224 FSUB.FSub <> T:29 var
+R3208:3210 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R3211:3211 FSUB.FSub <> X:28 var
+R3177:3182 FSUB.FSub <> tsubst def
+R3189:3189 FSUB.FSub <> T:29 var
+R3187:3187 FSUB.FSub <> X:28 var
+R3232:3235 FSUB.FSub <> tapp constr
+R3246:3249 FSUB.FSub <> tapp constr
+R3271:3276 FSUB.FSub <> tsubst def
+R3283:3283 FSUB.FSub <> T:29 var
+R3281:3281 FSUB.FSub <> X:28 var
+R3252:3260 FSUB.FSub <> subst_typ:30 def
+R3267:3267 FSUB.FSub <> T:29 var
+R3265:3265 FSUB.FSub <> X:28 var
+ind 3447:3449 <> env
+constr 3462:3466 <> empty
+constr 3476:3479 <> evar
+constr 3524:3529 <> ebound
+R3470:3472 FSUB.FSub <> env:32 ind
+R3486:3489 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3483:3485 FSUB.FSub <> env:32 ind
+R3493:3496 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3490:3492 FSUB.FSub <> typ ind
+R3497:3499 FSUB.FSub <> env:32 ind
+R3536:3539 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3533:3535 FSUB.FSub <> env:32 ind
+R3543:3546 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3540:3542 FSUB.FSub <> typ ind
+R3547:3549 FSUB.FSub <> env:32 ind
+def 3584:3590 <> opt_map
+binder 3593:3593 <> A:34
+binder 3595:3595 <> B:35
+R3610:3613 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3609:3609 FSUB.FSub <> A:34 var
+R3614:3614 FSUB.FSub <> B:35 var
+binder 3605:3605 <> f:36
+R3622:3627 Coq.Init.Datatypes <> option ind
+R3629:3629 FSUB.FSub <> A:34 var
+binder 3618:3618 <> x:37
+R3643:3643 FSUB.FSub <> x:37 var
+R3654:3657 Coq.Init.Datatypes <> Some constr
+R3664:3667 Coq.Init.Datatypes <> Some constr
+R3670:3670 FSUB.FSub <> f:36 var
+R3672:3672 FSUB.FSub <> x:37 var
+R3679:3682 Coq.Init.Datatypes <> None constr
+R3687:3690 Coq.Init.Datatypes <> None constr
+def 3709:3717 <> get_bound
+R3724:3726 FSUB.FSub <> env ind
+binder 3720:3720 <> e:39
+R3734:3736 Coq.Init.Datatypes <> nat ind
+binder 3730:3730 <> X:40
+R3752:3757 Coq.Init.Datatypes <> option ind
+R3759:3761 FSUB.FSub <> typ ind
+R3774:3774 FSUB.FSub <> e:39 var
+R3785:3789 FSUB.FSub <> empty constr
+R3798:3801 Coq.Init.Datatypes <> None constr
+R3807:3810 FSUB.FSub <> evar constr
+R3820:3828 FSUB.FSub <> get_bound:41 def
+R3833:3833 FSUB.FSub <> X:40 var
+R3839:3844 FSUB.FSub <> ebound constr
+R3860:3866 FSUB.FSub <> opt_map def
+R3900:3900 FSUB.FSub <> X:40 var
+R3924:3924 Coq.Init.Datatypes <> O constr
+R3932:3935 Coq.Init.Datatypes <> Some constr
+R3956:3956 Coq.Init.Datatypes <> S constr
+R3964:3972 FSUB.FSub <> get_bound:41 def
+R3869:3874 FSUB.FSub <> tshift def
+def 4017:4023 <> get_var
+R4030:4032 FSUB.FSub <> env ind
+binder 4026:4026 <> e:44
+R4040:4042 Coq.Init.Datatypes <> nat ind
+binder 4036:4036 <> x:45
+R4058:4063 Coq.Init.Datatypes <> option ind
+R4065:4067 FSUB.FSub <> typ ind
+R4080:4080 FSUB.FSub <> e:44 var
+R4091:4095 FSUB.FSub <> empty constr
+R4106:4109 Coq.Init.Datatypes <> None constr
+R4115:4120 FSUB.FSub <> ebound constr
+R4130:4136 FSUB.FSub <> opt_map def
+R4150:4156 FSUB.FSub <> get_var:46 def
+R4161:4161 FSUB.FSub <> x:45 var
+R4139:4144 FSUB.FSub <> tshift def
+R4168:4171 FSUB.FSub <> evar constr
+R4193:4193 FSUB.FSub <> x:45 var
+R4208:4208 Coq.Init.Datatypes <> O constr
+R4216:4219 Coq.Init.Datatypes <> Some constr
+R4231:4231 Coq.Init.Datatypes <> S constr
+R4239:4245 FSUB.FSub <> get_var:46 def
+def 4367:4372 <> wf_typ
+R4379:4381 FSUB.FSub <> env ind
+binder 4375:4375 <> e:49
+R4389:4391 FSUB.FSub <> typ ind
+binder 4385:4385 <> T:50
+R4423:4423 FSUB.FSub <> T:50 var
+R4434:4437 FSUB.FSub <> tvar constr
+R4462:4465 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4449:4457 FSUB.FSub <> get_bound def
+R4459:4459 FSUB.FSub <> e:49 var
+R4466:4469 Coq.Init.Datatypes <> None constr
+R4475:4477 FSUB.FSub <> top constr
+R4490:4493 Coq.Init.Logic <> True ind
+R4499:4503 FSUB.FSub <> arrow constr
+R4525:4528 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4514:4519 FSUB.FSub <> wf_typ:51 def
+R4521:4521 FSUB.FSub <> e:49 var
+R4529:4534 FSUB.FSub <> wf_typ:51 def
+R4536:4536 FSUB.FSub <> e:49 var
+R4545:4547 FSUB.FSub <> all constr
+R4571:4574 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4560:4565 FSUB.FSub <> wf_typ:51 def
+R4567:4567 FSUB.FSub <> e:49 var
+R4575:4580 FSUB.FSub <> wf_typ:51 def
+R4583:4588 FSUB.FSub <> ebound constr
+R4590:4590 FSUB.FSub <> e:49 var
+def 4616:4622 <> wf_term
+R4629:4631 FSUB.FSub <> env ind
+binder 4625:4625 <> e:53
+R4639:4642 FSUB.FSub <> term ind
+binder 4635:4635 <> t:54
+R4674:4674 FSUB.FSub <> t:54 var
+R4685:4687 FSUB.FSub <> var constr
+R4710:4713 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4699:4705 FSUB.FSub <> get_var def
+R4707:4707 FSUB.FSub <> e:53 var
+R4714:4717 Coq.Init.Datatypes <> None constr
+R4723:4725 FSUB.FSub <> abs constr
+R4748:4752 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4737:4742 FSUB.FSub <> wf_typ def
+R4744:4744 FSUB.FSub <> e:53 var
+R4753:4759 FSUB.FSub <> wf_term:55 def
+R4762:4765 FSUB.FSub <> evar constr
+R4767:4767 FSUB.FSub <> e:53 var
+R4780:4782 FSUB.FSub <> app constr
+R4806:4809 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4794:4800 FSUB.FSub <> wf_term:55 def
+R4802:4802 FSUB.FSub <> e:53 var
+R4810:4816 FSUB.FSub <> wf_term:55 def
+R4818:4818 FSUB.FSub <> e:53 var
+R4827:4830 FSUB.FSub <> tabs constr
+R4852:4856 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4841:4846 FSUB.FSub <> wf_typ def
+R4848:4848 FSUB.FSub <> e:53 var
+R4857:4863 FSUB.FSub <> wf_term:55 def
+R4866:4871 FSUB.FSub <> ebound constr
+R4873:4873 FSUB.FSub <> e:53 var
+R4886:4889 FSUB.FSub <> tapp constr
+R4912:4915 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4900:4906 FSUB.FSub <> wf_term:55 def
+R4908:4908 FSUB.FSub <> e:53 var
+R4916:4921 FSUB.FSub <> wf_typ def
+R4923:4923 FSUB.FSub <> e:53 var
+def 4945:4950 <> wf_env
+R4957:4959 FSUB.FSub <> env ind
+binder 4953:4953 <> e:57
+R4980:4980 FSUB.FSub <> e:57 var
+R4991:4995 FSUB.FSub <> empty constr
+R5005:5008 Coq.Init.Logic <> True ind
+R5014:5017 FSUB.FSub <> evar constr
+R5038:5041 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5028:5033 FSUB.FSub <> wf_typ def
+R5035:5035 FSUB.FSub <> e:57 var
+R5042:5047 FSUB.FSub <> wf_env:58 def
+R5049:5049 FSUB.FSub <> e:57 var
+R5055:5060 FSUB.FSub <> ebound constr
+R5079:5082 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5069:5074 FSUB.FSub <> wf_typ def
+R5076:5076 FSUB.FSub <> e:57 var
+R5083:5088 FSUB.FSub <> wf_env:58 def
+R5090:5090 FSUB.FSub <> e:57 var
+ind 5614:5616 <> sub
+constr 5651:5656 <> SA_Top
+constr 5730:5741 <> SA_Refl_TVar
+constr 5838:5850 <> SA_Trans_TVar
+constr 5958:5965 <> SA_Arrow
+constr 6079:6084 <> SA_All
+R5623:5626 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5620:5622 FSUB.FSub <> env ind
+R5630:5633 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5627:5629 FSUB.FSub <> typ ind
+R5637:5640 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5634:5636 FSUB.FSub <> typ ind
+R5674:5676 FSUB.FSub <> env ind
+binder 5670:5670 <> e:62
+R5684:5686 FSUB.FSub <> typ ind
+binder 5680:5680 <> S:63
+R5698:5701 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5690:5695 FSUB.FSub <> wf_env def
+R5697:5697 FSUB.FSub <> e:62 var
+R5712:5715 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5702:5707 FSUB.FSub <> wf_typ def
+R5711:5711 FSUB.FSub <> S:63 var
+R5709:5709 FSUB.FSub <> e:62 var
+R5716:5718 FSUB.FSub <> sub:60 ind
+R5724:5726 FSUB.FSub <> top constr
+R5722:5722 FSUB.FSub <> S:63 var
+R5720:5720 FSUB.FSub <> e:62 var
+R5759:5761 FSUB.FSub <> env ind
+binder 5755:5755 <> e:64
+R5769:5771 Coq.Init.Datatypes <> nat ind
+binder 5765:5765 <> X:65
+R5787:5790 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5779:5784 FSUB.FSub <> wf_env def
+R5786:5786 FSUB.FSub <> e:64 var
+R5808:5811 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5791:5796 FSUB.FSub <> wf_typ def
+R5801:5804 FSUB.FSub <> tvar constr
+R5806:5806 FSUB.FSub <> X:65 var
+R5798:5798 FSUB.FSub <> e:64 var
+R5812:5814 FSUB.FSub <> sub:60 ind
+R5828:5831 FSUB.FSub <> tvar constr
+R5833:5833 FSUB.FSub <> X:65 var
+R5819:5822 FSUB.FSub <> tvar constr
+R5824:5824 FSUB.FSub <> X:65 var
+R5816:5816 FSUB.FSub <> e:64 var
+R5868:5870 FSUB.FSub <> env ind
+binder 5864:5864 <> e:66
+R5878:5880 Coq.Init.Datatypes <> nat ind
+binder 5874:5874 <> X:67
+R5890:5892 FSUB.FSub <> typ ind
+binder 5884:5884 <> T:68
+binder 5886:5886 <> U:69
+R5922:5925 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5913:5915 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5900:5908 FSUB.FSub <> get_bound def
+R5912:5912 FSUB.FSub <> X:67 var
+R5910:5910 FSUB.FSub <> e:66 var
+R5916:5919 Coq.Init.Datatypes <> Some constr
+R5921:5921 FSUB.FSub <> U:69 var
+R5935:5938 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5926:5928 FSUB.FSub <> sub:60 ind
+R5934:5934 FSUB.FSub <> T:68 var
+R5932:5932 FSUB.FSub <> U:69 var
+R5930:5930 FSUB.FSub <> e:66 var
+R5939:5941 FSUB.FSub <> sub:60 ind
+R5954:5954 FSUB.FSub <> T:68 var
+R5946:5949 FSUB.FSub <> tvar constr
+R5951:5951 FSUB.FSub <> X:67 var
+R5943:5943 FSUB.FSub <> e:66 var
+R5983:5985 FSUB.FSub <> env ind
+binder 5979:5979 <> e:70
+R6003:6005 FSUB.FSub <> typ ind
+binder 5989:5990 <> T1:71
+binder 5992:5993 <> T2:72
+binder 5995:5996 <> S1:73
+binder 5998:5999 <> S2:74
+R6024:6027 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6013:6015 FSUB.FSub <> sub:60 ind
+R6022:6023 FSUB.FSub <> S1:73 var
+R6019:6020 FSUB.FSub <> T1:71 var
+R6017:6017 FSUB.FSub <> e:70 var
+R6039:6042 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6028:6030 FSUB.FSub <> sub:60 ind
+R6037:6038 FSUB.FSub <> T2:72 var
+R6034:6035 FSUB.FSub <> S2:74 var
+R6032:6032 FSUB.FSub <> e:70 var
+R6043:6045 FSUB.FSub <> sub:60 ind
+R6064:6068 FSUB.FSub <> arrow constr
+R6073:6074 FSUB.FSub <> T2:72 var
+R6070:6071 FSUB.FSub <> T1:71 var
+R6050:6054 FSUB.FSub <> arrow constr
+R6059:6060 FSUB.FSub <> S2:74 var
+R6056:6057 FSUB.FSub <> S1:73 var
+R6047:6047 FSUB.FSub <> e:70 var
+R6102:6104 FSUB.FSub <> env ind
+binder 6098:6098 <> e:75
+R6122:6124 FSUB.FSub <> typ ind
+binder 6108:6109 <> T1:76
+binder 6111:6112 <> T2:77
+binder 6114:6115 <> S1:78
+binder 6117:6118 <> S2:79
+R6143:6146 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6132:6134 FSUB.FSub <> sub:60 ind
+R6141:6142 FSUB.FSub <> S1:78 var
+R6138:6139 FSUB.FSub <> T1:76 var
+R6136:6136 FSUB.FSub <> e:75 var
+R6170:6173 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6147:6149 FSUB.FSub <> sub:60 ind
+R6168:6169 FSUB.FSub <> T2:77 var
+R6165:6166 FSUB.FSub <> S2:79 var
+R6152:6157 FSUB.FSub <> ebound constr
+R6161:6162 FSUB.FSub <> T1:76 var
+R6159:6159 FSUB.FSub <> e:75 var
+R6174:6176 FSUB.FSub <> sub:60 ind
+R6193:6195 FSUB.FSub <> all constr
+R6200:6201 FSUB.FSub <> T2:77 var
+R6197:6198 FSUB.FSub <> T1:76 var
+R6181:6183 FSUB.FSub <> all constr
+R6188:6189 FSUB.FSub <> S2:79 var
+R6185:6186 FSUB.FSub <> S1:78 var
+R6178:6178 FSUB.FSub <> e:75 var
+ind 6856:6861 <> typing
+constr 6897:6901 <> T_Var
+constr 7006:7010 <> T_Abs
+constr 7130:7134 <> T_App
+constr 7274:7279 <> T_Tabs
+constr 7396:7401 <> T_Tapp
+constr 7551:7555 <> T_Sub
+R6868:6871 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6865:6867 FSUB.FSub <> env ind
+R6876:6879 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6872:6875 FSUB.FSub <> term ind
+R6883:6886 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6880:6882 FSUB.FSub <> typ ind
+R6919:6921 FSUB.FSub <> env ind
+binder 6915:6915 <> e:82
+R6929:6931 Coq.Init.Datatypes <> nat ind
+binder 6925:6925 <> x:83
+R6939:6941 FSUB.FSub <> typ ind
+binder 6935:6935 <> T:84
+R6957:6960 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6949:6954 FSUB.FSub <> wf_env def
+R6956:6956 FSUB.FSub <> e:82 var
+R6981:6984 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6972:6974 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6961:6967 FSUB.FSub <> get_var def
+R6971:6971 FSUB.FSub <> x:83 var
+R6969:6969 FSUB.FSub <> e:82 var
+R6975:6978 Coq.Init.Datatypes <> Some constr
+R6980:6980 FSUB.FSub <> T:84 var
+R6985:6990 FSUB.FSub <> typing:80 ind
+R7002:7002 FSUB.FSub <> T:84 var
+R6995:6997 FSUB.FSub <> var constr
+R6999:6999 FSUB.FSub <> x:83 var
+R6992:6992 FSUB.FSub <> e:82 var
+R7028:7030 FSUB.FSub <> env ind
+binder 7024:7024 <> e:85
+R7038:7041 FSUB.FSub <> term ind
+binder 7034:7034 <> t:86
+R7053:7055 FSUB.FSub <> typ ind
+binder 7045:7046 <> T1:87
+binder 7048:7049 <> T2:88
+R7086:7093 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7063:7068 FSUB.FSub <> typing:80 ind
+R7084:7085 FSUB.FSub <> T2:88 var
+R7082:7082 FSUB.FSub <> t:86 var
+R7071:7074 FSUB.FSub <> evar constr
+R7078:7079 FSUB.FSub <> T1:87 var
+R7076:7076 FSUB.FSub <> e:85 var
+R7094:7099 FSUB.FSub <> typing:80 ind
+R7115:7119 FSUB.FSub <> arrow constr
+R7124:7125 FSUB.FSub <> T2:88 var
+R7121:7122 FSUB.FSub <> T1:87 var
+R7104:7106 FSUB.FSub <> abs constr
+R7111:7111 FSUB.FSub <> t:86 var
+R7108:7109 FSUB.FSub <> T1:87 var
+R7101:7101 FSUB.FSub <> e:85 var
+R7152:7154 FSUB.FSub <> env ind
+binder 7148:7148 <> e:89
+R7166:7169 FSUB.FSub <> term ind
+binder 7158:7159 <> t1:90
+binder 7161:7162 <> t2:91
+R7183:7185 FSUB.FSub <> typ ind
+binder 7173:7175 <> T11:92
+binder 7177:7179 <> T12:93
+R7220:7227 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7193:7198 FSUB.FSub <> typing:80 ind
+R7206:7210 FSUB.FSub <> arrow constr
+R7216:7218 FSUB.FSub <> T12:93 var
+R7212:7214 FSUB.FSub <> T11:92 var
+R7202:7203 FSUB.FSub <> t1:90 var
+R7200:7200 FSUB.FSub <> e:89 var
+R7243:7246 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7228:7233 FSUB.FSub <> typing:80 ind
+R7240:7242 FSUB.FSub <> T11:92 var
+R7237:7238 FSUB.FSub <> t2:91 var
+R7235:7235 FSUB.FSub <> e:89 var
+R7247:7252 FSUB.FSub <> typing:80 ind
+R7268:7270 FSUB.FSub <> T12:93 var
+R7257:7259 FSUB.FSub <> app constr
+R7264:7265 FSUB.FSub <> t2:91 var
+R7261:7262 FSUB.FSub <> t1:90 var
+R7254:7254 FSUB.FSub <> e:89 var
+R7297:7299 FSUB.FSub <> env ind
+binder 7293:7293 <> e:94
+R7307:7310 FSUB.FSub <> term ind
+binder 7303:7303 <> t:95
+R7322:7324 FSUB.FSub <> typ ind
+binder 7314:7315 <> T1:96
+binder 7317:7318 <> T2:97
+R7357:7360 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7332:7337 FSUB.FSub <> typing:80 ind
+R7355:7356 FSUB.FSub <> T2:97 var
+R7353:7353 FSUB.FSub <> t:95 var
+R7340:7345 FSUB.FSub <> ebound constr
+R7349:7350 FSUB.FSub <> T1:96 var
+R7347:7347 FSUB.FSub <> e:94 var
+R7361:7366 FSUB.FSub <> typing:80 ind
+R7383:7385 FSUB.FSub <> all constr
+R7390:7391 FSUB.FSub <> T2:97 var
+R7387:7388 FSUB.FSub <> T1:96 var
+R7371:7374 FSUB.FSub <> tabs constr
+R7379:7379 FSUB.FSub <> t:95 var
+R7376:7377 FSUB.FSub <> T1:96 var
+R7368:7368 FSUB.FSub <> e:94 var
+R7419:7421 FSUB.FSub <> env ind
+binder 7415:7415 <> e:98
+R7430:7433 FSUB.FSub <> term ind
+binder 7425:7426 <> t1:99
+R7450:7452 FSUB.FSub <> typ ind
+binder 7437:7439 <> T11:100
+binder 7441:7443 <> T12:101
+binder 7445:7446 <> T2:102
+R7485:7492 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7460:7465 FSUB.FSub <> typing:80 ind
+R7473:7475 FSUB.FSub <> all constr
+R7481:7483 FSUB.FSub <> T12:101 var
+R7477:7479 FSUB.FSub <> T11:100 var
+R7469:7470 FSUB.FSub <> t1:99 var
+R7467:7467 FSUB.FSub <> e:98 var
+R7505:7508 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7493:7495 FSUB.FSub <> sub ind
+R7502:7504 FSUB.FSub <> T11:100 var
+R7499:7500 FSUB.FSub <> T2:102 var
+R7497:7497 FSUB.FSub <> e:98 var
+R7509:7514 FSUB.FSub <> typing:80 ind
+R7532:7537 FSUB.FSub <> tsubst def
+R7545:7546 FSUB.FSub <> T2:102 var
+R7539:7541 FSUB.FSub <> T12:101 var
+R7519:7522 FSUB.FSub <> tapp constr
+R7527:7528 FSUB.FSub <> T2:102 var
+R7524:7525 FSUB.FSub <> t1:99 var
+R7516:7516 FSUB.FSub <> e:98 var
+R7573:7575 FSUB.FSub <> env ind
+binder 7569:7569 <> e:103
+R7583:7586 FSUB.FSub <> term ind
+binder 7579:7579 <> t:104
+R7598:7600 FSUB.FSub <> typ ind
+binder 7590:7591 <> T1:105
+binder 7593:7594 <> T2:106
+R7621:7624 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7608:7613 FSUB.FSub <> typing:80 ind
+R7619:7620 FSUB.FSub <> T1:105 var
+R7617:7617 FSUB.FSub <> t:104 var
+R7615:7615 FSUB.FSub <> e:103 var
+R7636:7639 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7625:7627 FSUB.FSub <> sub ind
+R7634:7635 FSUB.FSub <> T2:106 var
+R7631:7632 FSUB.FSub <> T1:105 var
+R7629:7629 FSUB.FSub <> e:103 var
+R7640:7645 FSUB.FSub <> typing:80 ind
+R7651:7652 FSUB.FSub <> T2:106 var
+R7649:7649 FSUB.FSub <> t:104 var
+R7647:7647 FSUB.FSub <> e:103 var
+def 7704:7708 <> value
+R7715:7718 FSUB.FSub <> term ind
+binder 7711:7711 <> t:107
+R7732:7732 FSUB.FSub <> t:107 var
+R7743:7745 FSUB.FSub <> abs constr
+R7755:7758 Coq.Init.Logic <> True ind
+R7764:7767 FSUB.FSub <> tabs constr
+R7776:7779 Coq.Init.Logic <> True ind
+R7797:7801 Coq.Init.Logic <> False ind
+ind 7821:7823 <> ctx
+constr 7837:7842 <> c_hole
+constr 7852:7859 <> c_appfun
+constr 7884:7891 <> c_apparg
+constr 7938:7946 <> c_typefun
+R7846:7848 FSUB.FSub <> ctx:109 ind
+R7866:7869 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7863:7865 FSUB.FSub <> ctx:109 ind
+R7874:7877 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7870:7873 FSUB.FSub <> term ind
+R7878:7880 FSUB.FSub <> ctx:109 ind
+R7907:7910 FSUB.FSub <> term ind
+binder 7903:7903 <> t:111
+R7921:7924 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7914:7918 FSUB.FSub <> value def
+R7920:7920 FSUB.FSub <> t:111 var
+R7928:7931 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7925:7927 FSUB.FSub <> ctx:109 ind
+R7932:7934 FSUB.FSub <> ctx:109 ind
+R7953:7956 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7950:7952 FSUB.FSub <> ctx:109 ind
+R7960:7963 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7957:7959 FSUB.FSub <> typ ind
+R7964:7966 FSUB.FSub <> ctx:109 ind
+def 7979:7985 <> ctx_app
+R7992:7994 FSUB.FSub <> ctx ind
+binder 7988:7988 <> c:112
+R8002:8005 FSUB.FSub <> term ind
+binder 7998:7998 <> t:113
+R8021:8024 FSUB.FSub <> term ind
+R8037:8037 FSUB.FSub <> c:112 var
+R8048:8053 FSUB.FSub <> c_hole constr
+R8068:8068 FSUB.FSub <> t:113 var
+R8074:8081 FSUB.FSub <> c_appfun constr
+R8094:8096 FSUB.FSub <> app constr
+R8099:8105 FSUB.FSub <> ctx_app:114 def
+R8110:8110 FSUB.FSub <> t:113 var
+R8121:8128 FSUB.FSub <> c_apparg constr
+R8141:8143 FSUB.FSub <> app constr
+R8149:8155 FSUB.FSub <> ctx_app:114 def
+R8160:8160 FSUB.FSub <> t:113 var
+R8167:8175 FSUB.FSub <> c_typefun constr
+R8187:8190 FSUB.FSub <> tapp constr
+R8193:8199 FSUB.FSub <> ctx_app:114 def
+R8204:8204 FSUB.FSub <> t:113 var
+ind 8228:8230 <> red
+constr 8260:8267 <> E_AppAbs
+constr 8371:8380 <> E_TappTabs
+constr 8478:8482 <> E_Ctx
+R8238:8241 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8234:8237 FSUB.FSub <> term ind
+R8246:8249 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8242:8245 FSUB.FSub <> term ind
+R8287:8289 FSUB.FSub <> typ ind
+binder 8281:8283 <> t11:118
+R8302:8305 FSUB.FSub <> term ind
+binder 8293:8295 <> t12:119
+binder 8297:8298 <> t2:120
+R8321:8324 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8313:8317 FSUB.FSub <> value def
+R8319:8320 FSUB.FSub <> t2:120 var
+R8325:8327 FSUB.FSub <> red:116 ind
+R8353:8357 FSUB.FSub <> subst def
+R8365:8366 FSUB.FSub <> t2:120 var
+R8359:8361 FSUB.FSub <> t12:119 var
+R8330:8332 FSUB.FSub <> app constr
+R8348:8349 FSUB.FSub <> t2:120 var
+R8335:8337 FSUB.FSub <> abs constr
+R8343:8345 FSUB.FSub <> t12:119 var
+R8339:8341 FSUB.FSub <> t11:118 var
+R8403:8405 FSUB.FSub <> typ ind
+binder 8394:8396 <> t11:121
+binder 8398:8399 <> t2:122
+R8415:8418 FSUB.FSub <> term ind
+binder 8409:8411 <> t12:123
+R8426:8428 FSUB.FSub <> red:116 ind
+R8456:8464 FSUB.FSub <> subst_typ def
+R8472:8473 FSUB.FSub <> t2:122 var
+R8466:8468 FSUB.FSub <> t12:123 var
+R8431:8434 FSUB.FSub <> tapp constr
+R8451:8452 FSUB.FSub <> t2:122 var
+R8437:8440 FSUB.FSub <> tabs constr
+R8446:8448 FSUB.FSub <> t12:123 var
+R8442:8444 FSUB.FSub <> t11:121 var
+R8500:8502 FSUB.FSub <> ctx ind
+binder 8496:8496 <> c:124
+R8515:8518 FSUB.FSub <> term ind
+binder 8506:8507 <> t1:125
+binder 8509:8511 <> t1':126
+R8536:8539 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8526:8528 FSUB.FSub <> red:116 ind
+R8533:8535 FSUB.FSub <> t1':126 var
+R8530:8531 FSUB.FSub <> t1:125 var
+R8540:8542 FSUB.FSub <> red:116 ind
+R8560:8566 FSUB.FSub <> ctx_app def
+R8570:8572 FSUB.FSub <> t1':126 var
+R8568:8568 FSUB.FSub <> c:124 var
+R8545:8551 FSUB.FSub <> ctx_app def
+R8555:8556 FSUB.FSub <> t1:125 var
+R8553:8553 FSUB.FSub <> c:124 var
+R8898:8903 FSUB.FSub <> tshift def
+R8913:8918 FSUB.FSub <> tsubst def
+R8926:8931 FSUB.FSub <> tshift def
+R8939:8944 FSUB.FSub <> tsubst def
+R9014:9022 Coq.Arith.Compare_dec <> le_gt_dec def
+R9014:9022 Coq.Arith.Compare_dec <> le_gt_dec def
+R9087:9098 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R9087:9098 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R9128:9139 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R9051:9059 Coq.Arith.Compare_dec <> le_gt_dec def
+R9373:9376 FSUB.FSub <> tvar constr
+R9354:9360 Coq.Init.Logic <> f_equal thm
+R9410:9414 Coq.Init.Logic <> False ind
+R9491:9495 FSUB.FSub <> arrow constr
+R9471:9478 Coq.Init.Logic <> f_equal2 thm
+R9544:9546 FSUB.FSub <> all constr
+R9524:9531 Coq.Init.Logic <> f_equal2 thm
+prf 9568:9585 <> tsubst_tshift_prop
+R9603:9605 Coq.Init.Datatypes <> nat ind
+binder 9599:9599 <> n:127
+R9616:9618 FSUB.FSub <> typ ind
+binder 9609:9609 <> T:128
+binder 9611:9612 <> T':129
+R9623:9625 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9622:9622 FSUB.FSub <> T:128 var
+R9626:9631 FSUB.FSub <> tsubst def
+R9648:9649 FSUB.FSub <> T':129 var
+R9646:9646 FSUB.FSub <> n:127 var
+R9634:9639 FSUB.FSub <> tshift def
+R9643:9643 FSUB.FSub <> T:128 var
+R9641:9641 FSUB.FSub <> n:127 var
+prf 9696:9715 <> tshift_tshift_prop_1
+R9736:9738 Coq.Init.Datatypes <> nat ind
+binder 9729:9729 <> n:130
+binder 9731:9732 <> n':131
+R9746:9748 FSUB.FSub <> typ ind
+binder 9742:9742 <> T:132
+R9784:9786 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9756:9761 FSUB.FSub <> tshift def
+R9766:9771 FSUB.FSub <> tshift def
+R9782:9782 FSUB.FSub <> T:132 var
+R9775:9777 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9774:9774 FSUB.FSub <> n:130 var
+R9778:9779 FSUB.FSub <> n':131 var
+R9763:9763 FSUB.FSub <> n:130 var
+R9787:9792 FSUB.FSub <> tshift def
+R9810:9815 FSUB.FSub <> tshift def
+R9819:9819 FSUB.FSub <> T:132 var
+R9817:9817 FSUB.FSub <> n:130 var
+R9796:9799 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9806:9806 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9801:9803 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9800:9800 FSUB.FSub <> n:130 var
+R9804:9805 FSUB.FSub <> n':131 var
+R9871:9871 Coq.Init.Datatypes <> S constr
+R9871:9871 Coq.Init.Datatypes <> S constr
+prf 9892:9911 <> tshift_tsubst_prop_1
+R9932:9934 Coq.Init.Datatypes <> nat ind
+binder 9925:9925 <> n:133
+binder 9927:9928 <> n':134
+R9945:9947 FSUB.FSub <> typ ind
+binder 9938:9938 <> T:135
+binder 9940:9941 <> T':136
+R9986:9994 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9955:9960 FSUB.FSub <> tshift def
+R9965:9970 FSUB.FSub <> tsubst def
+R9983:9984 FSUB.FSub <> T':136 var
+R9976:9978 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9975:9975 FSUB.FSub <> n:133 var
+R9979:9980 FSUB.FSub <> n':134 var
+R9972:9972 FSUB.FSub <> T:135 var
+R9962:9962 FSUB.FSub <> n:133 var
+R9995:10000 FSUB.FSub <> tsubst def
+R10029:10034 FSUB.FSub <> tshift def
+R10038:10039 FSUB.FSub <> T':136 var
+R10036:10036 FSUB.FSub <> n:133 var
+R10021:10023 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10017:10019 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10020:10020 FSUB.FSub <> n:133 var
+R10024:10025 FSUB.FSub <> n':134 var
+R10003:10008 FSUB.FSub <> tshift def
+R10012:10012 FSUB.FSub <> T:135 var
+R10010:10010 FSUB.FSub <> n:133 var
+R10091:10110 FSUB.FSub <> tshift_tshift_prop_1 thm
+R10133:10133 Coq.Init.Datatypes <> S constr
+R10091:10110 FSUB.FSub <> tshift_tshift_prop_1 thm
+R10091:10110 FSUB.FSub <> tshift_tshift_prop_1 thm
+R10133:10133 Coq.Init.Datatypes <> S constr
+prf 10154:10173 <> tshift_tsubst_prop_2
+R10194:10196 Coq.Init.Datatypes <> nat ind
+binder 10187:10187 <> n:137
+binder 10189:10190 <> n':138
+R10207:10209 FSUB.FSub <> typ ind
+binder 10200:10200 <> T:139
+binder 10202:10203 <> T':140
+R10217:10217 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10249:10259 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10313:10313 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10218:10223 FSUB.FSub <> tshift def
+R10235:10240 FSUB.FSub <> tsubst def
+R10246:10247 FSUB.FSub <> T':140 var
+R10244:10244 FSUB.FSub <> n:137 var
+R10242:10242 FSUB.FSub <> T:139 var
+R10227:10229 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10226:10226 FSUB.FSub <> n:137 var
+R10230:10231 FSUB.FSub <> n':138 var
+R10260:10265 FSUB.FSub <> tsubst def
+R10294:10299 FSUB.FSub <> tshift def
+R10310:10311 FSUB.FSub <> T':140 var
+R10303:10305 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10302:10302 FSUB.FSub <> n:137 var
+R10306:10307 FSUB.FSub <> n':138 var
+R10291:10291 FSUB.FSub <> n:137 var
+R10268:10273 FSUB.FSub <> tshift def
+R10288:10288 FSUB.FSub <> T:139 var
+R10281:10283 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10277:10279 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10280:10280 FSUB.FSub <> n:137 var
+R10284:10285 FSUB.FSub <> n':138 var
+R10364:10383 FSUB.FSub <> tshift_tshift_prop_1 thm
+R10391:10393 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10413:10413 Coq.Init.Datatypes <> S constr
+R10364:10383 FSUB.FSub <> tshift_tshift_prop_1 thm
+R10391:10393 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10364:10383 FSUB.FSub <> tshift_tshift_prop_1 thm
+R10391:10393 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10413:10413 Coq.Init.Datatypes <> S constr
+prf 10434:10451 <> tsubst_tsubst_prop
+R10472:10474 Coq.Init.Datatypes <> nat ind
+binder 10465:10465 <> n:141
+binder 10467:10468 <> n':142
+R10486:10488 FSUB.FSub <> typ ind
+binder 10478:10478 <> T:143
+binder 10480:10480 <> U:144
+binder 10482:10482 <> V:145
+R10496:10496 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10529:10539 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10607:10607 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10497:10502 FSUB.FSub <> tsubst def
+R10528:10528 FSUB.FSub <> V:145 var
+R10521:10523 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10520:10520 FSUB.FSub <> n:141 var
+R10524:10525 FSUB.FSub <> n':142 var
+R10505:10510 FSUB.FSub <> tsubst def
+R10516:10516 FSUB.FSub <> U:144 var
+R10514:10514 FSUB.FSub <> n:141 var
+R10512:10512 FSUB.FSub <> T:143 var
+R10540:10545 FSUB.FSub <> tsubst def
+R10587:10592 FSUB.FSub <> tsubst def
+R10605:10605 FSUB.FSub <> V:145 var
+R10598:10600 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10597:10597 FSUB.FSub <> n:141 var
+R10601:10602 FSUB.FSub <> n':142 var
+R10594:10594 FSUB.FSub <> U:144 var
+R10584:10584 FSUB.FSub <> n:141 var
+R10548:10553 FSUB.FSub <> tsubst def
+R10571:10576 FSUB.FSub <> tshift def
+R10580:10580 FSUB.FSub <> V:145 var
+R10578:10578 FSUB.FSub <> n:141 var
+R10563:10565 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10559:10561 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10562:10562 FSUB.FSub <> n:141 var
+R10566:10567 FSUB.FSub <> n':142 var
+R10555:10555 FSUB.FSub <> T:143 var
+R10665:10682 FSUB.FSub <> tsubst_tshift_prop thm
+R10699:10718 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R10726:10728 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10750:10769 FSUB.FSub <> tshift_tshift_prop_1 thm
+R10798:10798 Coq.Init.Datatypes <> S constr
+R10665:10682 FSUB.FSub <> tsubst_tshift_prop thm
+R10699:10718 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R10726:10728 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10699:10718 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R10726:10728 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R10750:10769 FSUB.FSub <> tshift_tshift_prop_1 thm
+R10750:10769 FSUB.FSub <> tshift_tshift_prop_1 thm
+R10798:10798 Coq.Init.Datatypes <> S constr
+prf 10890:10906 <> wf_typ_env_weaken
+R10924:10926 FSUB.FSub <> typ ind
+binder 10920:10920 <> T:146
+R10937:10939 FSUB.FSub <> env ind
+binder 10930:10930 <> e:147
+binder 10932:10933 <> e':148
+R10947:10947 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11011:11019 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10960:10962 Coq.Init.Datatypes <> nat ind
+binder 10956:10956 <> X:149
+R10987:10990 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10980:10982 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10966:10974 FSUB.FSub <> get_bound def
+R10979:10979 FSUB.FSub <> X:149 var
+R10976:10977 FSUB.FSub <> e':148 var
+R10983:10986 Coq.Init.Datatypes <> None constr
+R11004:11006 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10991:10999 FSUB.FSub <> get_bound def
+R11003:11003 FSUB.FSub <> X:149 var
+R11001:11001 FSUB.FSub <> e:147 var
+R11007:11010 Coq.Init.Datatypes <> None constr
+R11030:11033 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11020:11025 FSUB.FSub <> wf_typ def
+R11029:11029 FSUB.FSub <> T:146 var
+R11027:11027 FSUB.FSub <> e:147 var
+R11034:11039 FSUB.FSub <> wf_typ def
+R11044:11044 FSUB.FSub <> T:146 var
+R11041:11042 FSUB.FSub <> e':148 var
+R11326:11334 FSUB.FSub <> get_bound def
+R11326:11334 FSUB.FSub <> get_bound def
+prf 11405:11425 <> wf_typ_extensionality
+R11443:11445 FSUB.FSub <> typ ind
+binder 11439:11439 <> T:150
+R11456:11458 FSUB.FSub <> env ind
+binder 11449:11449 <> e:151
+binder 11451:11452 <> e':152
+R11466:11466 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11515:11523 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11479:11481 Coq.Init.Datatypes <> nat ind
+binder 11475:11475 <> X:153
+R11498:11500 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11485:11493 FSUB.FSub <> get_bound def
+R11497:11497 FSUB.FSub <> X:153 var
+R11495:11495 FSUB.FSub <> e:151 var
+R11501:11509 FSUB.FSub <> get_bound def
+R11514:11514 FSUB.FSub <> X:153 var
+R11511:11512 FSUB.FSub <> e':152 var
+R11534:11537 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11524:11529 FSUB.FSub <> wf_typ def
+R11533:11533 FSUB.FSub <> T:150 var
+R11531:11531 FSUB.FSub <> e:151 var
+R11538:11543 FSUB.FSub <> wf_typ def
+R11548:11548 FSUB.FSub <> T:150 var
+R11545:11546 FSUB.FSub <> e':152 var
+R11580:11596 FSUB.FSub <> wf_typ_env_weaken thm
+R11580:11596 FSUB.FSub <> wf_typ_env_weaken thm
+def 11809:11818 <> remove_var
+R11825:11827 FSUB.FSub <> env ind
+binder 11821:11821 <> e:154
+R11835:11837 Coq.Init.Datatypes <> nat ind
+binder 11831:11831 <> x:155
+R11853:11855 FSUB.FSub <> env ind
+R11868:11868 FSUB.FSub <> e:154 var
+R11879:11883 FSUB.FSub <> empty constr
+R11894:11898 FSUB.FSub <> empty constr
+R11904:11909 FSUB.FSub <> ebound constr
+R11919:11924 FSUB.FSub <> ebound constr
+R11927:11936 FSUB.FSub <> remove_var:156 def
+R11941:11941 FSUB.FSub <> x:155 var
+R11950:11953 FSUB.FSub <> evar constr
+R11975:11975 FSUB.FSub <> x:155 var
+R11990:11990 Coq.Init.Datatypes <> O constr
+R12008:12008 Coq.Init.Datatypes <> S constr
+R12015:12018 FSUB.FSub <> evar constr
+R12021:12030 FSUB.FSub <> remove_var:156 def
+R12035:12035 FSUB.FSub <> x:155 var
+prf 12064:12084 <> get_var_remove_var_lt
+R12102:12104 FSUB.FSub <> env ind
+binder 12098:12098 <> e:159
+R12115:12117 Coq.Init.Datatypes <> nat ind
+binder 12108:12108 <> x:160
+binder 12110:12111 <> x':161
+R12131:12134 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12126:12128 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R12125:12125 FSUB.FSub <> x:160 var
+R12129:12130 FSUB.FSub <> x':161 var
+R12162:12164 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12135:12141 FSUB.FSub <> get_var def
+R12161:12161 FSUB.FSub <> x:160 var
+R12144:12153 FSUB.FSub <> remove_var def
+R12157:12158 FSUB.FSub <> x':161 var
+R12155:12155 FSUB.FSub <> e:159 var
+R12165:12171 FSUB.FSub <> get_var def
+R12175:12175 FSUB.FSub <> x:160 var
+R12173:12173 FSUB.FSub <> e:159 var
+R12369:12375 FSUB.FSub <> opt_map def
+R12378:12383 FSUB.FSub <> tshift def
+R12350:12356 Coq.Init.Logic <> f_equal thm
+R12369:12375 FSUB.FSub <> opt_map def
+R12378:12383 FSUB.FSub <> tshift def
+R12350:12356 Coq.Init.Logic <> f_equal thm
+prf 12410:12430 <> get_var_remove_var_ge
+R12448:12450 FSUB.FSub <> env ind
+binder 12444:12444 <> e:162
+R12461:12463 Coq.Init.Datatypes <> nat ind
+binder 12454:12454 <> x:163
+binder 12456:12457 <> x':164
+R12478:12481 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12472:12475 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R12471:12471 FSUB.FSub <> x:163 var
+R12476:12477 FSUB.FSub <> x':164 var
+R12509:12511 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12482:12488 FSUB.FSub <> get_var def
+R12508:12508 FSUB.FSub <> x:163 var
+R12491:12500 FSUB.FSub <> remove_var def
+R12504:12505 FSUB.FSub <> x':164 var
+R12502:12502 FSUB.FSub <> e:162 var
+R12512:12518 FSUB.FSub <> get_var def
+R12524:12526 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R12527:12527 FSUB.FSub <> x:163 var
+R12520:12520 FSUB.FSub <> e:162 var
+R12724:12730 FSUB.FSub <> opt_map def
+R12733:12738 FSUB.FSub <> tshift def
+R12705:12711 Coq.Init.Logic <> f_equal thm
+R12724:12730 FSUB.FSub <> opt_map def
+R12733:12738 FSUB.FSub <> tshift def
+R12705:12711 Coq.Init.Logic <> f_equal thm
+prf 12783:12802 <> get_bound_remove_var
+R12820:12822 FSUB.FSub <> env ind
+binder 12816:12816 <> e:165
+R12832:12834 Coq.Init.Datatypes <> nat ind
+binder 12826:12826 <> X:166
+binder 12828:12829 <> x':167
+R12851:12853 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12838:12846 FSUB.FSub <> get_bound def
+R12850:12850 FSUB.FSub <> X:166 var
+R12848:12848 FSUB.FSub <> e:165 var
+R12854:12862 FSUB.FSub <> get_bound def
+R12882:12882 FSUB.FSub <> X:166 var
+R12865:12874 FSUB.FSub <> remove_var def
+R12878:12879 FSUB.FSub <> x':167 var
+R12876:12876 FSUB.FSub <> e:165 var
+R13023:13029 FSUB.FSub <> opt_map def
+R13032:13037 FSUB.FSub <> tshift def
+R13004:13010 Coq.Init.Logic <> f_equal thm
+R13023:13029 FSUB.FSub <> opt_map def
+R13032:13037 FSUB.FSub <> tshift def
+R13004:13010 Coq.Init.Logic <> f_equal thm
+prf 13067:13083 <> wf_typ_remove_var
+R13101:13103 FSUB.FSub <> env ind
+binder 13097:13097 <> e:168
+R13111:13113 Coq.Init.Datatypes <> nat ind
+binder 13107:13107 <> x:169
+R13121:13123 FSUB.FSub <> typ ind
+binder 13117:13117 <> T:170
+R13141:13144 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13131:13136 FSUB.FSub <> wf_typ def
+R13140:13140 FSUB.FSub <> T:170 var
+R13138:13138 FSUB.FSub <> e:168 var
+R13145:13150 FSUB.FSub <> wf_typ def
+R13169:13169 FSUB.FSub <> T:170 var
+R13153:13162 FSUB.FSub <> remove_var def
+R13166:13166 FSUB.FSub <> x:169 var
+R13164:13164 FSUB.FSub <> e:168 var
+R13194:13214 FSUB.FSub <> wf_typ_extensionality thm
+R13237:13256 FSUB.FSub <> get_bound_remove_var thm
+R13194:13214 FSUB.FSub <> wf_typ_extensionality thm
+R13237:13256 FSUB.FSub <> get_bound_remove_var thm
+prf 13271:13287 <> wf_typ_insert_var
+R13305:13307 FSUB.FSub <> env ind
+binder 13301:13301 <> e:171
+R13315:13317 Coq.Init.Datatypes <> nat ind
+binder 13311:13311 <> n:172
+R13325:13327 FSUB.FSub <> typ ind
+binder 13321:13321 <> T:173
+R13360:13363 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13335:13340 FSUB.FSub <> wf_typ def
+R13359:13359 FSUB.FSub <> T:173 var
+R13343:13352 FSUB.FSub <> remove_var def
+R13356:13356 FSUB.FSub <> n:172 var
+R13354:13354 FSUB.FSub <> e:171 var
+R13364:13369 FSUB.FSub <> wf_typ def
+R13373:13373 FSUB.FSub <> T:173 var
+R13371:13371 FSUB.FSub <> e:171 var
+R13398:13418 FSUB.FSub <> wf_typ_extensionality thm
+R13441:13446 Coq.Init.Logic <> sym_eq syndef
+R13455:13474 FSUB.FSub <> get_bound_remove_var thm
+R13398:13418 FSUB.FSub <> wf_typ_extensionality thm
+R13441:13446 Coq.Init.Logic <> sym_eq syndef
+R13455:13474 FSUB.FSub <> get_bound_remove_var thm
+prf 13489:13505 <> wf_env_remove_var
+R13523:13525 FSUB.FSub <> env ind
+binder 13519:13519 <> e:174
+R13533:13535 Coq.Init.Datatypes <> nat ind
+binder 13529:13529 <> x:175
+R13547:13550 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13539:13544 FSUB.FSub <> wf_env def
+R13546:13546 FSUB.FSub <> e:174 var
+R13551:13556 FSUB.FSub <> wf_env def
+R13559:13568 FSUB.FSub <> remove_var def
+R13572:13572 FSUB.FSub <> x:175 var
+R13570:13570 FSUB.FSub <> e:174 var
+R13686:13702 FSUB.FSub <> wf_typ_remove_var thm
+R13757:13773 FSUB.FSub <> wf_typ_remove_var thm
+R13686:13702 FSUB.FSub <> wf_typ_remove_var thm
+R13757:13773 FSUB.FSub <> wf_typ_remove_var thm
+ind 14028:14039 <> insert_bound
+constr 14074:14080 <> ib_here
+constr 14162:14167 <> ib_var
+constr 14296:14303 <> ib_bound
+R14046:14049 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14043:14045 Coq.Init.Datatypes <> nat ind
+R14053:14056 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14050:14052 FSUB.FSub <> env ind
+R14060:14063 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14057:14059 FSUB.FSub <> env ind
+R14100:14102 FSUB.FSub <> typ ind
+binder 14096:14096 <> T:178
+R14110:14112 FSUB.FSub <> env ind
+binder 14106:14106 <> e:179
+R14126:14129 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14116:14121 FSUB.FSub <> wf_typ def
+R14125:14125 FSUB.FSub <> T:178 var
+R14123:14123 FSUB.FSub <> e:179 var
+R14130:14141 FSUB.FSub <> insert_bound:176 ind
+R14148:14153 FSUB.FSub <> ebound constr
+R14157:14157 FSUB.FSub <> T:178 var
+R14155:14155 FSUB.FSub <> e:179 var
+R14145:14145 FSUB.FSub <> e:179 var
+R14185:14187 Coq.Init.Datatypes <> nat ind
+binder 14181:14181 <> X:180
+R14195:14197 FSUB.FSub <> typ ind
+binder 14191:14191 <> T:181
+R14208:14210 FSUB.FSub <> env ind
+binder 14201:14201 <> e:182
+binder 14203:14204 <> e':183
+R14237:14244 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14218:14229 FSUB.FSub <> insert_bound:176 ind
+R14235:14236 FSUB.FSub <> e':183 var
+R14233:14233 FSUB.FSub <> e:182 var
+R14231:14231 FSUB.FSub <> X:180 var
+R14245:14256 FSUB.FSub <> insert_bound:176 ind
+R14272:14275 FSUB.FSub <> evar constr
+R14281:14286 FSUB.FSub <> tshift def
+R14290:14290 FSUB.FSub <> T:181 var
+R14288:14288 FSUB.FSub <> X:180 var
+R14277:14278 FSUB.FSub <> e':183 var
+R14261:14264 FSUB.FSub <> evar constr
+R14268:14268 FSUB.FSub <> T:181 var
+R14266:14266 FSUB.FSub <> e:182 var
+R14258:14258 FSUB.FSub <> X:180 var
+R14321:14323 Coq.Init.Datatypes <> nat ind
+binder 14317:14317 <> X:184
+R14331:14333 FSUB.FSub <> typ ind
+binder 14327:14327 <> T:185
+R14344:14346 FSUB.FSub <> env ind
+binder 14337:14337 <> e:186
+binder 14339:14340 <> e':187
+R14373:14380 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14354:14365 FSUB.FSub <> insert_bound:176 ind
+R14371:14372 FSUB.FSub <> e':187 var
+R14369:14369 FSUB.FSub <> e:186 var
+R14367:14367 FSUB.FSub <> X:184 var
+R14381:14392 FSUB.FSub <> insert_bound:176 ind
+R14416:14421 FSUB.FSub <> ebound constr
+R14427:14432 FSUB.FSub <> tshift def
+R14436:14436 FSUB.FSub <> T:185 var
+R14434:14434 FSUB.FSub <> X:184 var
+R14423:14424 FSUB.FSub <> e':187 var
+R14403:14408 FSUB.FSub <> ebound constr
+R14412:14412 FSUB.FSub <> T:185 var
+R14410:14410 FSUB.FSub <> e:186 var
+R14396:14398 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R14399:14399 FSUB.FSub <> X:184 var
+prf 14448:14472 <> get_bound_insert_bound_ge
+R14493:14495 Coq.Init.Datatypes <> nat ind
+binder 14486:14486 <> X:188
+binder 14488:14489 <> X':189
+R14506:14508 FSUB.FSub <> env ind
+binder 14499:14499 <> e:190
+binder 14501:14502 <> e':191
+R14536:14539 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14516:14527 FSUB.FSub <> insert_bound ind
+R14534:14535 FSUB.FSub <> e':191 var
+R14532:14532 FSUB.FSub <> e:190 var
+R14529:14530 FSUB.FSub <> X':189 var
+R14547:14554 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R14542:14545 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R14540:14541 FSUB.FSub <> X':189 var
+R14546:14546 FSUB.FSub <> X:188 var
+R14575:14577 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14555:14563 FSUB.FSub <> get_bound def
+R14570:14572 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R14573:14573 FSUB.FSub <> X:188 var
+R14565:14566 FSUB.FSub <> e':191 var
+R14578:14584 FSUB.FSub <> opt_map def
+R14599:14607 FSUB.FSub <> get_bound def
+R14611:14611 FSUB.FSub <> X:188 var
+R14609:14609 FSUB.FSub <> e:190 var
+R14587:14592 FSUB.FSub <> tshift def
+R14594:14595 FSUB.FSub <> X':189 var
+R14817:14825 FSUB.FSub <> get_bound def
+R14893:14896 Coq.Init.Datatypes <> Some constr
+R14898:14900 FSUB.FSub <> typ ind
+R14873:14879 Coq.Init.Logic <> f_equal thm
+R14917:14936 FSUB.FSub <> tshift_tshift_prop_1 thm
+R14817:14825 FSUB.FSub <> get_bound def
+R14893:14896 Coq.Init.Datatypes <> Some constr
+R14898:14900 FSUB.FSub <> typ ind
+R14873:14879 Coq.Init.Logic <> f_equal thm
+R14917:14936 FSUB.FSub <> tshift_tshift_prop_1 thm
+prf 14958:14982 <> get_bound_insert_bound_lt
+R15003:15005 Coq.Init.Datatypes <> nat ind
+binder 14996:14996 <> X:192
+binder 14998:14999 <> X':193
+R15016:15018 FSUB.FSub <> env ind
+binder 15009:15009 <> e:194
+binder 15011:15012 <> e':195
+R15046:15049 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15026:15037 FSUB.FSub <> insert_bound ind
+R15044:15045 FSUB.FSub <> e':195 var
+R15042:15042 FSUB.FSub <> e:194 var
+R15039:15040 FSUB.FSub <> X':193 var
+R15056:15063 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15051:15053 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R15050:15050 FSUB.FSub <> X:192 var
+R15054:15055 FSUB.FSub <> X':193 var
+R15078:15080 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15064:15072 FSUB.FSub <> get_bound def
+R15077:15077 FSUB.FSub <> X:192 var
+R15074:15075 FSUB.FSub <> e':195 var
+R15081:15087 FSUB.FSub <> opt_map def
+R15102:15110 FSUB.FSub <> get_bound def
+R15114:15114 FSUB.FSub <> X:192 var
+R15112:15112 FSUB.FSub <> e:194 var
+R15090:15095 FSUB.FSub <> tshift def
+R15097:15098 FSUB.FSub <> X':193 var
+R15299:15302 Coq.Init.Datatypes <> Some constr
+R15304:15306 FSUB.FSub <> typ ind
+R15279:15285 Coq.Init.Logic <> f_equal thm
+R15325:15344 FSUB.FSub <> tshift_tshift_prop_1 thm
+R15418:15426 FSUB.FSub <> get_bound def
+R15496:15499 Coq.Init.Datatypes <> Some constr
+R15501:15503 FSUB.FSub <> typ ind
+R15476:15482 Coq.Init.Logic <> f_equal thm
+R15522:15541 FSUB.FSub <> tshift_tshift_prop_1 thm
+R15299:15302 Coq.Init.Datatypes <> Some constr
+R15304:15306 FSUB.FSub <> typ ind
+R15279:15285 Coq.Init.Logic <> f_equal thm
+R15325:15344 FSUB.FSub <> tshift_tshift_prop_1 thm
+R15418:15426 FSUB.FSub <> get_bound def
+R15496:15499 Coq.Init.Datatypes <> Some constr
+R15501:15503 FSUB.FSub <> typ ind
+R15476:15482 Coq.Init.Logic <> f_equal thm
+R15522:15541 FSUB.FSub <> tshift_tshift_prop_1 thm
+prf 15565:15584 <> get_var_insert_bound
+R15605:15607 Coq.Init.Datatypes <> nat ind
+binder 15598:15598 <> x:196
+binder 15600:15601 <> X':197
+R15618:15620 FSUB.FSub <> env ind
+binder 15611:15611 <> e:198
+binder 15613:15614 <> e':199
+R15648:15651 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15628:15639 FSUB.FSub <> insert_bound ind
+R15646:15647 FSUB.FSub <> e':199 var
+R15644:15644 FSUB.FSub <> e:198 var
+R15641:15642 FSUB.FSub <> X':197 var
+R15664:15666 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15652:15658 FSUB.FSub <> get_var def
+R15663:15663 FSUB.FSub <> x:196 var
+R15660:15661 FSUB.FSub <> e':199 var
+R15667:15673 FSUB.FSub <> opt_map def
+R15688:15694 FSUB.FSub <> get_var def
+R15698:15698 FSUB.FSub <> x:196 var
+R15696:15696 FSUB.FSub <> e:198 var
+R15676:15681 FSUB.FSub <> tshift def
+R15683:15684 FSUB.FSub <> X':197 var
+R15855:15861 FSUB.FSub <> get_var def
+R15928:15931 Coq.Init.Datatypes <> Some constr
+R15933:15935 FSUB.FSub <> typ ind
+R15908:15914 Coq.Init.Logic <> f_equal thm
+R15952:15971 FSUB.FSub <> tshift_tshift_prop_1 thm
+R15855:15861 FSUB.FSub <> get_var def
+R15928:15931 Coq.Init.Datatypes <> Some constr
+R15933:15935 FSUB.FSub <> typ ind
+R15908:15914 Coq.Init.Logic <> f_equal thm
+R15952:15971 FSUB.FSub <> tshift_tshift_prop_1 thm
+prf 15993:16011 <> insert_bound_wf_typ
+R16029:16031 FSUB.FSub <> typ ind
+binder 16025:16025 <> T:200
+R16039:16041 Coq.Init.Datatypes <> nat ind
+binder 16035:16035 <> X:201
+R16052:16054 FSUB.FSub <> env ind
+binder 16045:16045 <> e:202
+binder 16047:16048 <> e':203
+R16081:16084 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16062:16073 FSUB.FSub <> insert_bound ind
+R16079:16080 FSUB.FSub <> e':203 var
+R16077:16077 FSUB.FSub <> e:202 var
+R16075:16075 FSUB.FSub <> X:201 var
+R16095:16098 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16085:16090 FSUB.FSub <> wf_typ def
+R16094:16094 FSUB.FSub <> T:200 var
+R16092:16092 FSUB.FSub <> e:202 var
+R16099:16104 FSUB.FSub <> wf_typ def
+R16110:16115 FSUB.FSub <> tshift def
+R16119:16119 FSUB.FSub <> T:200 var
+R16117:16117 FSUB.FSub <> X:201 var
+R16106:16107 FSUB.FSub <> e':203 var
+R16151:16156 FSUB.FSub <> tshift def
+R16164:16169 FSUB.FSub <> tshift def
+R16200:16208 Coq.Arith.Compare_dec <> le_gt_dec def
+R16242:16247 FSUB.FSub <> wf_typ def
+R16259:16283 FSUB.FSub <> get_bound_insert_bound_ge thm
+R16332:16340 FSUB.FSub <> get_bound def
+R16404:16428 FSUB.FSub <> get_bound_insert_bound_lt thm
+R16477:16485 FSUB.FSub <> get_bound def
+R16688:16693 FSUB.FSub <> ebound constr
+R16727:16734 FSUB.FSub <> ib_bound constr
+R16164:16169 FSUB.FSub <> tshift def
+R16200:16208 Coq.Arith.Compare_dec <> le_gt_dec def
+R16259:16283 FSUB.FSub <> get_bound_insert_bound_ge thm
+R16259:16283 FSUB.FSub <> get_bound_insert_bound_ge thm
+R16332:16340 FSUB.FSub <> get_bound def
+R16404:16428 FSUB.FSub <> get_bound_insert_bound_lt thm
+R16404:16428 FSUB.FSub <> get_bound_insert_bound_lt thm
+R16477:16485 FSUB.FSub <> get_bound def
+R16688:16693 FSUB.FSub <> ebound constr
+R16727:16734 FSUB.FSub <> ib_bound constr
+prf 16760:16778 <> insert_bound_wf_env
+R16796:16798 Coq.Init.Datatypes <> nat ind
+binder 16792:16792 <> X:204
+R16809:16811 FSUB.FSub <> env ind
+binder 16802:16802 <> e:205
+binder 16804:16805 <> e':206
+R16838:16841 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16819:16830 FSUB.FSub <> insert_bound ind
+R16836:16837 FSUB.FSub <> e':206 var
+R16834:16834 FSUB.FSub <> e:205 var
+R16832:16832 FSUB.FSub <> X:204 var
+R16850:16853 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16842:16847 FSUB.FSub <> wf_env def
+R16849:16849 FSUB.FSub <> e:205 var
+R16854:16859 FSUB.FSub <> wf_env def
+R16861:16862 FSUB.FSub <> e':206 var
+R16951:16969 FSUB.FSub <> insert_bound_wf_typ thm
+R16951:16969 FSUB.FSub <> insert_bound_wf_typ thm
+R16951:16969 FSUB.FSub <> insert_bound_wf_typ thm
+prf 17059:17080 <> wf_typ_weakening_bound
+R17098:17100 FSUB.FSub <> env ind
+binder 17094:17094 <> e:207
+R17110:17112 FSUB.FSub <> typ ind
+binder 17104:17104 <> T:208
+binder 17106:17106 <> U:209
+R17130:17133 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17120:17125 FSUB.FSub <> wf_typ def
+R17129:17129 FSUB.FSub <> T:208 var
+R17127:17127 FSUB.FSub <> e:207 var
+R17144:17147 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17134:17139 FSUB.FSub <> wf_typ def
+R17143:17143 FSUB.FSub <> U:209 var
+R17141:17141 FSUB.FSub <> e:207 var
+R17148:17153 FSUB.FSub <> wf_typ def
+R17169:17174 FSUB.FSub <> tshift def
+R17178:17178 FSUB.FSub <> T:208 var
+R17156:17161 FSUB.FSub <> ebound constr
+R17165:17165 FSUB.FSub <> U:209 var
+R17163:17163 FSUB.FSub <> e:207 var
+R17210:17228 FSUB.FSub <> insert_bound_wf_typ thm
+R17256:17262 FSUB.FSub <> ib_here constr
+R17210:17228 FSUB.FSub <> insert_bound_wf_typ thm
+R17256:17262 FSUB.FSub <> ib_here constr
+prf 17286:17305 <> wf_typ_weakening_var
+R17323:17325 FSUB.FSub <> env ind
+binder 17319:17319 <> e:210
+R17335:17337 FSUB.FSub <> typ ind
+binder 17329:17329 <> T:211
+binder 17331:17331 <> U:212
+R17355:17358 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17345:17350 FSUB.FSub <> wf_typ def
+R17354:17354 FSUB.FSub <> U:212 var
+R17352:17352 FSUB.FSub <> e:210 var
+R17359:17364 FSUB.FSub <> wf_typ def
+R17377:17377 FSUB.FSub <> U:212 var
+R17367:17370 FSUB.FSub <> evar constr
+R17374:17374 FSUB.FSub <> T:211 var
+R17372:17372 FSUB.FSub <> e:210 var
+R17404:17420 FSUB.FSub <> wf_typ_env_weaken thm
+R17404:17420 FSUB.FSub <> wf_typ_env_weaken thm
+prf 17465:17488 <> wf_typ_strengthening_var
+R17506:17508 FSUB.FSub <> env ind
+binder 17502:17502 <> e:213
+R17518:17520 FSUB.FSub <> typ ind
+binder 17512:17512 <> T:214
+binder 17514:17514 <> U:215
+R17547:17550 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17528:17533 FSUB.FSub <> wf_typ def
+R17546:17546 FSUB.FSub <> U:215 var
+R17536:17539 FSUB.FSub <> evar constr
+R17543:17543 FSUB.FSub <> T:214 var
+R17541:17541 FSUB.FSub <> e:213 var
+R17551:17556 FSUB.FSub <> wf_typ def
+R17560:17560 FSUB.FSub <> U:215 var
+R17558:17558 FSUB.FSub <> e:213 var
+R17587:17603 FSUB.FSub <> wf_typ_env_weaken thm
+R17587:17603 FSUB.FSub <> wf_typ_env_weaken thm
+prf 17648:17660 <> wf_typ_ebound
+R17682:17684 FSUB.FSub <> typ ind
+binder 17674:17674 <> T:216
+binder 17676:17676 <> U:217
+binder 17678:17678 <> V:218
+R17692:17694 FSUB.FSub <> env ind
+binder 17688:17688 <> e:219
+R17723:17726 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17702:17707 FSUB.FSub <> wf_typ def
+R17722:17722 FSUB.FSub <> T:216 var
+R17710:17715 FSUB.FSub <> ebound constr
+R17719:17719 FSUB.FSub <> U:217 var
+R17717:17717 FSUB.FSub <> e:219 var
+R17727:17732 FSUB.FSub <> wf_typ def
+R17747:17747 FSUB.FSub <> T:216 var
+R17735:17740 FSUB.FSub <> ebound constr
+R17744:17744 FSUB.FSub <> V:218 var
+R17742:17742 FSUB.FSub <> e:219 var
+R17774:17790 FSUB.FSub <> wf_typ_env_weaken thm
+R17774:17790 FSUB.FSub <> wf_typ_env_weaken thm
+prf 17871:17880 <> get_var_wf
+R17898:17900 FSUB.FSub <> env ind
+binder 17894:17894 <> e:220
+R17908:17910 Coq.Init.Datatypes <> nat ind
+binder 17904:17904 <> n:221
+R17918:17920 FSUB.FSub <> typ ind
+binder 17914:17914 <> T:222
+R17936:17939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17928:17933 FSUB.FSub <> wf_env def
+R17935:17935 FSUB.FSub <> e:220 var
+R17960:17963 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17951:17953 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17940:17946 FSUB.FSub <> get_var def
+R17950:17950 FSUB.FSub <> n:221 var
+R17948:17948 FSUB.FSub <> e:220 var
+R17954:17957 Coq.Init.Datatypes <> Some constr
+R17959:17959 FSUB.FSub <> T:222 var
+R17964:17969 FSUB.FSub <> wf_typ def
+R17973:17973 FSUB.FSub <> T:222 var
+R17971:17971 FSUB.FSub <> e:220 var
+R18133:18152 FSUB.FSub <> wf_typ_weakening_var thm
+R18174:18193 FSUB.FSub <> wf_typ_weakening_var thm
+R18283:18289 FSUB.FSub <> get_var def
+R18376:18397 FSUB.FSub <> wf_typ_weakening_bound thm
+R18133:18152 FSUB.FSub <> wf_typ_weakening_var thm
+R18174:18193 FSUB.FSub <> wf_typ_weakening_var thm
+R18283:18289 FSUB.FSub <> get_var def
+R18376:18397 FSUB.FSub <> wf_typ_weakening_bound thm
+prf 18772:18777 <> sub_wf
+R18795:18797 FSUB.FSub <> env ind
+binder 18791:18791 <> e:223
+R18807:18809 FSUB.FSub <> typ ind
+binder 18801:18801 <> T:224
+binder 18803:18803 <> U:225
+R18826:18829 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18817:18819 FSUB.FSub <> sub ind
+R18825:18825 FSUB.FSub <> U:225 var
+R18823:18823 FSUB.FSub <> T:224 var
+R18821:18821 FSUB.FSub <> e:223 var
+R18838:18841 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R18830:18835 FSUB.FSub <> wf_env def
+R18837:18837 FSUB.FSub <> e:223 var
+R18852:18855 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R18842:18847 FSUB.FSub <> wf_typ def
+R18851:18851 FSUB.FSub <> T:224 var
+R18849:18849 FSUB.FSub <> e:223 var
+R18856:18861 FSUB.FSub <> wf_typ def
+R18865:18865 FSUB.FSub <> U:225 var
+R18863:18863 FSUB.FSub <> e:223 var
+R18982:18994 FSUB.FSub <> wf_typ_ebound thm
+R18982:18994 FSUB.FSub <> wf_typ_ebound thm
+prf 19077:19091 <> sub_reflexivity
+R19109:19111 FSUB.FSub <> env ind
+binder 19105:19105 <> e:226
+R19119:19121 FSUB.FSub <> typ ind
+binder 19115:19115 <> T:227
+R19133:19136 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19125:19130 FSUB.FSub <> wf_env def
+R19132:19132 FSUB.FSub <> e:226 var
+R19147:19150 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19137:19142 FSUB.FSub <> wf_typ def
+R19146:19146 FSUB.FSub <> T:227 var
+R19144:19144 FSUB.FSub <> e:226 var
+R19151:19153 FSUB.FSub <> sub ind
+R19159:19159 FSUB.FSub <> T:227 var
+R19157:19157 FSUB.FSub <> T:227 var
+R19155:19155 FSUB.FSub <> e:226 var
+R19240:19251 FSUB.FSub <> SA_Refl_TVar constr
+R19274:19279 FSUB.FSub <> SA_Top constr
+R19302:19309 FSUB.FSub <> SA_Arrow constr
+R19338:19342 Coq.Init.Logic <> proj1 thm
+R19375:19379 Coq.Init.Logic <> proj2 thm
+R19400:19405 FSUB.FSub <> SA_All constr
+R19434:19438 Coq.Init.Logic <> proj1 thm
+R19476:19480 Coq.Init.Logic <> proj2 thm
+R19240:19251 FSUB.FSub <> SA_Refl_TVar constr
+R19274:19279 FSUB.FSub <> SA_Top constr
+R19302:19309 FSUB.FSub <> SA_Arrow constr
+R19338:19342 Coq.Init.Logic <> proj1 thm
+R19375:19379 Coq.Init.Logic <> proj2 thm
+R19400:19405 FSUB.FSub <> SA_All constr
+R19434:19438 Coq.Init.Logic <> proj1 thm
+R19476:19480 Coq.Init.Logic <> proj2 thm
+prf 19912:19934 <> sub_weakening_bound_ind
+R19955:19957 FSUB.FSub <> env ind
+binder 19948:19948 <> e:228
+binder 19950:19951 <> e':229
+R19965:19967 Coq.Init.Datatypes <> nat ind
+binder 19961:19961 <> X:230
+R19977:19979 FSUB.FSub <> typ ind
+binder 19971:19971 <> U:231
+binder 19973:19973 <> V:232
+R20006:20009 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19987:19998 FSUB.FSub <> insert_bound ind
+R20004:20005 FSUB.FSub <> e':229 var
+R20002:20002 FSUB.FSub <> e:228 var
+R20000:20000 FSUB.FSub <> X:230 var
+R20019:20022 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20010:20012 FSUB.FSub <> sub ind
+R20018:20018 FSUB.FSub <> V:232 var
+R20016:20016 FSUB.FSub <> U:231 var
+R20014:20014 FSUB.FSub <> e:228 var
+R20023:20025 FSUB.FSub <> sub ind
+R20044:20049 FSUB.FSub <> tshift def
+R20053:20053 FSUB.FSub <> V:232 var
+R20051:20051 FSUB.FSub <> X:230 var
+R20031:20036 FSUB.FSub <> tshift def
+R20040:20040 FSUB.FSub <> U:231 var
+R20038:20038 FSUB.FSub <> X:230 var
+R20027:20028 FSUB.FSub <> e':229 var
+R20173:20178 FSUB.FSub <> SA_Top constr
+R20196:20214 FSUB.FSub <> insert_bound_wf_env thm
+R20237:20255 FSUB.FSub <> insert_bound_wf_typ thm
+R20278:20289 FSUB.FSub <> SA_Refl_TVar constr
+R20307:20325 FSUB.FSub <> insert_bound_wf_env thm
+R20348:20366 FSUB.FSub <> insert_bound_wf_typ thm
+R20389:20401 FSUB.FSub <> SA_Trans_TVar constr
+R20445:20453 Coq.Arith.Compare_dec <> le_gt_dec def
+R20488:20488 Coq.Init.Datatypes <> S constr
+R20500:20502 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R20532:20556 FSUB.FSub <> get_bound_insert_bound_ge thm
+R20627:20651 FSUB.FSub <> get_bound_insert_bound_lt thm
+R20720:20727 FSUB.FSub <> SA_Arrow constr
+R20747:20752 FSUB.FSub <> SA_All constr
+R20783:20785 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R20793:20800 FSUB.FSub <> ib_bound constr
+R20173:20178 FSUB.FSub <> SA_Top constr
+R20196:20214 FSUB.FSub <> insert_bound_wf_env thm
+R20237:20255 FSUB.FSub <> insert_bound_wf_typ thm
+R20278:20289 FSUB.FSub <> SA_Refl_TVar constr
+R20307:20325 FSUB.FSub <> insert_bound_wf_env thm
+R20348:20366 FSUB.FSub <> insert_bound_wf_typ thm
+R20389:20401 FSUB.FSub <> SA_Trans_TVar constr
+R20445:20453 Coq.Arith.Compare_dec <> le_gt_dec def
+R20488:20488 Coq.Init.Datatypes <> S constr
+R20500:20502 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R20532:20556 FSUB.FSub <> get_bound_insert_bound_ge thm
+R20532:20556 FSUB.FSub <> get_bound_insert_bound_ge thm
+R20627:20651 FSUB.FSub <> get_bound_insert_bound_lt thm
+R20627:20651 FSUB.FSub <> get_bound_insert_bound_lt thm
+R20720:20727 FSUB.FSub <> SA_Arrow constr
+R20747:20752 FSUB.FSub <> SA_All constr
+R20783:20785 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R20793:20800 FSUB.FSub <> ib_bound constr
+prf 20825:20843 <> sub_weakening_bound
+R20861:20863 FSUB.FSub <> env ind
+binder 20857:20857 <> e:233
+R20875:20877 FSUB.FSub <> typ ind
+binder 20867:20867 <> T:234
+binder 20869:20869 <> U:235
+binder 20871:20871 <> V:236
+R20895:20898 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20885:20890 FSUB.FSub <> wf_typ def
+R20894:20894 FSUB.FSub <> V:236 var
+R20892:20892 FSUB.FSub <> e:233 var
+R20908:20911 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R20899:20901 FSUB.FSub <> sub ind
+R20907:20907 FSUB.FSub <> U:235 var
+R20905:20905 FSUB.FSub <> T:234 var
+R20903:20903 FSUB.FSub <> e:233 var
+R20912:20914 FSUB.FSub <> sub ind
+R20943:20948 FSUB.FSub <> tshift def
+R20952:20952 FSUB.FSub <> U:235 var
+R20930:20935 FSUB.FSub <> tshift def
+R20939:20939 FSUB.FSub <> T:234 var
+R20917:20922 FSUB.FSub <> ebound constr
+R20926:20926 FSUB.FSub <> V:236 var
+R20924:20924 FSUB.FSub <> e:233 var
+R20985:21007 FSUB.FSub <> sub_weakening_bound_ind thm
+R21034:21040 FSUB.FSub <> ib_here constr
+R20985:21007 FSUB.FSub <> sub_weakening_bound_ind thm
+R21034:21040 FSUB.FSub <> ib_here constr
+prf 21406:21423 <> sub_extensionality
+R21444:21446 FSUB.FSub <> env ind
+binder 21437:21437 <> e:237
+binder 21439:21440 <> e':238
+R21456:21458 FSUB.FSub <> typ ind
+binder 21450:21450 <> U:239
+binder 21452:21452 <> V:240
+R21466:21466 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21519:21523 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21479:21481 Coq.Init.Datatypes <> nat ind
+binder 21475:21475 <> X:241
+R21485:21485 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21499:21503 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21518:21518 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21486:21494 FSUB.FSub <> get_bound def
+R21498:21498 FSUB.FSub <> X:241 var
+R21496:21496 FSUB.FSub <> e:237 var
+R21504:21512 FSUB.FSub <> get_bound def
+R21517:21517 FSUB.FSub <> X:241 var
+R21514:21515 FSUB.FSub <> e':238 var
+R21533:21540 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21524:21529 FSUB.FSub <> wf_env def
+R21531:21532 FSUB.FSub <> e':238 var
+R21550:21553 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21541:21543 FSUB.FSub <> sub ind
+R21549:21549 FSUB.FSub <> V:240 var
+R21547:21547 FSUB.FSub <> U:239 var
+R21545:21545 FSUB.FSub <> e:237 var
+R21554:21556 FSUB.FSub <> sub ind
+R21563:21563 FSUB.FSub <> V:240 var
+R21561:21561 FSUB.FSub <> U:239 var
+R21558:21559 FSUB.FSub <> e':238 var
+R21678:21683 FSUB.FSub <> SA_Top constr
+R21702:21722 FSUB.FSub <> wf_typ_extensionality thm
+R21743:21754 FSUB.FSub <> SA_Refl_TVar constr
+R21773:21793 FSUB.FSub <> wf_typ_extensionality thm
+R21831:21843 FSUB.FSub <> SA_Trans_TVar constr
+R21877:21884 FSUB.FSub <> SA_Arrow constr
+R21904:21909 FSUB.FSub <> SA_All constr
+R21950:21955 FSUB.FSub <> ebound constr
+R22077:22097 FSUB.FSub <> wf_typ_extensionality thm
+R22130:22134 Coq.Init.Logic <> proj1 thm
+R22137:22141 Coq.Init.Logic <> proj2 thm
+R22144:22149 FSUB.FSub <> sub_wf thm
+R21678:21683 FSUB.FSub <> SA_Top constr
+R21702:21722 FSUB.FSub <> wf_typ_extensionality thm
+R21743:21754 FSUB.FSub <> SA_Refl_TVar constr
+R21773:21793 FSUB.FSub <> wf_typ_extensionality thm
+R21831:21843 FSUB.FSub <> SA_Trans_TVar constr
+R21877:21884 FSUB.FSub <> SA_Arrow constr
+R21904:21909 FSUB.FSub <> SA_All constr
+R21950:21955 FSUB.FSub <> ebound constr
+R22077:22097 FSUB.FSub <> wf_typ_extensionality thm
+R22130:22134 Coq.Init.Logic <> proj1 thm
+R22137:22141 Coq.Init.Logic <> proj2 thm
+R22144:22149 FSUB.FSub <> sub_wf thm
+prf 22175:22195 <> sub_weakening_var_ind
+R22213:22215 FSUB.FSub <> env ind
+binder 22209:22209 <> e:242
+R22223:22225 Coq.Init.Datatypes <> nat ind
+binder 22219:22219 <> x:243
+R22235:22237 FSUB.FSub <> typ ind
+binder 22229:22229 <> U:244
+binder 22231:22231 <> V:245
+R22253:22256 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22245:22250 FSUB.FSub <> wf_env def
+R22252:22252 FSUB.FSub <> e:242 var
+R22281:22284 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22257:22259 FSUB.FSub <> sub ind
+R22280:22280 FSUB.FSub <> V:245 var
+R22278:22278 FSUB.FSub <> U:244 var
+R22262:22271 FSUB.FSub <> remove_var def
+R22275:22275 FSUB.FSub <> x:243 var
+R22273:22273 FSUB.FSub <> e:242 var
+R22285:22287 FSUB.FSub <> sub ind
+R22293:22293 FSUB.FSub <> V:245 var
+R22291:22291 FSUB.FSub <> U:244 var
+R22289:22289 FSUB.FSub <> e:242 var
+R22323:22340 FSUB.FSub <> sub_extensionality thm
+R22371:22376 Coq.Init.Logic <> sym_eq syndef
+R22385:22404 FSUB.FSub <> get_bound_remove_var thm
+R22323:22340 FSUB.FSub <> sub_extensionality thm
+R22371:22376 Coq.Init.Logic <> sym_eq syndef
+R22385:22404 FSUB.FSub <> get_bound_remove_var thm
+prf 22419:22435 <> sub_weakening_var
+R22453:22455 FSUB.FSub <> env ind
+binder 22449:22449 <> e:246
+R22467:22469 FSUB.FSub <> typ ind
+binder 22459:22459 <> T:247
+binder 22461:22461 <> U:248
+binder 22463:22463 <> V:249
+R22487:22490 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22477:22482 FSUB.FSub <> wf_typ def
+R22486:22486 FSUB.FSub <> V:249 var
+R22484:22484 FSUB.FSub <> e:246 var
+R22500:22503 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22491:22493 FSUB.FSub <> sub ind
+R22499:22499 FSUB.FSub <> U:248 var
+R22497:22497 FSUB.FSub <> T:247 var
+R22495:22495 FSUB.FSub <> e:246 var
+R22504:22506 FSUB.FSub <> sub ind
+R22521:22521 FSUB.FSub <> U:248 var
+R22519:22519 FSUB.FSub <> T:247 var
+R22509:22512 FSUB.FSub <> evar constr
+R22516:22516 FSUB.FSub <> V:249 var
+R22514:22514 FSUB.FSub <> e:246 var
+R22569:22586 FSUB.FSub <> sub_extensionality thm
+R22632:22636 Coq.Init.Logic <> proj1 thm
+R22639:22644 FSUB.FSub <> sub_wf thm
+R22569:22586 FSUB.FSub <> sub_extensionality thm
+R22632:22636 Coq.Init.Logic <> proj1 thm
+R22639:22644 FSUB.FSub <> sub_wf thm
+ind 22821:22826 <> narrow
+constr 22861:22868 <> narrow_0
+constr 22965:22983 <> narrow_extend_bound
+constr 23114:23130 <> narrow_extend_var
+R22833:22836 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22830:22832 Coq.Init.Datatypes <> nat ind
+R22840:22843 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22837:22839 FSUB.FSub <> env ind
+R22847:22850 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22844:22846 FSUB.FSub <> env ind
+R22888:22890 FSUB.FSub <> env ind
+binder 22884:22884 <> e:252
+R22901:22903 FSUB.FSub <> typ ind
+binder 22894:22894 <> T:253
+binder 22896:22897 <> T':254
+R22923:22926 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22913:22915 FSUB.FSub <> sub ind
+R22922:22922 FSUB.FSub <> T:253 var
+R22919:22920 FSUB.FSub <> T':254 var
+R22917:22917 FSUB.FSub <> e:252 var
+R22927:22932 FSUB.FSub <> narrow:250 ind
+R22950:22955 FSUB.FSub <> ebound constr
+R22959:22960 FSUB.FSub <> T':254 var
+R22957:22957 FSUB.FSub <> e:252 var
+R22937:22942 FSUB.FSub <> ebound constr
+R22946:22946 FSUB.FSub <> T:253 var
+R22944:22944 FSUB.FSub <> e:252 var
+R23004:23006 FSUB.FSub <> env ind
+binder 22997:22997 <> e:255
+binder 22999:23000 <> e':256
+R23014:23016 FSUB.FSub <> typ ind
+binder 23010:23010 <> T:257
+R23024:23026 Coq.Init.Datatypes <> nat ind
+binder 23020:23020 <> X:258
+R23045:23048 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23034:23039 FSUB.FSub <> wf_typ def
+R23044:23044 FSUB.FSub <> T:257 var
+R23041:23042 FSUB.FSub <> e':256 var
+R23062:23069 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23049:23054 FSUB.FSub <> narrow:250 ind
+R23060:23061 FSUB.FSub <> e':256 var
+R23058:23058 FSUB.FSub <> e:255 var
+R23056:23056 FSUB.FSub <> X:258 var
+R23070:23075 FSUB.FSub <> narrow:250 ind
+R23099:23104 FSUB.FSub <> ebound constr
+R23109:23109 FSUB.FSub <> T:257 var
+R23106:23107 FSUB.FSub <> e':256 var
+R23086:23091 FSUB.FSub <> ebound constr
+R23095:23095 FSUB.FSub <> T:257 var
+R23093:23093 FSUB.FSub <> e:255 var
+R23079:23081 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R23082:23082 FSUB.FSub <> X:258 var
+R23151:23153 FSUB.FSub <> env ind
+binder 23144:23144 <> e:259
+binder 23146:23147 <> e':260
+R23161:23163 FSUB.FSub <> typ ind
+binder 23157:23157 <> T:261
+R23171:23173 Coq.Init.Datatypes <> nat ind
+binder 23167:23167 <> X:262
+R23192:23195 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23181:23186 FSUB.FSub <> wf_typ def
+R23191:23191 FSUB.FSub <> T:261 var
+R23188:23189 FSUB.FSub <> e':260 var
+R23209:23212 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23196:23201 FSUB.FSub <> narrow:250 ind
+R23207:23208 FSUB.FSub <> e':260 var
+R23205:23205 FSUB.FSub <> e:259 var
+R23203:23203 FSUB.FSub <> X:262 var
+R23213:23218 FSUB.FSub <> narrow:250 ind
+R23234:23237 FSUB.FSub <> evar constr
+R23242:23242 FSUB.FSub <> T:261 var
+R23239:23240 FSUB.FSub <> e':260 var
+R23223:23226 FSUB.FSub <> evar constr
+R23230:23230 FSUB.FSub <> T:261 var
+R23228:23228 FSUB.FSub <> e:259 var
+R23220:23220 FSUB.FSub <> X:262 var
+prf 23253:23271 <> get_bound_narrow_ne
+R23292:23294 Coq.Init.Datatypes <> nat ind
+binder 23285:23285 <> X:263
+binder 23287:23288 <> X':264
+R23305:23307 FSUB.FSub <> env ind
+binder 23298:23298 <> e:265
+binder 23300:23301 <> e':266
+R23328:23331 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23315:23320 FSUB.FSub <> narrow ind
+R23326:23327 FSUB.FSub <> e':266 var
+R23324:23324 FSUB.FSub <> e:265 var
+R23322:23322 FSUB.FSub <> X:263 var
+R23339:23342 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23334:23337 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R23332:23333 FSUB.FSub <> X':264 var
+R23338:23338 FSUB.FSub <> X:263 var
+R23357:23359 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23343:23351 FSUB.FSub <> get_bound def
+R23355:23356 FSUB.FSub <> X':264 var
+R23353:23353 FSUB.FSub <> e:265 var
+R23360:23368 FSUB.FSub <> get_bound def
+R23373:23374 FSUB.FSub <> X':264 var
+R23370:23371 FSUB.FSub <> e':266 var
+prf 23590:23608 <> get_bound_narrow_eq
+R23626:23628 Coq.Init.Datatypes <> nat ind
+binder 23622:23622 <> X:267
+R23639:23641 FSUB.FSub <> env ind
+binder 23632:23632 <> e:268
+binder 23634:23635 <> e':269
+R23662:23669 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23649:23654 FSUB.FSub <> narrow ind
+R23660:23661 FSUB.FSub <> e':269 var
+R23658:23658 FSUB.FSub <> e:268 var
+R23656:23656 FSUB.FSub <> X:267 var
+R23670:23676 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R23678:23679 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 23677:23677 <> T:270
+R23680:23686 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R23689:23696 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 23687:23688 <> T':271
+R23719:23722 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R23710:23712 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23697:23705 FSUB.FSub <> get_bound def
+R23709:23709 FSUB.FSub <> X:267 var
+R23707:23707 FSUB.FSub <> e:268 var
+R23713:23716 Coq.Init.Datatypes <> Some constr
+R23718:23718 FSUB.FSub <> T:270 var
+R23747:23750 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R23737:23739 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R23723:23731 FSUB.FSub <> get_bound def
+R23736:23736 FSUB.FSub <> X:267 var
+R23733:23734 FSUB.FSub <> e':269 var
+R23740:23743 Coq.Init.Datatypes <> Some constr
+R23745:23746 FSUB.FSub <> T':271 var
+R23751:23753 FSUB.FSub <> sub ind
+R23761:23761 FSUB.FSub <> T:270 var
+R23758:23759 FSUB.FSub <> T':271 var
+R23755:23756 FSUB.FSub <> e':269 var
+R23810:23815 FSUB.FSub <> tshift def
+R23831:23836 FSUB.FSub <> tshift def
+R23878:23896 FSUB.FSub <> sub_weakening_bound thm
+R23915:23919 Coq.Init.Logic <> proj1 thm
+R23922:23926 Coq.Init.Logic <> proj2 thm
+R23929:23934 FSUB.FSub <> sub_wf thm
+R24019:24024 FSUB.FSub <> tshift def
+R24040:24045 FSUB.FSub <> tshift def
+R24150:24168 FSUB.FSub <> sub_weakening_bound thm
+R24308:24324 FSUB.FSub <> sub_weakening_var thm
+R23810:23815 FSUB.FSub <> tshift def
+R23831:23836 FSUB.FSub <> tshift def
+R23878:23896 FSUB.FSub <> sub_weakening_bound thm
+R23915:23919 Coq.Init.Logic <> proj1 thm
+R23922:23926 Coq.Init.Logic <> proj2 thm
+R23929:23934 FSUB.FSub <> sub_wf thm
+R24019:24024 FSUB.FSub <> tshift def
+R24040:24045 FSUB.FSub <> tshift def
+R24150:24168 FSUB.FSub <> sub_weakening_bound thm
+R24308:24324 FSUB.FSub <> sub_weakening_var thm
+prf 24350:24363 <> get_var_narrow
+R24384:24386 Coq.Init.Datatypes <> nat ind
+binder 24377:24377 <> X:272
+binder 24379:24380 <> x':273
+R24397:24399 FSUB.FSub <> env ind
+binder 24390:24390 <> e:274
+binder 24392:24393 <> e':275
+R24420:24423 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24407:24412 FSUB.FSub <> narrow ind
+R24418:24419 FSUB.FSub <> e':275 var
+R24416:24416 FSUB.FSub <> e:274 var
+R24414:24414 FSUB.FSub <> X:272 var
+R24436:24438 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R24424:24430 FSUB.FSub <> get_var def
+R24434:24435 FSUB.FSub <> x':273 var
+R24432:24432 FSUB.FSub <> e:274 var
+R24439:24445 FSUB.FSub <> get_var def
+R24450:24451 FSUB.FSub <> x':273 var
+R24447:24448 FSUB.FSub <> e':275 var
+prf 24628:24640 <> narrow_wf_typ
+R24661:24663 FSUB.FSub <> env ind
+binder 24654:24654 <> e:276
+binder 24656:24657 <> e':277
+R24671:24673 FSUB.FSub <> typ ind
+binder 24667:24667 <> T:278
+R24681:24683 Coq.Init.Datatypes <> nat ind
+binder 24677:24677 <> X:279
+R24704:24707 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24691:24696 FSUB.FSub <> narrow ind
+R24702:24703 FSUB.FSub <> e':277 var
+R24700:24700 FSUB.FSub <> e:276 var
+R24698:24698 FSUB.FSub <> X:279 var
+R24718:24721 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R24708:24713 FSUB.FSub <> wf_typ def
+R24717:24717 FSUB.FSub <> T:278 var
+R24715:24715 FSUB.FSub <> e:276 var
+R24722:24727 FSUB.FSub <> wf_typ def
+R24732:24732 FSUB.FSub <> T:278 var
+R24729:24730 FSUB.FSub <> e':277 var
+R24770:24786 FSUB.FSub <> wf_typ_env_weaken thm
+R24828:24837 Coq.Arith.Peano_dec <> eq_nat_dec syndef
+R24897:24915 FSUB.FSub <> get_bound_narrow_eq thm
+R25017:25035 FSUB.FSub <> get_bound_narrow_ne thm
+R24770:24786 FSUB.FSub <> wf_typ_env_weaken thm
+R24828:24837 Coq.Arith.Peano_dec <> eq_nat_dec syndef
+R24897:24915 FSUB.FSub <> get_bound_narrow_eq thm
+R25017:25035 FSUB.FSub <> get_bound_narrow_ne thm
+R25017:25035 FSUB.FSub <> get_bound_narrow_ne thm
+prf 25068:25080 <> narrow_wf_env
+R25101:25103 FSUB.FSub <> env ind
+binder 25094:25094 <> e:280
+binder 25096:25097 <> e':281
+R25111:25113 Coq.Init.Datatypes <> nat ind
+binder 25107:25107 <> X:282
+R25134:25137 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25121:25126 FSUB.FSub <> narrow ind
+R25132:25133 FSUB.FSub <> e':281 var
+R25130:25130 FSUB.FSub <> e:280 var
+R25128:25128 FSUB.FSub <> X:282 var
+R25146:25149 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25138:25143 FSUB.FSub <> wf_env def
+R25145:25145 FSUB.FSub <> e:280 var
+R25150:25155 FSUB.FSub <> wf_env def
+R25157:25158 FSUB.FSub <> e':281 var
+R25245:25249 Coq.Init.Logic <> proj1 thm
+R25252:25256 Coq.Init.Logic <> proj2 thm
+R25259:25264 FSUB.FSub <> sub_wf thm
+R25245:25249 Coq.Init.Logic <> proj1 thm
+R25252:25256 Coq.Init.Logic <> proj2 thm
+R25259:25264 FSUB.FSub <> sub_wf thm
+def 25469:25485 <> transitivity_prop
+R25492:25494 FSUB.FSub <> typ ind
+binder 25488:25488 <> Q:283
+R25514:25516 FSUB.FSub <> env ind
+binder 25510:25510 <> e:284
+R25526:25528 FSUB.FSub <> typ ind
+binder 25520:25520 <> S:285
+binder 25522:25522 <> T:286
+R25541:25544 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25532:25534 FSUB.FSub <> sub ind
+R25540:25540 FSUB.FSub <> Q:283 var
+R25538:25538 FSUB.FSub <> S:285 var
+R25536:25536 FSUB.FSub <> e:284 var
+R25554:25557 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25545:25547 FSUB.FSub <> sub ind
+R25553:25553 FSUB.FSub <> T:286 var
+R25551:25551 FSUB.FSub <> Q:283 var
+R25549:25549 FSUB.FSub <> e:284 var
+R25558:25560 FSUB.FSub <> sub ind
+R25566:25566 FSUB.FSub <> T:286 var
+R25564:25564 FSUB.FSub <> S:285 var
+R25562:25562 FSUB.FSub <> e:284 var
+def 25581:25594 <> narrowing_prop
+R25601:25603 FSUB.FSub <> typ ind
+binder 25597:25597 <> Q:287
+R25626:25628 FSUB.FSub <> env ind
+binder 25619:25619 <> e:288
+binder 25621:25622 <> e':289
+R25636:25638 Coq.Init.Datatypes <> nat ind
+binder 25632:25632 <> X:290
+R25648:25650 FSUB.FSub <> typ ind
+binder 25642:25642 <> S:291
+binder 25644:25644 <> T:292
+R25671:25674 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25658:25663 FSUB.FSub <> narrow ind
+R25669:25670 FSUB.FSub <> e':289 var
+R25667:25667 FSUB.FSub <> e:288 var
+R25665:25665 FSUB.FSub <> X:290 var
+R25697:25704 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25688:25690 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R25675:25683 FSUB.FSub <> get_bound def
+R25687:25687 FSUB.FSub <> X:290 var
+R25685:25685 FSUB.FSub <> e:288 var
+R25691:25694 Coq.Init.Datatypes <> Some constr
+R25696:25696 FSUB.FSub <> Q:287 var
+R25714:25717 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R25705:25707 FSUB.FSub <> sub ind
+R25713:25713 FSUB.FSub <> T:292 var
+R25711:25711 FSUB.FSub <> S:291 var
+R25709:25709 FSUB.FSub <> e:288 var
+R25718:25720 FSUB.FSub <> sub ind
+R25727:25727 FSUB.FSub <> T:292 var
+R25725:25725 FSUB.FSub <> S:291 var
+R25722:25723 FSUB.FSub <> e':289 var
+def 26011:26014 <> size
+R26021:26023 FSUB.FSub <> typ ind
+binder 26017:26017 <> T:293
+R26028:26030 Coq.Init.Datatypes <> nat ind
+R26043:26043 FSUB.FSub <> T:293 var
+R26054:26057 FSUB.FSub <> tvar constr
+R26075:26077 FSUB.FSub <> top constr
+R26096:26100 FSUB.FSub <> arrow constr
+R26122:26124 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R26112:26114 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R26115:26118 FSUB.FSub <> size:294 def
+R26125:26128 FSUB.FSub <> size:294 def
+R26137:26139 FSUB.FSub <> all constr
+R26163:26165 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R26153:26155 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R26156:26159 FSUB.FSub <> size:294 def
+R26166:26169 FSUB.FSub <> size:294 def
+prf 26188:26207 <> shift_preserves_size
+R26225:26227 FSUB.FSub <> typ ind
+binder 26221:26221 <> T:296
+R26235:26237 Coq.Init.Datatypes <> nat ind
+binder 26231:26231 <> X:297
+R26258:26260 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26241:26244 FSUB.FSub <> size def
+R26247:26252 FSUB.FSub <> tshift def
+R26256:26256 FSUB.FSub <> T:296 var
+R26254:26254 FSUB.FSub <> X:297 var
+R26261:26264 FSUB.FSub <> size def
+R26266:26266 FSUB.FSub <> T:296 var
+prf 26549:26565 <> transitivity_case
+R26582:26584 FSUB.FSub <> typ ind
+binder 26578:26578 <> Q:298
+R26591:26591 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26678:26686 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26604:26606 FSUB.FSub <> typ ind
+binder 26599:26600 <> Q':299
+R26633:26636 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R26624:26626 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R26617:26620 FSUB.FSub <> size def
+R26622:26623 FSUB.FSub <> Q':299 var
+R26627:26630 FSUB.FSub <> size def
+R26632:26632 FSUB.FSub <> Q:298 var
+R26657:26660 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R26637:26653 FSUB.FSub <> transitivity_prop def
+R26655:26656 FSUB.FSub <> Q':299 var
+R26661:26674 FSUB.FSub <> narrowing_prop def
+R26676:26677 FSUB.FSub <> Q':299 var
+R26687:26703 FSUB.FSub <> transitivity_prop def
+R26705:26705 FSUB.FSub <> Q:298 var
+R26780:26785 FSUB.FSub <> SA_Top constr
+R26823:26835 FSUB.FSub <> SA_Trans_TVar constr
+R26894:26899 FSUB.FSub <> SA_Top constr
+R26950:26954 Coq.Init.Logic <> proj2 thm
+R26957:26961 Coq.Init.Logic <> proj2 thm
+R26964:26969 FSUB.FSub <> sub_wf thm
+R26995:26999 Coq.Init.Logic <> proj1 thm
+R27002:27006 Coq.Init.Logic <> proj2 thm
+R27009:27014 FSUB.FSub <> sub_wf thm
+R27040:27047 FSUB.FSub <> SA_Arrow constr
+R27080:27082 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R27073:27076 FSUB.FSub <> size def
+R27083:27086 FSUB.FSub <> size def
+R27089:27093 FSUB.FSub <> arrow constr
+R27223:27225 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R27216:27219 FSUB.FSub <> size def
+R27226:27229 FSUB.FSub <> size def
+R27232:27236 FSUB.FSub <> arrow constr
+R27391:27396 FSUB.FSub <> SA_Top constr
+R27447:27451 Coq.Init.Logic <> proj2 thm
+R27454:27458 Coq.Init.Logic <> proj2 thm
+R27461:27466 FSUB.FSub <> sub_wf thm
+R27491:27503 FSUB.FSub <> wf_typ_ebound thm
+R27538:27542 Coq.Init.Logic <> proj1 thm
+R27545:27549 Coq.Init.Logic <> proj2 thm
+R27552:27557 FSUB.FSub <> sub_wf thm
+R27597:27599 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R27590:27593 FSUB.FSub <> size def
+R27600:27603 FSUB.FSub <> size def
+R27606:27608 FSUB.FSub <> all constr
+R27651:27656 FSUB.FSub <> SA_All constr
+R27772:27774 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R27754:27757 FSUB.FSub <> size def
+R27760:27765 FSUB.FSub <> tshift def
+R27775:27778 FSUB.FSub <> size def
+R27781:27783 FSUB.FSub <> all constr
+R27814:27833 FSUB.FSub <> shift_preserves_size thm
+R27920:27927 FSUB.FSub <> narrow_0 constr
+R27999:28001 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27974:27982 FSUB.FSub <> get_bound def
+R27985:27990 FSUB.FSub <> ebound constr
+R28002:28005 Coq.Init.Datatypes <> Some constr
+R28008:28013 FSUB.FSub <> tshift def
+R28134:28136 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R28127:28130 FSUB.FSub <> size def
+R28137:28140 FSUB.FSub <> size def
+R28143:28145 FSUB.FSub <> all constr
+R28216:28220 Coq.Init.Logic <> proj1 thm
+R28258:28263 FSUB.FSub <> ebound constr
+R26780:26785 FSUB.FSub <> SA_Top constr
+R26823:26835 FSUB.FSub <> SA_Trans_TVar constr
+R26894:26899 FSUB.FSub <> SA_Top constr
+R26950:26954 Coq.Init.Logic <> proj2 thm
+R26957:26961 Coq.Init.Logic <> proj2 thm
+R26964:26969 FSUB.FSub <> sub_wf thm
+R26995:26999 Coq.Init.Logic <> proj1 thm
+R27002:27006 Coq.Init.Logic <> proj2 thm
+R27009:27014 FSUB.FSub <> sub_wf thm
+R27040:27047 FSUB.FSub <> SA_Arrow constr
+R27080:27082 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R27073:27076 FSUB.FSub <> size def
+R27083:27086 FSUB.FSub <> size def
+R27089:27093 FSUB.FSub <> arrow constr
+R27223:27225 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R27216:27219 FSUB.FSub <> size def
+R27226:27229 FSUB.FSub <> size def
+R27232:27236 FSUB.FSub <> arrow constr
+R27391:27396 FSUB.FSub <> SA_Top constr
+R27447:27451 Coq.Init.Logic <> proj2 thm
+R27454:27458 Coq.Init.Logic <> proj2 thm
+R27461:27466 FSUB.FSub <> sub_wf thm
+R27491:27503 FSUB.FSub <> wf_typ_ebound thm
+R27538:27542 Coq.Init.Logic <> proj1 thm
+R27545:27549 Coq.Init.Logic <> proj2 thm
+R27552:27557 FSUB.FSub <> sub_wf thm
+R27597:27599 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R27590:27593 FSUB.FSub <> size def
+R27600:27603 FSUB.FSub <> size def
+R27606:27608 FSUB.FSub <> all constr
+R27651:27656 FSUB.FSub <> SA_All constr
+R27772:27774 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R27754:27757 FSUB.FSub <> size def
+R27760:27765 FSUB.FSub <> tshift def
+R27775:27778 FSUB.FSub <> size def
+R27781:27783 FSUB.FSub <> all constr
+R27814:27833 FSUB.FSub <> shift_preserves_size thm
+R27814:27833 FSUB.FSub <> shift_preserves_size thm
+R27920:27927 FSUB.FSub <> narrow_0 constr
+R27999:28001 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27974:27982 FSUB.FSub <> get_bound def
+R27985:27990 FSUB.FSub <> ebound constr
+R28002:28005 Coq.Init.Datatypes <> Some constr
+R28008:28013 FSUB.FSub <> tshift def
+R28134:28136 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R28127:28130 FSUB.FSub <> size def
+R28137:28140 FSUB.FSub <> size def
+R28143:28145 FSUB.FSub <> all constr
+R28216:28220 Coq.Init.Logic <> proj1 thm
+R28258:28263 FSUB.FSub <> ebound constr
+prf 28535:28548 <> narrowing_case
+R28565:28567 FSUB.FSub <> typ ind
+binder 28561:28561 <> Q:300
+R28574:28574 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28632:28640 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28587:28589 FSUB.FSub <> typ ind
+binder 28582:28583 <> Q':301
+R28608:28611 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R28599:28601 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R28592:28595 FSUB.FSub <> size def
+R28597:28598 FSUB.FSub <> Q':301 var
+R28602:28605 FSUB.FSub <> size def
+R28607:28607 FSUB.FSub <> Q:300 var
+R28612:28628 FSUB.FSub <> transitivity_prop def
+R28630:28631 FSUB.FSub <> Q':301 var
+R28641:28654 FSUB.FSub <> narrowing_prop def
+R28656:28656 FSUB.FSub <> Q:300 var
+R28820:28825 FSUB.FSub <> SA_Top constr
+R28843:28855 FSUB.FSub <> narrow_wf_env thm
+R28878:28890 FSUB.FSub <> narrow_wf_typ thm
+R28913:28924 FSUB.FSub <> SA_Refl_TVar constr
+R28942:28954 FSUB.FSub <> narrow_wf_env thm
+R28977:28989 FSUB.FSub <> narrow_wf_typ thm
+R29012:29021 Coq.Arith.Peano_dec <> eq_nat_dec syndef
+R29217:29226 Coq.Init.Logic <> refl_equal syndef
+R29229:29232 FSUB.FSub <> size def
+R29298:29316 FSUB.FSub <> get_bound_narrow_eq thm
+R29458:29470 FSUB.FSub <> SA_Trans_TVar constr
+R29520:29532 FSUB.FSub <> SA_Trans_TVar constr
+R29588:29606 FSUB.FSub <> get_bound_narrow_ne thm
+R29638:29645 FSUB.FSub <> SA_Arrow constr
+R29666:29671 FSUB.FSub <> SA_All constr
+R29720:29725 FSUB.FSub <> tshift def
+R29740:29742 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R29798:29817 FSUB.FSub <> shift_preserves_size thm
+R29835:29853 FSUB.FSub <> narrow_extend_bound constr
+R29887:29899 FSUB.FSub <> narrow_wf_typ thm
+R29934:29938 Coq.Init.Logic <> proj1 thm
+R29941:29945 Coq.Init.Logic <> proj2 thm
+R29948:29953 FSUB.FSub <> sub_wf thm
+R28820:28825 FSUB.FSub <> SA_Top constr
+R28843:28855 FSUB.FSub <> narrow_wf_env thm
+R28878:28890 FSUB.FSub <> narrow_wf_typ thm
+R28913:28924 FSUB.FSub <> SA_Refl_TVar constr
+R28942:28954 FSUB.FSub <> narrow_wf_env thm
+R28977:28989 FSUB.FSub <> narrow_wf_typ thm
+R29012:29021 Coq.Arith.Peano_dec <> eq_nat_dec syndef
+R29217:29226 Coq.Init.Logic <> refl_equal syndef
+R29229:29232 FSUB.FSub <> size def
+R29298:29316 FSUB.FSub <> get_bound_narrow_eq thm
+R29458:29470 FSUB.FSub <> SA_Trans_TVar constr
+R29520:29532 FSUB.FSub <> SA_Trans_TVar constr
+R29588:29606 FSUB.FSub <> get_bound_narrow_ne thm
+R29588:29606 FSUB.FSub <> get_bound_narrow_ne thm
+R29638:29645 FSUB.FSub <> SA_Arrow constr
+R29666:29671 FSUB.FSub <> SA_All constr
+R29720:29725 FSUB.FSub <> tshift def
+R29740:29742 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R29798:29817 FSUB.FSub <> shift_preserves_size thm
+R29835:29853 FSUB.FSub <> narrow_extend_bound constr
+R29887:29899 FSUB.FSub <> narrow_wf_typ thm
+R29934:29938 Coq.Init.Logic <> proj1 thm
+R29941:29945 Coq.Init.Logic <> proj2 thm
+R29948:29953 FSUB.FSub <> sub_wf thm
+prf 30245:30270 <> transitivity_and_narrowing
+R30287:30289 FSUB.FSub <> typ ind
+binder 30283:30283 <> Q:302
+R30311:30314 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R30292:30308 FSUB.FSub <> transitivity_prop def
+R30310:30310 FSUB.FSub <> Q:302 var
+R30315:30328 FSUB.FSub <> narrowing_prop def
+R30330:30330 FSUB.FSub <> Q:302 var
+R30369:30371 Coq.Init.Datatypes <> nat ind
+binder 30365:30365 <> n:303
+R30379:30381 FSUB.FSub <> typ ind
+binder 30375:30375 <> Q:304
+R30403:30406 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30399:30401 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R30393:30396 FSUB.FSub <> size def
+R30398:30398 FSUB.FSub <> Q:304 var
+R30402:30402 FSUB.FSub <> n:303 var
+R30426:30429 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R30407:30423 FSUB.FSub <> transitivity_prop def
+R30425:30425 FSUB.FSub <> Q:304 var
+R30430:30443 FSUB.FSub <> narrowing_prop def
+R30445:30445 FSUB.FSub <> Q:304 var
+R30495:30499 Coq.Init.Logic <> False ind
+R30552:30562 Coq.Arith.Lt <> le_lt_or_eq thm
+R30725:30727 FSUB.FSub <> typ ind
+binder 30720:30721 <> Q':305
+R30746:30749 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30737:30739 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R30730:30733 FSUB.FSub <> size def
+R30735:30736 FSUB.FSub <> Q':305 var
+R30740:30743 FSUB.FSub <> size def
+R30750:30766 FSUB.FSub <> transitivity_prop def
+R30768:30769 FSUB.FSub <> Q':305 var
+R30827:30843 FSUB.FSub <> transitivity_case thm
+R30913:30926 FSUB.FSub <> narrowing_case thm
+R30970:30970 Coq.Init.Datatypes <> S constr
+R30973:30976 FSUB.FSub <> size def
+R30369:30371 Coq.Init.Datatypes <> nat ind
+binder 30365:30365 <> n:306
+R30379:30381 FSUB.FSub <> typ ind
+binder 30375:30375 <> Q:307
+R30403:30406 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30399:30401 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R30393:30396 FSUB.FSub <> size def
+R30398:30398 FSUB.FSub <> Q:307 var
+R30402:30402 FSUB.FSub <> n:306 var
+R30426:30429 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R30407:30423 FSUB.FSub <> transitivity_prop def
+R30425:30425 FSUB.FSub <> Q:307 var
+R30430:30443 FSUB.FSub <> narrowing_prop def
+R30445:30445 FSUB.FSub <> Q:307 var
+R30495:30499 Coq.Init.Logic <> False ind
+R30552:30562 Coq.Arith.Lt <> le_lt_or_eq thm
+R30725:30727 FSUB.FSub <> typ ind
+binder 30720:30721 <> Q':308
+R30746:30749 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R30737:30739 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R30730:30733 FSUB.FSub <> size def
+R30735:30736 FSUB.FSub <> Q':308 var
+R30740:30743 FSUB.FSub <> size def
+R30750:30766 FSUB.FSub <> transitivity_prop def
+R30768:30769 FSUB.FSub <> Q':308 var
+R30827:30843 FSUB.FSub <> transitivity_case thm
+R30913:30926 FSUB.FSub <> narrowing_case thm
+R30970:30970 Coq.Init.Datatypes <> S constr
+R30973:30976 FSUB.FSub <> size def
+prf 31003:31018 <> sub_transitivity
+R31036:31038 FSUB.FSub <> env ind
+binder 31032:31032 <> e:309
+R31050:31052 FSUB.FSub <> typ ind
+binder 31042:31042 <> T:310
+binder 31044:31044 <> U:311
+binder 31046:31046 <> V:312
+R31065:31068 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31056:31058 FSUB.FSub <> sub ind
+R31064:31064 FSUB.FSub <> U:311 var
+R31062:31062 FSUB.FSub <> T:310 var
+R31060:31060 FSUB.FSub <> e:309 var
+R31078:31081 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31069:31071 FSUB.FSub <> sub ind
+R31077:31077 FSUB.FSub <> V:312 var
+R31075:31075 FSUB.FSub <> U:311 var
+R31073:31073 FSUB.FSub <> e:309 var
+R31082:31084 FSUB.FSub <> sub ind
+R31090:31090 FSUB.FSub <> V:312 var
+R31088:31088 FSUB.FSub <> T:310 var
+R31086:31086 FSUB.FSub <> e:309 var
+R31116:31120 Coq.Init.Logic <> proj1 thm
+R31123:31148 FSUB.FSub <> transitivity_and_narrowing thm
+R31116:31120 Coq.Init.Logic <> proj1 thm
+R31123:31148 FSUB.FSub <> transitivity_and_narrowing thm
+prf 31167:31179 <> sub_narrowing
+R31200:31202 FSUB.FSub <> env ind
+binder 31193:31193 <> e:313
+binder 31195:31196 <> e':314
+R31210:31212 Coq.Init.Datatypes <> nat ind
+binder 31206:31206 <> X:315
+R31222:31224 FSUB.FSub <> typ ind
+binder 31216:31216 <> S:316
+binder 31218:31218 <> T:317
+R31245:31248 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31232:31237 FSUB.FSub <> narrow ind
+R31243:31244 FSUB.FSub <> e':314 var
+R31241:31241 FSUB.FSub <> e:313 var
+R31239:31239 FSUB.FSub <> X:315 var
+R31258:31261 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31249:31251 FSUB.FSub <> sub ind
+R31257:31257 FSUB.FSub <> T:317 var
+R31255:31255 FSUB.FSub <> S:316 var
+R31253:31253 FSUB.FSub <> e:313 var
+R31262:31264 FSUB.FSub <> sub ind
+R31271:31271 FSUB.FSub <> T:317 var
+R31269:31269 FSUB.FSub <> S:316 var
+R31266:31267 FSUB.FSub <> e':314 var
+R31317:31335 FSUB.FSub <> get_bound_narrow_eq thm
+R31379:31383 Coq.Init.Logic <> proj2 thm
+R31386:31411 FSUB.FSub <> transitivity_and_narrowing thm
+R31317:31335 FSUB.FSub <> get_bound_narrow_eq thm
+R31379:31383 Coq.Init.Logic <> proj2 thm
+R31386:31411 FSUB.FSub <> transitivity_and_narrowing thm
+ind 31902:31910 <> env_subst
+constr 31952:31958 <> es_here
+constr 32049:32054 <> es_var
+constr 32189:32196 <> es_bound
+R31917:31920 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31914:31916 Coq.Init.Datatypes <> nat ind
+R31924:31927 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31921:31923 FSUB.FSub <> typ ind
+R31931:31934 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31928:31930 FSUB.FSub <> env ind
+R31938:31941 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R31935:31937 FSUB.FSub <> env ind
+R31978:31980 FSUB.FSub <> env ind
+binder 31974:31974 <> e:320
+R31991:31993 FSUB.FSub <> typ ind
+binder 31984:31984 <> T:321
+binder 31986:31987 <> T':322
+R32013:32016 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32003:32005 FSUB.FSub <> sub ind
+R32012:32012 FSUB.FSub <> T:321 var
+R32009:32010 FSUB.FSub <> T':322 var
+R32007:32007 FSUB.FSub <> e:320 var
+R32017:32025 FSUB.FSub <> env_subst:318 ind
+R32045:32045 FSUB.FSub <> e:320 var
+R32033:32038 FSUB.FSub <> ebound constr
+R32042:32042 FSUB.FSub <> T:321 var
+R32040:32040 FSUB.FSub <> e:320 var
+R32029:32030 FSUB.FSub <> T':322 var
+R32072:32074 Coq.Init.Datatypes <> nat ind
+binder 32068:32068 <> X:323
+R32085:32087 FSUB.FSub <> typ ind
+binder 32078:32078 <> T:324
+binder 32080:32081 <> T':325
+R32098:32100 FSUB.FSub <> env ind
+binder 32091:32091 <> e:326
+binder 32093:32094 <> e':327
+R32127:32134 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32108:32116 FSUB.FSub <> env_subst:318 ind
+R32125:32126 FSUB.FSub <> e':327 var
+R32123:32123 FSUB.FSub <> e:326 var
+R32120:32121 FSUB.FSub <> T':325 var
+R32118:32118 FSUB.FSub <> X:323 var
+R32135:32143 FSUB.FSub <> env_subst:318 ind
+R32162:32165 FSUB.FSub <> evar constr
+R32171:32176 FSUB.FSub <> tsubst def
+R32182:32183 FSUB.FSub <> T':325 var
+R32180:32180 FSUB.FSub <> X:323 var
+R32178:32178 FSUB.FSub <> T:324 var
+R32167:32168 FSUB.FSub <> e':327 var
+R32151:32154 FSUB.FSub <> evar constr
+R32158:32158 FSUB.FSub <> T:324 var
+R32156:32156 FSUB.FSub <> e:326 var
+R32147:32148 FSUB.FSub <> T':325 var
+R32145:32145 FSUB.FSub <> X:323 var
+R32214:32216 Coq.Init.Datatypes <> nat ind
+binder 32210:32210 <> X:328
+R32227:32229 FSUB.FSub <> typ ind
+binder 32220:32220 <> T:329
+binder 32222:32223 <> T':330
+R32240:32242 FSUB.FSub <> env ind
+binder 32233:32233 <> e:331
+binder 32235:32236 <> e':332
+R32269:32276 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32250:32258 FSUB.FSub <> env_subst:318 ind
+R32267:32268 FSUB.FSub <> e':332 var
+R32265:32265 FSUB.FSub <> e:331 var
+R32262:32263 FSUB.FSub <> T':330 var
+R32260:32260 FSUB.FSub <> X:328 var
+R32277:32285 FSUB.FSub <> env_subst:318 ind
+R32323:32328 FSUB.FSub <> ebound constr
+R32334:32339 FSUB.FSub <> tsubst def
+R32345:32346 FSUB.FSub <> T':330 var
+R32343:32343 FSUB.FSub <> X:328 var
+R32341:32341 FSUB.FSub <> T:329 var
+R32330:32331 FSUB.FSub <> e':332 var
+R32310:32315 FSUB.FSub <> ebound constr
+R32319:32319 FSUB.FSub <> T:329 var
+R32317:32317 FSUB.FSub <> e:331 var
+R32296:32301 FSUB.FSub <> tshift def
+R32305:32306 FSUB.FSub <> T':330 var
+R32289:32291 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R32292:32292 FSUB.FSub <> X:328 var
+prf 32358:32374 <> env_subst_get_var
+R32395:32397 Coq.Init.Datatypes <> nat ind
+binder 32388:32388 <> x:333
+binder 32390:32391 <> X':334
+R32408:32410 FSUB.FSub <> env ind
+binder 32401:32401 <> e:335
+binder 32403:32404 <> e':336
+R32418:32420 FSUB.FSub <> typ ind
+binder 32414:32414 <> T:337
+R32428:32428 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32449:32457 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R32429:32437 FSUB.FSub <> env_subst ind
+R32447:32448 FSUB.FSub <> e':336 var
+R32445:32445 FSUB.FSub <> e:335 var
+R32443:32443 FSUB.FSub <> T:337 var
+R32440:32441 FSUB.FSub <> X':334 var
+R32470:32472 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R32458:32464 FSUB.FSub <> get_var def
+R32469:32469 FSUB.FSub <> x:333 var
+R32466:32467 FSUB.FSub <> e':336 var
+R32473:32479 FSUB.FSub <> opt_map def
+R32509:32515 FSUB.FSub <> get_var def
+R32519:32519 FSUB.FSub <> x:333 var
+R32517:32517 FSUB.FSub <> e:335 var
+binder 32486:32487 <> T':338
+R32492:32497 FSUB.FSub <> tsubst def
+R32505:32505 FSUB.FSub <> T:337 var
+R32502:32503 FSUB.FSub <> X':334 var
+R32499:32500 FSUB.FSub <> T':338 var
+R32616:32622 FSUB.FSub <> get_var def
+R32678:32681 Coq.Init.Datatypes <> Some constr
+R32683:32685 FSUB.FSub <> typ ind
+R32658:32664 Coq.Init.Logic <> f_equal thm
+R32695:32712 FSUB.FSub <> tsubst_tshift_prop thm
+R32820:32826 FSUB.FSub <> get_var def
+R32883:32886 Coq.Init.Datatypes <> Some constr
+R32888:32890 FSUB.FSub <> typ ind
+R32863:32869 Coq.Init.Logic <> f_equal thm
+R32907:32926 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R32616:32622 FSUB.FSub <> get_var def
+R32678:32681 Coq.Init.Datatypes <> Some constr
+R32683:32685 FSUB.FSub <> typ ind
+R32658:32664 Coq.Init.Logic <> f_equal thm
+R32695:32712 FSUB.FSub <> tsubst_tshift_prop thm
+R32820:32826 FSUB.FSub <> get_var def
+R32883:32886 Coq.Init.Datatypes <> Some constr
+R32888:32890 FSUB.FSub <> typ ind
+R32863:32869 Coq.Init.Logic <> f_equal thm
+R32907:32926 FSUB.FSub <> tshift_tsubst_prop_1 thm
+prf 32948:32969 <> env_subst_get_bound_lt
+R32990:32992 Coq.Init.Datatypes <> nat ind
+binder 32983:32983 <> X:339
+binder 32985:32986 <> X':340
+R33003:33005 FSUB.FSub <> env ind
+binder 32996:32996 <> e:341
+binder 32998:32999 <> e':342
+R33013:33015 FSUB.FSub <> typ ind
+binder 33009:33009 <> T:343
+R33023:33023 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33043:33047 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33024:33032 FSUB.FSub <> env_subst ind
+R33041:33042 FSUB.FSub <> e':342 var
+R33039:33039 FSUB.FSub <> e:341 var
+R33037:33037 FSUB.FSub <> T:343 var
+R33034:33035 FSUB.FSub <> X':340 var
+R33054:33061 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33049:33051 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R33048:33048 FSUB.FSub <> X:339 var
+R33052:33053 FSUB.FSub <> X':340 var
+R33076:33078 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R33062:33070 FSUB.FSub <> get_bound def
+R33075:33075 FSUB.FSub <> X:339 var
+R33072:33073 FSUB.FSub <> e':342 var
+R33079:33085 FSUB.FSub <> opt_map def
+R33115:33123 FSUB.FSub <> get_bound def
+R33127:33127 FSUB.FSub <> X:339 var
+R33125:33125 FSUB.FSub <> e:341 var
+binder 33092:33093 <> T':344
+R33098:33103 FSUB.FSub <> tsubst def
+R33111:33111 FSUB.FSub <> T:343 var
+R33108:33109 FSUB.FSub <> X':340 var
+R33105:33106 FSUB.FSub <> T':344 var
+R33305:33308 Coq.Init.Datatypes <> Some constr
+R33310:33312 FSUB.FSub <> typ ind
+R33285:33291 Coq.Init.Logic <> f_equal thm
+R33331:33350 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R33414:33422 FSUB.FSub <> get_bound def
+R33494:33497 Coq.Init.Datatypes <> Some constr
+R33499:33501 FSUB.FSub <> typ ind
+R33474:33480 Coq.Init.Logic <> f_equal thm
+R33522:33541 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R33305:33308 Coq.Init.Datatypes <> Some constr
+R33310:33312 FSUB.FSub <> typ ind
+R33285:33291 Coq.Init.Logic <> f_equal thm
+R33331:33350 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R33414:33422 FSUB.FSub <> get_bound def
+R33494:33497 Coq.Init.Datatypes <> Some constr
+R33499:33501 FSUB.FSub <> typ ind
+R33474:33480 Coq.Init.Logic <> f_equal thm
+R33522:33541 FSUB.FSub <> tshift_tsubst_prop_1 thm
+prf 33581:33602 <> env_subst_get_bound_ge
+R33623:33625 Coq.Init.Datatypes <> nat ind
+binder 33616:33616 <> X:345
+binder 33618:33619 <> X':346
+R33636:33638 FSUB.FSub <> env ind
+binder 33629:33629 <> e:347
+binder 33631:33632 <> e':348
+R33646:33648 FSUB.FSub <> typ ind
+binder 33642:33642 <> T:349
+R33675:33678 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33656:33664 FSUB.FSub <> env_subst ind
+R33673:33674 FSUB.FSub <> e':348 var
+R33671:33671 FSUB.FSub <> e:347 var
+R33669:33669 FSUB.FSub <> T:349 var
+R33666:33667 FSUB.FSub <> X':346 var
+R33685:33692 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R33681:33683 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R33679:33680 FSUB.FSub <> X':346 var
+R33684:33684 FSUB.FSub <> X:345 var
+R33713:33715 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R33693:33701 FSUB.FSub <> get_bound def
+R33708:33710 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R33707:33707 FSUB.FSub <> X:345 var
+R33703:33704 FSUB.FSub <> e':348 var
+R33716:33722 FSUB.FSub <> opt_map def
+R33752:33760 FSUB.FSub <> get_bound def
+R33764:33764 FSUB.FSub <> X:345 var
+R33762:33762 FSUB.FSub <> e:347 var
+binder 33729:33730 <> T':350
+R33735:33740 FSUB.FSub <> tsubst def
+R33748:33748 FSUB.FSub <> T:349 var
+R33745:33746 FSUB.FSub <> X':346 var
+R33742:33743 FSUB.FSub <> T':350 var
+R33929:33937 Coq.Arith.Minus <> minus_n_O thm
+R33946:33954 FSUB.FSub <> get_bound def
+R34024:34027 Coq.Init.Datatypes <> Some constr
+R34029:34031 FSUB.FSub <> typ ind
+R34004:34010 Coq.Init.Logic <> f_equal thm
+R34049:34066 FSUB.FSub <> tsubst_tshift_prop thm
+R34140:34140 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R34145:34148 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R34141:34141 Coq.Init.Datatypes <> S constr
+R34158:34158 Coq.Init.Datatypes <> S constr
+R34163:34165 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R34232:34240 FSUB.FSub <> get_bound def
+R34310:34313 Coq.Init.Datatypes <> Some constr
+R34315:34317 FSUB.FSub <> typ ind
+R34290:34296 Coq.Init.Logic <> f_equal thm
+R34336:34355 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R33929:33937 Coq.Arith.Minus <> minus_n_O thm
+R33929:33937 Coq.Arith.Minus <> minus_n_O thm
+R33946:33954 FSUB.FSub <> get_bound def
+R34024:34027 Coq.Init.Datatypes <> Some constr
+R34029:34031 FSUB.FSub <> typ ind
+R34004:34010 Coq.Init.Logic <> f_equal thm
+R34049:34066 FSUB.FSub <> tsubst_tshift_prop thm
+R34140:34140 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R34145:34148 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R34141:34141 Coq.Init.Datatypes <> S constr
+R34158:34158 Coq.Init.Datatypes <> S constr
+R34163:34165 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R34232:34240 FSUB.FSub <> get_bound def
+R34310:34313 Coq.Init.Datatypes <> Some constr
+R34315:34317 FSUB.FSub <> typ ind
+R34290:34296 Coq.Init.Logic <> f_equal thm
+R34336:34355 FSUB.FSub <> tshift_tsubst_prop_1 thm
+prf 34379:34396 <> env_subst_wf_typ_0
+R34417:34419 FSUB.FSub <> env ind
+binder 34410:34410 <> e:351
+binder 34412:34413 <> e':352
+R34427:34429 FSUB.FSub <> typ ind
+binder 34423:34423 <> T:353
+R34437:34439 Coq.Init.Datatypes <> nat ind
+binder 34433:34433 <> X:354
+R34465:34468 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R34447:34455 FSUB.FSub <> env_subst ind
+R34463:34464 FSUB.FSub <> e':352 var
+R34461:34461 FSUB.FSub <> e:351 var
+R34459:34459 FSUB.FSub <> T:353 var
+R34457:34457 FSUB.FSub <> X:354 var
+R34478:34481 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R34469:34474 FSUB.FSub <> wf_env def
+R34476:34477 FSUB.FSub <> e':352 var
+R34482:34487 FSUB.FSub <> wf_typ def
+R34492:34492 FSUB.FSub <> T:353 var
+R34489:34490 FSUB.FSub <> e':352 var
+R34559:34563 Coq.Init.Logic <> proj1 thm
+R34566:34570 Coq.Init.Logic <> proj2 thm
+R34573:34578 FSUB.FSub <> sub_wf thm
+R34614:34633 FSUB.FSub <> wf_typ_weakening_var thm
+R34670:34691 FSUB.FSub <> wf_typ_weakening_bound thm
+R34559:34563 Coq.Init.Logic <> proj1 thm
+R34566:34570 Coq.Init.Logic <> proj2 thm
+R34573:34578 FSUB.FSub <> sub_wf thm
+R34614:34633 FSUB.FSub <> wf_typ_weakening_var thm
+R34670:34691 FSUB.FSub <> wf_typ_weakening_bound thm
+prf 34714:34729 <> env_subst_wf_typ
+R34750:34752 FSUB.FSub <> env ind
+binder 34743:34743 <> e:355
+binder 34745:34746 <> e':356
+R34762:34764 FSUB.FSub <> typ ind
+binder 34756:34756 <> S:357
+binder 34758:34758 <> T:358
+R34772:34774 Coq.Init.Datatypes <> nat ind
+binder 34768:34768 <> X:359
+R34800:34803 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R34782:34790 FSUB.FSub <> env_subst ind
+R34798:34799 FSUB.FSub <> e':356 var
+R34796:34796 FSUB.FSub <> e:355 var
+R34794:34794 FSUB.FSub <> T:358 var
+R34792:34792 FSUB.FSub <> X:359 var
+R34814:34817 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R34804:34809 FSUB.FSub <> wf_typ def
+R34813:34813 FSUB.FSub <> S:357 var
+R34811:34811 FSUB.FSub <> e:355 var
+R34827:34830 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R34818:34823 FSUB.FSub <> wf_env def
+R34825:34826 FSUB.FSub <> e':356 var
+R34831:34836 FSUB.FSub <> wf_typ def
+R34842:34847 FSUB.FSub <> tsubst def
+R34853:34853 FSUB.FSub <> T:358 var
+R34851:34851 FSUB.FSub <> X:359 var
+R34849:34849 FSUB.FSub <> S:357 var
+R34838:34839 FSUB.FSub <> e':356 var
+R34975:34986 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R35064:35085 FSUB.FSub <> env_subst_get_bound_lt thm
+R35134:35142 FSUB.FSub <> get_bound def
+R35189:35206 FSUB.FSub <> env_subst_wf_typ_0 thm
+R35258:35279 FSUB.FSub <> env_subst_get_bound_ge thm
+R35326:35334 FSUB.FSub <> get_bound def
+R35519:35524 FSUB.FSub <> ebound constr
+R35558:35565 FSUB.FSub <> es_bound constr
+R34975:34986 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R35064:35085 FSUB.FSub <> env_subst_get_bound_lt thm
+R35064:35085 FSUB.FSub <> env_subst_get_bound_lt thm
+R35134:35142 FSUB.FSub <> get_bound def
+R35189:35206 FSUB.FSub <> env_subst_wf_typ_0 thm
+R35258:35279 FSUB.FSub <> env_subst_get_bound_ge thm
+R35258:35279 FSUB.FSub <> env_subst_get_bound_ge thm
+R35326:35334 FSUB.FSub <> get_bound def
+R35519:35524 FSUB.FSub <> ebound constr
+R35558:35565 FSUB.FSub <> es_bound constr
+prf 35657:35672 <> env_subst_wf_env
+R35693:35695 FSUB.FSub <> env ind
+binder 35686:35686 <> e:360
+binder 35688:35689 <> e':361
+R35703:35705 FSUB.FSub <> typ ind
+binder 35699:35699 <> T:362
+R35713:35715 Coq.Init.Datatypes <> nat ind
+binder 35709:35709 <> X:363
+R35741:35744 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R35723:35731 FSUB.FSub <> env_subst ind
+R35739:35740 FSUB.FSub <> e':361 var
+R35737:35737 FSUB.FSub <> e:360 var
+R35735:35735 FSUB.FSub <> T:362 var
+R35733:35733 FSUB.FSub <> X:363 var
+R35753:35756 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R35745:35750 FSUB.FSub <> wf_env def
+R35752:35752 FSUB.FSub <> e:360 var
+R35757:35762 FSUB.FSub <> wf_env def
+R35764:35765 FSUB.FSub <> e':361 var
+R35864:35879 FSUB.FSub <> env_subst_wf_typ thm
+R35864:35879 FSUB.FSub <> env_subst_wf_typ thm
+R35864:35879 FSUB.FSub <> env_subst_wf_typ thm
+prf 35967:35975 <> typing_wf
+R35993:35995 FSUB.FSub <> env ind
+binder 35989:35989 <> e:364
+R36003:36006 FSUB.FSub <> term ind
+binder 35999:35999 <> t:365
+R36014:36016 FSUB.FSub <> typ ind
+binder 36010:36010 <> U:366
+R36036:36039 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36024:36029 FSUB.FSub <> typing ind
+R36035:36035 FSUB.FSub <> U:366 var
+R36033:36033 FSUB.FSub <> t:365 var
+R36031:36031 FSUB.FSub <> e:364 var
+R36048:36051 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R36040:36045 FSUB.FSub <> wf_env def
+R36047:36047 FSUB.FSub <> e:364 var
+R36063:36066 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R36052:36058 FSUB.FSub <> wf_term def
+R36062:36062 FSUB.FSub <> t:365 var
+R36060:36060 FSUB.FSub <> e:364 var
+R36067:36072 FSUB.FSub <> wf_typ def
+R36076:36076 FSUB.FSub <> U:366 var
+R36074:36074 FSUB.FSub <> e:364 var
+R36201:36210 FSUB.FSub <> get_var_wf thm
+R36289:36312 FSUB.FSub <> wf_typ_strengthening_var thm
+R36459:36463 Coq.Init.Logic <> proj1 thm
+R36466:36470 Coq.Init.Logic <> proj2 thm
+R36473:36478 FSUB.FSub <> sub_wf thm
+R36558:36564 FSUB.FSub <> es_here constr
+R36530:36545 FSUB.FSub <> env_subst_wf_typ thm
+R36615:36619 Coq.Init.Logic <> proj2 thm
+R36622:36626 Coq.Init.Logic <> proj2 thm
+R36629:36634 FSUB.FSub <> sub_wf thm
+R36201:36210 FSUB.FSub <> get_var_wf thm
+R36289:36312 FSUB.FSub <> wf_typ_strengthening_var thm
+R36459:36463 Coq.Init.Logic <> proj1 thm
+R36466:36470 Coq.Init.Logic <> proj2 thm
+R36473:36478 FSUB.FSub <> sub_wf thm
+R36558:36564 FSUB.FSub <> es_here constr
+R36530:36545 FSUB.FSub <> env_subst_wf_typ thm
+R36615:36619 Coq.Init.Logic <> proj2 thm
+R36622:36626 Coq.Init.Logic <> proj2 thm
+R36629:36634 FSUB.FSub <> sub_wf thm
+prf 36825:36850 <> typing_weakening_bound_ind
+R36871:36873 FSUB.FSub <> env ind
+binder 36864:36864 <> e:367
+binder 36866:36867 <> e':368
+R36881:36883 Coq.Init.Datatypes <> nat ind
+binder 36877:36877 <> X:369
+R36891:36894 FSUB.FSub <> term ind
+binder 36887:36887 <> t:370
+R36902:36904 FSUB.FSub <> typ ind
+binder 36898:36898 <> U:371
+R36931:36938 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36912:36923 FSUB.FSub <> insert_bound ind
+R36929:36930 FSUB.FSub <> e':368 var
+R36927:36927 FSUB.FSub <> e:367 var
+R36925:36925 FSUB.FSub <> X:369 var
+R36951:36954 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36939:36944 FSUB.FSub <> typing ind
+R36950:36950 FSUB.FSub <> U:371 var
+R36948:36948 FSUB.FSub <> t:370 var
+R36946:36946 FSUB.FSub <> e:367 var
+R36955:36960 FSUB.FSub <> typing ind
+R36982:36987 FSUB.FSub <> tshift def
+R36991:36991 FSUB.FSub <> U:371 var
+R36989:36989 FSUB.FSub <> X:369 var
+R36966:36974 FSUB.FSub <> shift_typ def
+R36978:36978 FSUB.FSub <> t:370 var
+R36976:36976 FSUB.FSub <> X:369 var
+R36962:36963 FSUB.FSub <> e':368 var
+R37111:37115 FSUB.FSub <> T_Var constr
+R37133:37151 FSUB.FSub <> insert_bound_wf_env thm
+R37175:37194 FSUB.FSub <> get_var_insert_bound thm
+R37246:37250 FSUB.FSub <> T_Abs constr
+R37275:37280 FSUB.FSub <> ib_var constr
+R37380:37384 FSUB.FSub <> T_App constr
+R37405:37410 FSUB.FSub <> T_Tabs constr
+R37436:37443 FSUB.FSub <> ib_bound constr
+R37467:37486 FSUB.FSub <> tshift_tsubst_prop_2 thm
+R37508:37513 FSUB.FSub <> T_Tapp constr
+R37534:37556 FSUB.FSub <> sub_weakening_bound_ind thm
+R37578:37582 FSUB.FSub <> T_Sub constr
+R37603:37625 FSUB.FSub <> sub_weakening_bound_ind thm
+R37111:37115 FSUB.FSub <> T_Var constr
+R37133:37151 FSUB.FSub <> insert_bound_wf_env thm
+R37175:37194 FSUB.FSub <> get_var_insert_bound thm
+R37175:37194 FSUB.FSub <> get_var_insert_bound thm
+R37246:37250 FSUB.FSub <> T_Abs constr
+R37275:37280 FSUB.FSub <> ib_var constr
+R37380:37384 FSUB.FSub <> T_App constr
+R37405:37410 FSUB.FSub <> T_Tabs constr
+R37436:37443 FSUB.FSub <> ib_bound constr
+R37467:37486 FSUB.FSub <> tshift_tsubst_prop_2 thm
+R37467:37486 FSUB.FSub <> tshift_tsubst_prop_2 thm
+R37508:37513 FSUB.FSub <> T_Tapp constr
+R37534:37556 FSUB.FSub <> sub_weakening_bound_ind thm
+R37578:37582 FSUB.FSub <> T_Sub constr
+R37603:37625 FSUB.FSub <> sub_weakening_bound_ind thm
+prf 37649:37670 <> typing_weakening_bound
+R37688:37690 FSUB.FSub <> env ind
+binder 37684:37684 <> e:372
+R37698:37701 FSUB.FSub <> term ind
+binder 37694:37694 <> t:373
+R37711:37713 FSUB.FSub <> typ ind
+binder 37705:37705 <> U:374
+binder 37707:37707 <> V:375
+R37731:37734 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R37721:37726 FSUB.FSub <> wf_typ def
+R37730:37730 FSUB.FSub <> V:375 var
+R37728:37728 FSUB.FSub <> e:372 var
+R37747:37754 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R37735:37740 FSUB.FSub <> typing ind
+R37746:37746 FSUB.FSub <> U:374 var
+R37744:37744 FSUB.FSub <> t:373 var
+R37742:37742 FSUB.FSub <> e:372 var
+R37755:37760 FSUB.FSub <> typing ind
+R37792:37797 FSUB.FSub <> tshift def
+R37801:37801 FSUB.FSub <> U:374 var
+R37776:37784 FSUB.FSub <> shift_typ def
+R37788:37788 FSUB.FSub <> t:373 var
+R37763:37768 FSUB.FSub <> ebound constr
+R37772:37772 FSUB.FSub <> V:375 var
+R37770:37770 FSUB.FSub <> e:372 var
+R37835:37860 FSUB.FSub <> typing_weakening_bound_ind thm
+R37888:37894 FSUB.FSub <> ib_here constr
+R37835:37860 FSUB.FSub <> typing_weakening_bound_ind thm
+R37888:37894 FSUB.FSub <> ib_here constr
+prf 37918:37941 <> typing_weakening_var_ind
+R37959:37961 FSUB.FSub <> env ind
+binder 37955:37955 <> e:376
+R37969:37971 Coq.Init.Datatypes <> nat ind
+binder 37965:37965 <> x:377
+R37979:37982 FSUB.FSub <> term ind
+binder 37975:37975 <> t:378
+R37990:37992 FSUB.FSub <> typ ind
+binder 37986:37986 <> U:379
+R38008:38011 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R38000:38005 FSUB.FSub <> wf_env def
+R38007:38007 FSUB.FSub <> e:376 var
+R38039:38042 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R38012:38017 FSUB.FSub <> typing ind
+R38038:38038 FSUB.FSub <> U:379 var
+R38036:38036 FSUB.FSub <> t:378 var
+R38020:38029 FSUB.FSub <> remove_var def
+R38033:38033 FSUB.FSub <> x:377 var
+R38031:38031 FSUB.FSub <> e:376 var
+R38043:38048 FSUB.FSub <> typing ind
+R38064:38064 FSUB.FSub <> U:379 var
+R38053:38057 FSUB.FSub <> shift def
+R38061:38061 FSUB.FSub <> t:378 var
+R38059:38059 FSUB.FSub <> x:377 var
+R38050:38050 FSUB.FSub <> e:376 var
+R38096:38102 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R38105:38106 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 38103:38104 <> e':380
+R38109:38111 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R38107:38108 FSUB.FSub <> e':380 var
+R38112:38121 FSUB.FSub <> remove_var def
+R38268:38272 FSUB.FSub <> T_Var constr
+R38315:38323 Coq.Arith.Compare_dec <> le_gt_dec def
+R38360:38380 FSUB.FSub <> get_var_remove_var_ge thm
+R38420:38440 FSUB.FSub <> get_var_remove_var_lt thm
+R38478:38482 FSUB.FSub <> T_Abs constr
+R38587:38591 Coq.Init.Logic <> proj1 thm
+R38594:38598 Coq.Init.Logic <> proj1 thm
+R38601:38609 FSUB.FSub <> typing_wf thm
+R38652:38668 FSUB.FSub <> wf_typ_insert_var thm
+R38691:38695 FSUB.FSub <> T_App constr
+R38754:38759 FSUB.FSub <> T_Tabs constr
+R38864:38868 Coq.Init.Logic <> proj1 thm
+R38871:38875 Coq.Init.Logic <> proj1 thm
+R38878:38886 FSUB.FSub <> typing_wf thm
+R38929:38945 FSUB.FSub <> wf_typ_insert_var thm
+R38968:38973 FSUB.FSub <> T_Tapp constr
+R39039:39059 FSUB.FSub <> sub_weakening_var_ind thm
+R39082:39086 FSUB.FSub <> T_Sub constr
+R39152:39172 FSUB.FSub <> sub_weakening_var_ind thm
+R39196:39205 FSUB.FSub <> remove_var def
+R38096:38102 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R38105:38106 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 38103:38104 <> e':381
+R38109:38111 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R38107:38108 FSUB.FSub <> e':381 var
+R38112:38121 FSUB.FSub <> remove_var def
+R38268:38272 FSUB.FSub <> T_Var constr
+R38315:38323 Coq.Arith.Compare_dec <> le_gt_dec def
+R38360:38380 FSUB.FSub <> get_var_remove_var_ge thm
+R38360:38380 FSUB.FSub <> get_var_remove_var_ge thm
+R38360:38380 FSUB.FSub <> get_var_remove_var_ge thm
+R38420:38440 FSUB.FSub <> get_var_remove_var_lt thm
+R38420:38440 FSUB.FSub <> get_var_remove_var_lt thm
+R38420:38440 FSUB.FSub <> get_var_remove_var_lt thm
+R38478:38482 FSUB.FSub <> T_Abs constr
+R38587:38591 Coq.Init.Logic <> proj1 thm
+R38594:38598 Coq.Init.Logic <> proj1 thm
+R38601:38609 FSUB.FSub <> typing_wf thm
+R38652:38668 FSUB.FSub <> wf_typ_insert_var thm
+R38691:38695 FSUB.FSub <> T_App constr
+R38754:38759 FSUB.FSub <> T_Tabs constr
+R38864:38868 Coq.Init.Logic <> proj1 thm
+R38871:38875 Coq.Init.Logic <> proj1 thm
+R38878:38886 FSUB.FSub <> typing_wf thm
+R38929:38945 FSUB.FSub <> wf_typ_insert_var thm
+R38968:38973 FSUB.FSub <> T_Tapp constr
+R39039:39059 FSUB.FSub <> sub_weakening_var_ind thm
+R39082:39086 FSUB.FSub <> T_Sub constr
+R39152:39172 FSUB.FSub <> sub_weakening_var_ind thm
+R39196:39205 FSUB.FSub <> remove_var def
+prf 39236:39255 <> typing_weakening_var
+R39273:39275 FSUB.FSub <> env ind
+binder 39269:39269 <> e:382
+R39283:39286 FSUB.FSub <> term ind
+binder 39279:39279 <> t:383
+R39296:39298 FSUB.FSub <> typ ind
+binder 39290:39290 <> U:384
+binder 39292:39292 <> V:385
+R39316:39319 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R39306:39311 FSUB.FSub <> wf_typ def
+R39315:39315 FSUB.FSub <> V:385 var
+R39313:39313 FSUB.FSub <> e:382 var
+R39332:39335 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R39320:39325 FSUB.FSub <> typing ind
+R39331:39331 FSUB.FSub <> U:384 var
+R39329:39329 FSUB.FSub <> t:383 var
+R39327:39327 FSUB.FSub <> e:382 var
+R39336:39341 FSUB.FSub <> typing ind
+R39366:39366 FSUB.FSub <> U:384 var
+R39355:39359 FSUB.FSub <> shift def
+R39363:39363 FSUB.FSub <> t:383 var
+R39344:39347 FSUB.FSub <> evar constr
+R39351:39351 FSUB.FSub <> V:385 var
+R39349:39349 FSUB.FSub <> e:382 var
+R39401:39424 FSUB.FSub <> typing_weakening_var_ind thm
+R39427:39430 FSUB.FSub <> evar constr
+R39482:39486 Coq.Init.Logic <> proj1 thm
+R39489:39497 FSUB.FSub <> typing_wf thm
+R39401:39424 FSUB.FSub <> typing_weakening_var_ind thm
+R39427:39430 FSUB.FSub <> evar constr
+R39482:39486 Coq.Init.Logic <> proj1 thm
+R39489:39497 FSUB.FSub <> typing_wf thm
+prf 39564:39584 <> sub_strengthening_var
+R39602:39604 FSUB.FSub <> env ind
+binder 39598:39598 <> e:386
+R39612:39614 Coq.Init.Datatypes <> nat ind
+binder 39608:39608 <> x:387
+R39624:39626 FSUB.FSub <> typ ind
+binder 39618:39618 <> U:388
+binder 39620:39620 <> V:389
+R39643:39646 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R39634:39636 FSUB.FSub <> sub ind
+R39642:39642 FSUB.FSub <> V:389 var
+R39640:39640 FSUB.FSub <> U:388 var
+R39638:39638 FSUB.FSub <> e:386 var
+R39647:39649 FSUB.FSub <> sub ind
+R39670:39670 FSUB.FSub <> V:389 var
+R39668:39668 FSUB.FSub <> U:388 var
+R39652:39661 FSUB.FSub <> remove_var def
+R39665:39665 FSUB.FSub <> x:387 var
+R39663:39663 FSUB.FSub <> e:386 var
+R39715:39732 FSUB.FSub <> sub_extensionality thm
+R39756:39775 FSUB.FSub <> get_bound_remove_var thm
+R39789:39805 FSUB.FSub <> wf_env_remove_var thm
+R39815:39819 Coq.Init.Logic <> proj1 thm
+R39822:39827 FSUB.FSub <> sub_wf thm
+R39715:39732 FSUB.FSub <> sub_extensionality thm
+R39756:39775 FSUB.FSub <> get_bound_remove_var thm
+R39789:39805 FSUB.FSub <> wf_env_remove_var thm
+R39815:39819 Coq.Init.Logic <> proj1 thm
+R39822:39827 FSUB.FSub <> sub_wf thm
+prf 39916:39935 <> typing_narrowing_ind
+R39956:39958 FSUB.FSub <> env ind
+binder 39949:39949 <> e:390
+binder 39951:39952 <> e':391
+R39966:39968 Coq.Init.Datatypes <> nat ind
+binder 39962:39962 <> X:392
+R39976:39979 FSUB.FSub <> term ind
+binder 39972:39972 <> t:393
+R39987:39989 FSUB.FSub <> typ ind
+binder 39983:39983 <> U:394
+R40010:40013 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R39997:40002 FSUB.FSub <> narrow ind
+R40008:40009 FSUB.FSub <> e':391 var
+R40006:40006 FSUB.FSub <> e:390 var
+R40004:40004 FSUB.FSub <> X:392 var
+R40026:40029 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R40014:40019 FSUB.FSub <> typing ind
+R40025:40025 FSUB.FSub <> U:394 var
+R40023:40023 FSUB.FSub <> t:393 var
+R40021:40021 FSUB.FSub <> e:390 var
+R40030:40035 FSUB.FSub <> typing ind
+R40042:40042 FSUB.FSub <> U:394 var
+R40040:40040 FSUB.FSub <> t:393 var
+R40037:40038 FSUB.FSub <> e':391 var
+R40154:40158 FSUB.FSub <> T_Var constr
+R40176:40188 FSUB.FSub <> narrow_wf_env thm
+R40215:40228 FSUB.FSub <> get_var_narrow thm
+R40268:40272 FSUB.FSub <> T_Abs constr
+R40318:40334 FSUB.FSub <> narrow_extend_var constr
+R40359:40371 FSUB.FSub <> narrow_wf_typ thm
+R40377:40381 Coq.Init.Logic <> proj1 thm
+R40384:40388 Coq.Init.Logic <> proj1 thm
+R40391:40399 FSUB.FSub <> typing_wf thm
+R40421:40425 FSUB.FSub <> T_App constr
+R40446:40451 FSUB.FSub <> T_Tabs constr
+R40480:40480 Coq.Init.Datatypes <> S constr
+R40499:40517 FSUB.FSub <> narrow_extend_bound constr
+R40557:40569 FSUB.FSub <> narrow_wf_typ thm
+R40575:40579 Coq.Init.Logic <> proj1 thm
+R40582:40586 Coq.Init.Logic <> proj1 thm
+R40589:40597 FSUB.FSub <> typing_wf thm
+R40619:40624 FSUB.FSub <> T_Tapp constr
+R40641:40653 FSUB.FSub <> sub_narrowing thm
+R40673:40677 FSUB.FSub <> T_Sub constr
+R40715:40727 FSUB.FSub <> sub_narrowing thm
+R40154:40158 FSUB.FSub <> T_Var constr
+R40176:40188 FSUB.FSub <> narrow_wf_env thm
+R40215:40228 FSUB.FSub <> get_var_narrow thm
+R40215:40228 FSUB.FSub <> get_var_narrow thm
+R40268:40272 FSUB.FSub <> T_Abs constr
+R40318:40334 FSUB.FSub <> narrow_extend_var constr
+R40359:40371 FSUB.FSub <> narrow_wf_typ thm
+R40377:40381 Coq.Init.Logic <> proj1 thm
+R40384:40388 Coq.Init.Logic <> proj1 thm
+R40391:40399 FSUB.FSub <> typing_wf thm
+R40421:40425 FSUB.FSub <> T_App constr
+R40446:40451 FSUB.FSub <> T_Tabs constr
+R40480:40480 Coq.Init.Datatypes <> S constr
+R40499:40517 FSUB.FSub <> narrow_extend_bound constr
+R40557:40569 FSUB.FSub <> narrow_wf_typ thm
+R40575:40579 Coq.Init.Logic <> proj1 thm
+R40582:40586 Coq.Init.Logic <> proj1 thm
+R40589:40597 FSUB.FSub <> typing_wf thm
+R40619:40624 FSUB.FSub <> T_Tapp constr
+R40641:40653 FSUB.FSub <> sub_narrowing thm
+R40673:40677 FSUB.FSub <> T_Sub constr
+R40715:40727 FSUB.FSub <> sub_narrowing thm
+prf 40750:40765 <> typing_narrowing
+R40783:40785 FSUB.FSub <> env ind
+binder 40779:40779 <> e:395
+R40793:40796 FSUB.FSub <> term ind
+binder 40789:40789 <> t:396
+R40810:40812 FSUB.FSub <> typ ind
+binder 40800:40800 <> U:397
+binder 40802:40803 <> V1:398
+binder 40805:40806 <> V2:399
+R40844:40847 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R40820:40825 FSUB.FSub <> typing ind
+R40843:40843 FSUB.FSub <> U:397 var
+R40841:40841 FSUB.FSub <> t:396 var
+R40828:40833 FSUB.FSub <> ebound constr
+R40837:40838 FSUB.FSub <> V1:398 var
+R40835:40835 FSUB.FSub <> e:395 var
+R40859:40862 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R40848:40850 FSUB.FSub <> sub ind
+R40857:40858 FSUB.FSub <> V1:398 var
+R40854:40855 FSUB.FSub <> V2:399 var
+R40852:40852 FSUB.FSub <> e:395 var
+R40863:40868 FSUB.FSub <> typing ind
+R40886:40886 FSUB.FSub <> U:397 var
+R40884:40884 FSUB.FSub <> t:396 var
+R40871:40876 FSUB.FSub <> ebound constr
+R40880:40881 FSUB.FSub <> V2:399 var
+R40878:40878 FSUB.FSub <> e:395 var
+R40924:40943 FSUB.FSub <> typing_narrowing_ind thm
+R40946:40953 FSUB.FSub <> narrow_0 constr
+R40924:40943 FSUB.FSub <> typing_narrowing_ind thm
+R40946:40953 FSUB.FSub <> narrow_0 constr
+prf 41277:41298 <> subst_preserves_typing
+R41316:41318 FSUB.FSub <> env ind
+binder 41312:41312 <> e:400
+R41326:41328 Coq.Init.Datatypes <> nat ind
+binder 41322:41322 <> x:401
+R41338:41341 FSUB.FSub <> term ind
+binder 41332:41332 <> t:402
+binder 41334:41334 <> u:403
+R41351:41353 FSUB.FSub <> typ ind
+binder 41345:41345 <> V:404
+binder 41347:41347 <> W:405
+R41373:41380 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41361:41366 FSUB.FSub <> typing ind
+R41372:41372 FSUB.FSub <> V:404 var
+R41370:41370 FSUB.FSub <> t:402 var
+R41368:41368 FSUB.FSub <> e:400 var
+R41408:41411 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41381:41386 FSUB.FSub <> typing ind
+R41407:41407 FSUB.FSub <> W:405 var
+R41405:41405 FSUB.FSub <> u:403 var
+R41389:41398 FSUB.FSub <> remove_var def
+R41402:41402 FSUB.FSub <> x:401 var
+R41400:41400 FSUB.FSub <> e:400 var
+R41432:41439 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R41423:41425 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R41412:41418 FSUB.FSub <> get_var def
+R41422:41422 FSUB.FSub <> x:401 var
+R41420:41420 FSUB.FSub <> e:400 var
+R41426:41429 Coq.Init.Datatypes <> Some constr
+R41431:41431 FSUB.FSub <> W:405 var
+R41440:41445 FSUB.FSub <> typing ind
+R41478:41478 FSUB.FSub <> V:404 var
+R41465:41469 FSUB.FSub <> subst def
+R41475:41475 FSUB.FSub <> u:403 var
+R41473:41473 FSUB.FSub <> x:401 var
+R41471:41471 FSUB.FSub <> t:402 var
+R41448:41457 FSUB.FSub <> remove_var def
+R41461:41461 FSUB.FSub <> x:401 var
+R41459:41459 FSUB.FSub <> e:400 var
+R41593:41604 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R41673:41677 FSUB.FSub <> T_Var constr
+R41698:41714 FSUB.FSub <> wf_env_remove_var thm
+R41745:41765 FSUB.FSub <> get_var_remove_var_lt thm
+R41919:41923 FSUB.FSub <> T_Var constr
+R41942:41958 FSUB.FSub <> wf_env_remove_var thm
+R42047:42055 Coq.Arith.Minus <> minus_n_O thm
+R42078:42098 FSUB.FSub <> get_var_remove_var_ge thm
+R42139:42143 FSUB.FSub <> T_Abs constr
+R42163:42163 Coq.Init.Datatypes <> S constr
+R42170:42174 FSUB.FSub <> shift def
+R42214:42230 FSUB.FSub <> wf_typ_remove_var thm
+R42236:42240 Coq.Init.Logic <> proj1 thm
+R42243:42247 Coq.Init.Logic <> proj1 thm
+R42250:42258 FSUB.FSub <> typing_wf thm
+R42280:42299 FSUB.FSub <> typing_weakening_var thm
+R42321:42325 FSUB.FSub <> T_App constr
+R42395:42400 FSUB.FSub <> T_Tabs constr
+R42423:42431 FSUB.FSub <> shift_typ def
+R42439:42444 FSUB.FSub <> tshift def
+R42475:42491 FSUB.FSub <> wf_typ_remove_var thm
+R42497:42501 Coq.Init.Logic <> proj1 thm
+R42504:42508 Coq.Init.Logic <> proj1 thm
+R42511:42519 FSUB.FSub <> typing_wf thm
+R42543:42564 FSUB.FSub <> typing_weakening_bound thm
+R42629:42634 FSUB.FSub <> T_Tapp constr
+R42685:42705 FSUB.FSub <> sub_strengthening_var thm
+R42733:42737 FSUB.FSub <> T_Sub constr
+R42788:42808 FSUB.FSub <> sub_strengthening_var thm
+R41593:41604 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R41673:41677 FSUB.FSub <> T_Var constr
+R41698:41714 FSUB.FSub <> wf_env_remove_var thm
+R41745:41765 FSUB.FSub <> get_var_remove_var_lt thm
+R41745:41765 FSUB.FSub <> get_var_remove_var_lt thm
+R41919:41923 FSUB.FSub <> T_Var constr
+R41942:41958 FSUB.FSub <> wf_env_remove_var thm
+R42047:42055 Coq.Arith.Minus <> minus_n_O thm
+R42047:42055 Coq.Arith.Minus <> minus_n_O thm
+R42078:42098 FSUB.FSub <> get_var_remove_var_ge thm
+R42078:42098 FSUB.FSub <> get_var_remove_var_ge thm
+R42078:42098 FSUB.FSub <> get_var_remove_var_ge thm
+R42139:42143 FSUB.FSub <> T_Abs constr
+R42163:42163 Coq.Init.Datatypes <> S constr
+R42170:42174 FSUB.FSub <> shift def
+R42214:42230 FSUB.FSub <> wf_typ_remove_var thm
+R42236:42240 Coq.Init.Logic <> proj1 thm
+R42243:42247 Coq.Init.Logic <> proj1 thm
+R42250:42258 FSUB.FSub <> typing_wf thm
+R42280:42299 FSUB.FSub <> typing_weakening_var thm
+R42321:42325 FSUB.FSub <> T_App constr
+R42395:42400 FSUB.FSub <> T_Tabs constr
+R42423:42431 FSUB.FSub <> shift_typ def
+R42439:42444 FSUB.FSub <> tshift def
+R42475:42491 FSUB.FSub <> wf_typ_remove_var thm
+R42497:42501 Coq.Init.Logic <> proj1 thm
+R42504:42508 Coq.Init.Logic <> proj1 thm
+R42511:42519 FSUB.FSub <> typing_wf thm
+R42543:42564 FSUB.FSub <> typing_weakening_bound thm
+R42629:42634 FSUB.FSub <> T_Tapp constr
+R42685:42705 FSUB.FSub <> sub_strengthening_var thm
+R42733:42737 FSUB.FSub <> T_Sub constr
+R42788:42808 FSUB.FSub <> sub_strengthening_var thm
+prf 42904:42916 <> env_subst_sub
+R42937:42939 FSUB.FSub <> env ind
+binder 42930:42930 <> e:406
+binder 42932:42933 <> e':407
+R42950:42952 FSUB.FSub <> typ ind
+binder 42943:42943 <> T:408
+binder 42945:42946 <> T':409
+R42960:42962 Coq.Init.Datatypes <> nat ind
+binder 42956:42956 <> X:410
+R42989:42992 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42970:42978 FSUB.FSub <> env_subst ind
+R42987:42988 FSUB.FSub <> e':407 var
+R42985:42985 FSUB.FSub <> e:406 var
+R42982:42983 FSUB.FSub <> T':409 var
+R42980:42980 FSUB.FSub <> X:410 var
+R43019:43022 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R42993:42993 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R43007:43011 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R43018:43018 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R42994:43002 FSUB.FSub <> get_bound def
+R43006:43006 FSUB.FSub <> X:410 var
+R43004:43004 FSUB.FSub <> e:406 var
+R43012:43015 Coq.Init.Datatypes <> Some constr
+R43017:43017 FSUB.FSub <> T:408 var
+R43032:43040 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R43066:43066 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R43023:43028 FSUB.FSub <> wf_env def
+R43030:43031 FSUB.FSub <> e':407 var
+R43041:43043 FSUB.FSub <> sub ind
+R43052:43057 FSUB.FSub <> tsubst def
+R43063:43064 FSUB.FSub <> T':409 var
+R43061:43061 FSUB.FSub <> X:410 var
+R43059:43059 FSUB.FSub <> T:408 var
+R43048:43049 FSUB.FSub <> T':409 var
+R43045:43046 FSUB.FSub <> e':407 var
+R43221:43238 FSUB.FSub <> tsubst_tshift_prop thm
+R43291:43307 FSUB.FSub <> sub_weakening_var thm
+R43374:43382 FSUB.FSub <> get_bound def
+R43477:43496 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R43516:43534 FSUB.FSub <> sub_weakening_bound thm
+R43221:43238 FSUB.FSub <> tsubst_tshift_prop thm
+R43221:43238 FSUB.FSub <> tsubst_tshift_prop thm
+R43291:43307 FSUB.FSub <> sub_weakening_var thm
+R43374:43382 FSUB.FSub <> get_bound def
+R43477:43496 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R43477:43496 FSUB.FSub <> tshift_tsubst_prop_1 thm
+R43516:43534 FSUB.FSub <> sub_weakening_bound thm
+prf 43572:43597 <> tsubst_preserves_subtyping
+R43618:43620 FSUB.FSub <> env ind
+binder 43611:43611 <> e:411
+binder 43613:43614 <> e':412
+R43628:43630 Coq.Init.Datatypes <> nat ind
+binder 43624:43624 <> X:413
+R43642:43644 FSUB.FSub <> typ ind
+binder 43634:43634 <> T:414
+binder 43636:43636 <> U:415
+binder 43638:43638 <> V:416
+R43670:43673 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R43652:43660 FSUB.FSub <> env_subst ind
+R43668:43669 FSUB.FSub <> e':412 var
+R43666:43666 FSUB.FSub <> e:411 var
+R43664:43664 FSUB.FSub <> T:414 var
+R43662:43662 FSUB.FSub <> X:413 var
+R43683:43686 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R43674:43676 FSUB.FSub <> sub ind
+R43682:43682 FSUB.FSub <> V:416 var
+R43680:43680 FSUB.FSub <> U:415 var
+R43678:43678 FSUB.FSub <> e:411 var
+R43687:43689 FSUB.FSub <> sub ind
+R43710:43715 FSUB.FSub <> tsubst def
+R43721:43721 FSUB.FSub <> T:414 var
+R43719:43719 FSUB.FSub <> X:413 var
+R43717:43717 FSUB.FSub <> V:416 var
+R43695:43700 FSUB.FSub <> tsubst def
+R43706:43706 FSUB.FSub <> T:414 var
+R43704:43704 FSUB.FSub <> X:413 var
+R43702:43702 FSUB.FSub <> U:415 var
+R43691:43692 FSUB.FSub <> e':412 var
+R43837:43842 FSUB.FSub <> SA_Top constr
+R43860:43875 FSUB.FSub <> env_subst_wf_env thm
+R43898:43913 FSUB.FSub <> env_subst_wf_typ thm
+R43922:43937 FSUB.FSub <> env_subst_wf_env thm
+R43978:43992 FSUB.FSub <> sub_reflexivity thm
+R44010:44025 FSUB.FSub <> env_subst_wf_env thm
+R44048:44063 FSUB.FSub <> env_subst_wf_typ thm
+R44072:44087 FSUB.FSub <> env_subst_wf_env thm
+R44136:44147 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R44241:44246 FSUB.FSub <> tsubst def
+R44216:44228 FSUB.FSub <> SA_Trans_TVar constr
+R44277:44298 FSUB.FSub <> env_subst_get_bound_lt thm
+R44417:44432 FSUB.FSub <> sub_transitivity thm
+R44495:44507 FSUB.FSub <> env_subst_sub thm
+R44533:44548 FSUB.FSub <> env_subst_wf_env thm
+R44554:44558 Coq.Init.Logic <> proj1 thm
+R44561:44566 FSUB.FSub <> sub_wf thm
+R44625:44630 FSUB.FSub <> tsubst def
+R44600:44612 FSUB.FSub <> SA_Trans_TVar constr
+R44659:44680 FSUB.FSub <> env_subst_get_bound_ge thm
+R44749:44753 Coq.Init.Logic <> False ind
+R44892:44899 FSUB.FSub <> SA_Arrow constr
+R44944:44949 FSUB.FSub <> SA_All constr
+R44985:44992 FSUB.FSub <> es_bound constr
+R43837:43842 FSUB.FSub <> SA_Top constr
+R43860:43875 FSUB.FSub <> env_subst_wf_env thm
+R43898:43913 FSUB.FSub <> env_subst_wf_typ thm
+R43922:43937 FSUB.FSub <> env_subst_wf_env thm
+R43978:43992 FSUB.FSub <> sub_reflexivity thm
+R44010:44025 FSUB.FSub <> env_subst_wf_env thm
+R44048:44063 FSUB.FSub <> env_subst_wf_typ thm
+R44072:44087 FSUB.FSub <> env_subst_wf_env thm
+R44136:44147 Coq.Arith.Compare_dec <> lt_eq_lt_dec def
+R44241:44246 FSUB.FSub <> tsubst def
+R44216:44228 FSUB.FSub <> SA_Trans_TVar constr
+R44277:44298 FSUB.FSub <> env_subst_get_bound_lt thm
+R44277:44298 FSUB.FSub <> env_subst_get_bound_lt thm
+R44417:44432 FSUB.FSub <> sub_transitivity thm
+R44495:44507 FSUB.FSub <> env_subst_sub thm
+R44533:44548 FSUB.FSub <> env_subst_wf_env thm
+R44554:44558 Coq.Init.Logic <> proj1 thm
+R44561:44566 FSUB.FSub <> sub_wf thm
+R44625:44630 FSUB.FSub <> tsubst def
+R44600:44612 FSUB.FSub <> SA_Trans_TVar constr
+R44659:44680 FSUB.FSub <> env_subst_get_bound_ge thm
+R44659:44680 FSUB.FSub <> env_subst_get_bound_ge thm
+R44659:44680 FSUB.FSub <> env_subst_get_bound_ge thm
+R44749:44753 Coq.Init.Logic <> False ind
+R44892:44899 FSUB.FSub <> SA_Arrow constr
+R44944:44949 FSUB.FSub <> SA_All constr
+R44985:44992 FSUB.FSub <> es_bound constr
+prf 45080:45109 <> subst_typ_preserves_typing_ind
+R45130:45132 FSUB.FSub <> env ind
+binder 45123:45123 <> e:417
+binder 45125:45126 <> e':418
+R45140:45143 FSUB.FSub <> term ind
+binder 45136:45136 <> t:419
+R45153:45155 FSUB.FSub <> typ ind
+binder 45147:45147 <> U:420
+binder 45149:45149 <> P:421
+R45163:45165 Coq.Init.Datatypes <> nat ind
+binder 45159:45159 <> X:422
+R45191:45198 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R45173:45181 FSUB.FSub <> env_subst ind
+R45189:45190 FSUB.FSub <> e':418 var
+R45187:45187 FSUB.FSub <> e:417 var
+R45185:45185 FSUB.FSub <> P:421 var
+R45183:45183 FSUB.FSub <> X:422 var
+R45211:45214 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R45199:45204 FSUB.FSub <> typing ind
+R45210:45210 FSUB.FSub <> U:420 var
+R45208:45208 FSUB.FSub <> t:419 var
+R45206:45206 FSUB.FSub <> e:417 var
+R45215:45220 FSUB.FSub <> typing ind
+R45244:45249 FSUB.FSub <> tsubst def
+R45255:45255 FSUB.FSub <> P:421 var
+R45253:45253 FSUB.FSub <> X:422 var
+R45251:45251 FSUB.FSub <> U:420 var
+R45226:45234 FSUB.FSub <> subst_typ def
+R45240:45240 FSUB.FSub <> P:421 var
+R45238:45238 FSUB.FSub <> X:422 var
+R45236:45236 FSUB.FSub <> t:419 var
+R45222:45223 FSUB.FSub <> e':418 var
+R45383:45387 FSUB.FSub <> T_Var constr
+R45405:45420 FSUB.FSub <> env_subst_wf_env thm
+R45444:45460 FSUB.FSub <> env_subst_get_var thm
+R45537:45541 FSUB.FSub <> T_Abs constr
+R45567:45572 FSUB.FSub <> es_var constr
+R45612:45616 FSUB.FSub <> T_App constr
+R45692:45697 FSUB.FSub <> T_Tabs constr
+R45716:45723 FSUB.FSub <> es_bound constr
+R45784:45789 FSUB.FSub <> T_Tapp constr
+R45799:45804 FSUB.FSub <> tsubst def
+R45848:45853 FSUB.FSub <> tsubst def
+R45871:45888 FSUB.FSub <> tsubst_tsubst_prop thm
+R45919:45944 FSUB.FSub <> tsubst_preserves_subtyping thm
+R45982:45986 FSUB.FSub <> T_Sub constr
+R46032:46057 FSUB.FSub <> tsubst_preserves_subtyping thm
+R45383:45387 FSUB.FSub <> T_Var constr
+R45405:45420 FSUB.FSub <> env_subst_wf_env thm
+R45444:45460 FSUB.FSub <> env_subst_get_var thm
+R45444:45460 FSUB.FSub <> env_subst_get_var thm
+R45537:45541 FSUB.FSub <> T_Abs constr
+R45567:45572 FSUB.FSub <> es_var constr
+R45612:45616 FSUB.FSub <> T_App constr
+R45692:45697 FSUB.FSub <> T_Tabs constr
+R45716:45723 FSUB.FSub <> es_bound constr
+R45784:45789 FSUB.FSub <> T_Tapp constr
+R45799:45804 FSUB.FSub <> tsubst def
+R45848:45853 FSUB.FSub <> tsubst def
+R45871:45888 FSUB.FSub <> tsubst_tsubst_prop thm
+R45871:45888 FSUB.FSub <> tsubst_tsubst_prop thm
+R45919:45944 FSUB.FSub <> tsubst_preserves_subtyping thm
+R45982:45986 FSUB.FSub <> T_Sub constr
+R46032:46057 FSUB.FSub <> tsubst_preserves_subtyping thm
+prf 46080:46105 <> subst_typ_preserves_typing
+R46123:46125 FSUB.FSub <> env ind
+binder 46119:46119 <> e:423
+R46133:46136 FSUB.FSub <> term ind
+binder 46129:46129 <> t:424
+R46148:46150 FSUB.FSub <> typ ind
+binder 46140:46140 <> U:425
+binder 46142:46142 <> P:426
+binder 46144:46144 <> Q:427
+R46181:46184 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R46158:46163 FSUB.FSub <> typing ind
+R46180:46180 FSUB.FSub <> U:425 var
+R46178:46178 FSUB.FSub <> t:424 var
+R46166:46171 FSUB.FSub <> ebound constr
+R46175:46175 FSUB.FSub <> Q:427 var
+R46173:46173 FSUB.FSub <> e:423 var
+R46194:46201 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R46185:46187 FSUB.FSub <> sub ind
+R46193:46193 FSUB.FSub <> Q:427 var
+R46191:46191 FSUB.FSub <> P:426 var
+R46189:46189 FSUB.FSub <> e:423 var
+R46202:46207 FSUB.FSub <> typing ind
+R46230:46235 FSUB.FSub <> tsubst def
+R46241:46241 FSUB.FSub <> P:426 var
+R46237:46237 FSUB.FSub <> U:425 var
+R46212:46220 FSUB.FSub <> subst_typ def
+R46226:46226 FSUB.FSub <> P:426 var
+R46222:46222 FSUB.FSub <> t:424 var
+R46209:46209 FSUB.FSub <> e:423 var
+R46278:46307 FSUB.FSub <> subst_typ_preserves_typing_ind thm
+R46310:46316 FSUB.FSub <> es_here constr
+R46278:46307 FSUB.FSub <> subst_typ_preserves_typing_ind thm
+R46310:46316 FSUB.FSub <> es_here constr
+prf 46473:46487 <> t_abs_inversion
+R46505:46507 FSUB.FSub <> env ind
+binder 46501:46501 <> e:428
+R46515:46518 FSUB.FSub <> term ind
+binder 46511:46511 <> t:429
+R46536:46538 FSUB.FSub <> typ ind
+binder 46522:46523 <> T0:430
+binder 46525:46526 <> T1:431
+binder 46528:46529 <> T2:432
+binder 46531:46532 <> T3:433
+R46568:46575 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R46546:46551 FSUB.FSub <> typing ind
+R46566:46567 FSUB.FSub <> T0:430 var
+R46556:46558 FSUB.FSub <> abs constr
+R46563:46563 FSUB.FSub <> t:429 var
+R46560:46561 FSUB.FSub <> T1:431 var
+R46553:46553 FSUB.FSub <> e:428 var
+R46598:46605 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R46576:46578 FSUB.FSub <> sub ind
+R46586:46590 FSUB.FSub <> arrow constr
+R46595:46596 FSUB.FSub <> T3:433 var
+R46592:46593 FSUB.FSub <> T2:432 var
+R46582:46583 FSUB.FSub <> T0:430 var
+R46580:46580 FSUB.FSub <> e:428 var
+R46617:46627 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R46677:46677 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R46606:46608 FSUB.FSub <> sub ind
+R46615:46616 FSUB.FSub <> T1:431 var
+R46612:46613 FSUB.FSub <> T2:432 var
+R46610:46610 FSUB.FSub <> e:428 var
+R46628:46634 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R46637:46638 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 46635:46636 <> T4:434
+R46650:46653 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R46639:46641 FSUB.FSub <> sub ind
+R46648:46649 FSUB.FSub <> T3:433 var
+R46645:46646 FSUB.FSub <> T4:434 var
+R46643:46643 FSUB.FSub <> e:428 var
+R46654:46659 FSUB.FSub <> typing ind
+R46675:46676 FSUB.FSub <> T4:434 var
+R46673:46673 FSUB.FSub <> t:429 var
+R46662:46665 FSUB.FSub <> evar constr
+R46669:46670 FSUB.FSub <> T1:431 var
+R46667:46667 FSUB.FSub <> e:428 var
+R46713:46719 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R46726:46727 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 46720:46721 <> t':435
+R46730:46732 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R46728:46729 FSUB.FSub <> t':435 var
+R46733:46735 FSUB.FSub <> abs constr
+R47070:47085 FSUB.FSub <> sub_transitivity thm
+R47110:47112 FSUB.FSub <> abs constr
+R46713:46719 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R46726:46727 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 46720:46721 <> t':436
+R46730:46732 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R46728:46729 FSUB.FSub <> t':436 var
+R46733:46735 FSUB.FSub <> abs constr
+R47070:47085 FSUB.FSub <> sub_transitivity thm
+R47110:47112 FSUB.FSub <> abs constr
+prf 47144:47159 <> t_tabs_inversion
+R47177:47179 FSUB.FSub <> env ind
+binder 47173:47173 <> e:437
+R47187:47190 FSUB.FSub <> term ind
+binder 47183:47183 <> t:438
+R47208:47210 FSUB.FSub <> typ ind
+binder 47194:47195 <> T0:439
+binder 47197:47198 <> T1:440
+binder 47200:47201 <> T2:441
+binder 47203:47204 <> T3:442
+R47241:47248 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R47218:47223 FSUB.FSub <> typing ind
+R47239:47240 FSUB.FSub <> T0:439 var
+R47228:47231 FSUB.FSub <> tabs constr
+R47236:47236 FSUB.FSub <> t:438 var
+R47233:47234 FSUB.FSub <> T1:440 var
+R47225:47225 FSUB.FSub <> e:437 var
+R47269:47276 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R47249:47251 FSUB.FSub <> sub ind
+R47259:47261 FSUB.FSub <> all constr
+R47266:47267 FSUB.FSub <> T3:442 var
+R47263:47264 FSUB.FSub <> T2:441 var
+R47255:47256 FSUB.FSub <> T0:439 var
+R47253:47253 FSUB.FSub <> e:437 var
+R47288:47298 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R47362:47362 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R47277:47279 FSUB.FSub <> sub ind
+R47286:47287 FSUB.FSub <> T1:440 var
+R47283:47284 FSUB.FSub <> T2:441 var
+R47281:47281 FSUB.FSub <> e:437 var
+R47299:47305 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R47308:47309 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 47306:47307 <> T4:443
+R47333:47336 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R47310:47312 FSUB.FSub <> sub ind
+R47331:47332 FSUB.FSub <> T3:442 var
+R47328:47329 FSUB.FSub <> T4:443 var
+R47315:47320 FSUB.FSub <> ebound constr
+R47324:47325 FSUB.FSub <> T2:441 var
+R47322:47322 FSUB.FSub <> e:437 var
+R47337:47342 FSUB.FSub <> typing ind
+R47360:47361 FSUB.FSub <> T4:443 var
+R47358:47358 FSUB.FSub <> t:438 var
+R47345:47350 FSUB.FSub <> ebound constr
+R47354:47355 FSUB.FSub <> T2:441 var
+R47352:47352 FSUB.FSub <> e:437 var
+R47398:47404 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R47411:47412 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 47405:47406 <> t':444
+R47415:47417 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R47413:47414 FSUB.FSub <> t':444 var
+R47418:47421 FSUB.FSub <> tabs constr
+R47723:47738 FSUB.FSub <> typing_narrowing thm
+R47790:47805 FSUB.FSub <> sub_transitivity thm
+R47830:47833 FSUB.FSub <> tabs constr
+R47398:47404 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R47411:47412 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 47405:47406 <> t':445
+R47415:47417 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R47413:47414 FSUB.FSub <> t':445 var
+R47418:47421 FSUB.FSub <> tabs constr
+R47723:47738 FSUB.FSub <> typing_narrowing thm
+R47790:47805 FSUB.FSub <> sub_transitivity thm
+R47830:47833 FSUB.FSub <> tabs constr
+prf 47915:47923 <> fun_value
+R47941:47944 FSUB.FSub <> term ind
+binder 47937:47937 <> t:446
+R47956:47958 FSUB.FSub <> typ ind
+binder 47948:47949 <> T1:447
+binder 47951:47952 <> T2:448
+R47973:47976 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R47966:47970 FSUB.FSub <> value def
+R47972:47972 FSUB.FSub <> t:446 var
+R48005:48012 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R47977:47982 FSUB.FSub <> typing ind
+R47993:47997 FSUB.FSub <> arrow constr
+R48002:48003 FSUB.FSub <> T2:448 var
+R47999:48000 FSUB.FSub <> T1:447 var
+R47990:47990 FSUB.FSub <> t:446 var
+R47984:47988 FSUB.FSub <> empty constr
+R48013:48019 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48022:48024 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48020:48021 <> t':449
+R48025:48031 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48035:48037 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48032:48034 <> T1':450
+R48039:48041 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48038:48038 FSUB.FSub <> t:446 var
+R48042:48044 FSUB.FSub <> abs constr
+R48050:48051 FSUB.FSub <> t':449 var
+R48046:48048 FSUB.FSub <> T1':450 var
+R48082:48088 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48090:48091 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48089:48089 <> e:451
+R48093:48095 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48092:48092 FSUB.FSub <> e:451 var
+R48096:48100 FSUB.FSub <> empty constr
+R48151:48157 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48160:48161 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48158:48159 <> T0:452
+R48164:48166 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48162:48163 FSUB.FSub <> T0:452 var
+R48167:48171 FSUB.FSub <> arrow constr
+R48543:48548 Coq.Init.Logic <> sym_eq syndef
+R48575:48579 FSUB.FSub <> arrow constr
+R48612:48616 FSUB.FSub <> empty constr
+R48082:48088 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48090:48091 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48089:48089 <> e:453
+R48093:48095 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48092:48092 FSUB.FSub <> e:453 var
+R48096:48100 FSUB.FSub <> empty constr
+R48151:48157 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48160:48161 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48158:48159 <> T0:454
+R48164:48166 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48162:48163 FSUB.FSub <> T0:454 var
+R48167:48171 FSUB.FSub <> arrow constr
+R48543:48548 Coq.Init.Logic <> sym_eq syndef
+R48575:48579 FSUB.FSub <> arrow constr
+R48612:48616 FSUB.FSub <> empty constr
+prf 48642:48654 <> typefun_value
+R48672:48675 FSUB.FSub <> term ind
+binder 48668:48668 <> t:455
+R48687:48689 FSUB.FSub <> typ ind
+binder 48679:48680 <> T1:456
+binder 48682:48683 <> T2:457
+R48704:48707 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R48697:48701 FSUB.FSub <> value def
+R48703:48703 FSUB.FSub <> t:455 var
+R48734:48741 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R48708:48713 FSUB.FSub <> typing ind
+R48724:48726 FSUB.FSub <> all constr
+R48731:48732 FSUB.FSub <> T2:457 var
+R48728:48729 FSUB.FSub <> T1:456 var
+R48721:48721 FSUB.FSub <> t:455 var
+R48715:48719 FSUB.FSub <> empty constr
+R48742:48748 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48751:48752 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48749:48750 <> t':458
+R48753:48759 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48763:48764 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48760:48762 <> T1':459
+R48766:48768 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48765:48765 FSUB.FSub <> t:455 var
+R48769:48772 FSUB.FSub <> tabs constr
+R48778:48779 FSUB.FSub <> t':458 var
+R48774:48776 FSUB.FSub <> T1':459 var
+R48810:48816 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48818:48819 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48817:48817 <> e:460
+R48821:48823 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48820:48820 FSUB.FSub <> e:460 var
+R48824:48828 FSUB.FSub <> empty constr
+R48879:48885 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48888:48889 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48886:48887 <> T0:461
+R48892:48894 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48890:48891 FSUB.FSub <> T0:461 var
+R48895:48897 FSUB.FSub <> all constr
+R49269:49274 Coq.Init.Logic <> sym_eq syndef
+R49301:49303 FSUB.FSub <> all constr
+R49336:49340 FSUB.FSub <> empty constr
+R48810:48816 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48818:48819 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48817:48817 <> e:462
+R48821:48823 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48820:48820 FSUB.FSub <> e:462 var
+R48824:48828 FSUB.FSub <> empty constr
+R48879:48885 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R48888:48889 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 48886:48887 <> T0:463
+R48892:48894 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48890:48891 FSUB.FSub <> T0:463 var
+R48895:48897 FSUB.FSub <> all constr
+R49269:49274 Coq.Init.Logic <> sym_eq syndef
+R49301:49303 FSUB.FSub <> all constr
+R49336:49340 FSUB.FSub <> empty constr
+prf 49398:49411 <> local_progress
+R49429:49432 FSUB.FSub <> term ind
+binder 49425:49425 <> t:464
+R49440:49442 FSUB.FSub <> typ ind
+binder 49436:49436 <> U:465
+R49466:49469 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R49450:49455 FSUB.FSub <> typing ind
+R49465:49465 FSUB.FSub <> U:465 var
+R49463:49463 FSUB.FSub <> t:464 var
+R49457:49461 FSUB.FSub <> empty constr
+R49477:49506 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R49470:49474 FSUB.FSub <> value def
+R49476:49476 FSUB.FSub <> t:464 var
+R49507:49513 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R49515:49516 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 49514:49514 <> c:466
+R49517:49523 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R49526:49527 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 49524:49525 <> t0:467
+R49528:49534 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R49538:49539 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 49535:49537 <> t0':468
+R49550:49553 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R49540:49542 FSUB.FSub <> red ind
+R49547:49549 FSUB.FSub <> t0':468 var
+R49544:49545 FSUB.FSub <> t0:467 var
+R49555:49557 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R49554:49554 FSUB.FSub <> t:464 var
+R49558:49564 FSUB.FSub <> ctx_app def
+R49568:49569 FSUB.FSub <> t0:467 var
+R49566:49566 FSUB.FSub <> c:466 var
+R49593:49599 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R49601:49602 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 49600:49600 <> e:469
+R49604:49606 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R49603:49603 FSUB.FSub <> e:469 var
+R49607:49611 FSUB.FSub <> empty constr
+R49904:49912 FSUB.FSub <> fun_value thm
+R49976:49981 FSUB.FSub <> c_hole constr
+R50004:50006 FSUB.FSub <> app constr
+R50009:50011 FSUB.FSub <> abs constr
+R50034:50038 FSUB.FSub <> subst def
+R50084:50091 FSUB.FSub <> E_AppAbs constr
+R50157:50164 FSUB.FSub <> c_apparg constr
+R50280:50287 FSUB.FSub <> c_appfun constr
+R50466:50478 FSUB.FSub <> typefun_value thm
+R50540:50545 FSUB.FSub <> c_hole constr
+R50566:50569 FSUB.FSub <> tapp constr
+R50572:50575 FSUB.FSub <> tabs constr
+R50598:50606 FSUB.FSub <> subst_typ def
+R50650:50659 FSUB.FSub <> E_TappTabs constr
+R50714:50722 FSUB.FSub <> c_typefun constr
+R50811:50815 FSUB.FSub <> empty constr
+R49593:49599 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R49601:49602 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 49600:49600 <> e:470
+R49604:49606 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R49603:49603 FSUB.FSub <> e:470 var
+R49607:49611 FSUB.FSub <> empty constr
+R49904:49912 FSUB.FSub <> fun_value thm
+R49976:49981 FSUB.FSub <> c_hole constr
+R50004:50006 FSUB.FSub <> app constr
+R50009:50011 FSUB.FSub <> abs constr
+R50034:50038 FSUB.FSub <> subst def
+R50084:50091 FSUB.FSub <> E_AppAbs constr
+R50157:50164 FSUB.FSub <> c_apparg constr
+R50280:50287 FSUB.FSub <> c_appfun constr
+R50466:50478 FSUB.FSub <> typefun_value thm
+R50540:50545 FSUB.FSub <> c_hole constr
+R50566:50569 FSUB.FSub <> tapp constr
+R50572:50575 FSUB.FSub <> tabs constr
+R50598:50606 FSUB.FSub <> subst_typ def
+R50650:50659 FSUB.FSub <> E_TappTabs constr
+R50714:50722 FSUB.FSub <> c_typefun constr
+R50811:50815 FSUB.FSub <> empty constr
+prf 50888:50895 <> progress
+R50913:50916 FSUB.FSub <> term ind
+binder 50909:50909 <> t:471
+R50924:50926 FSUB.FSub <> typ ind
+binder 50920:50920 <> U:472
+R50950:50953 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R50934:50939 FSUB.FSub <> typing ind
+R50949:50949 FSUB.FSub <> U:472 var
+R50947:50947 FSUB.FSub <> t:471 var
+R50941:50945 FSUB.FSub <> empty constr
+R50961:50964 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R50954:50958 FSUB.FSub <> value def
+R50960:50960 FSUB.FSub <> t:471 var
+R50965:50971 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R50974:50975 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 50972:50973 <> t':473
+R50976:50978 FSUB.FSub <> red ind
+R50982:50983 FSUB.FSub <> t':473 var
+R50980:50980 FSUB.FSub <> t:471 var
+R51014:51027 FSUB.FSub <> local_progress thm
+R51104:51110 FSUB.FSub <> ctx_app def
+R51138:51142 FSUB.FSub <> E_Ctx constr
+R51014:51027 FSUB.FSub <> local_progress thm
+R51104:51110 FSUB.FSub <> ctx_app def
+R51138:51142 FSUB.FSub <> E_Ctx constr
+prf 51581:51599 <> context_replacement
+R51617:51619 FSUB.FSub <> env ind
+binder 51613:51613 <> e:474
+R51627:51629 FSUB.FSub <> ctx ind
+binder 51623:51623 <> c:475
+R51640:51643 FSUB.FSub <> term ind
+binder 51633:51633 <> t:476
+binder 51635:51636 <> t':477
+R51651:51653 FSUB.FSub <> typ ind
+binder 51647:51647 <> T:478
+R51661:51661 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51716:51724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51675:51677 FSUB.FSub <> typ ind
+binder 51670:51671 <> T':479
+R51681:51681 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51695:51700 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51715:51715 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51682:51687 FSUB.FSub <> typing ind
+R51693:51694 FSUB.FSub <> T':479 var
+R51691:51691 FSUB.FSub <> t:476 var
+R51689:51689 FSUB.FSub <> e:474 var
+R51701:51706 FSUB.FSub <> typing ind
+R51713:51714 FSUB.FSub <> T':479 var
+R51710:51711 FSUB.FSub <> t':477 var
+R51708:51708 FSUB.FSub <> e:474 var
+R51749:51752 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R51725:51730 FSUB.FSub <> typing ind
+R51748:51748 FSUB.FSub <> T:478 var
+R51735:51741 FSUB.FSub <> ctx_app def
+R51745:51745 FSUB.FSub <> t:476 var
+R51743:51743 FSUB.FSub <> c:475 var
+R51732:51732 FSUB.FSub <> e:474 var
+R51753:51758 FSUB.FSub <> typing ind
+R51777:51777 FSUB.FSub <> T:478 var
+R51763:51769 FSUB.FSub <> ctx_app def
+R51773:51774 FSUB.FSub <> t':477 var
+R51771:51771 FSUB.FSub <> c:475 var
+R51760:51760 FSUB.FSub <> e:474 var
+R51812:51818 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R51822:51823 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 51819:51821 <> t'':480
+R51827:51829 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R51824:51826 FSUB.FSub <> t'':480 var
+R51830:51836 FSUB.FSub <> ctx_app def
+R52038:52042 FSUB.FSub <> T_Var constr
+R52157:52161 FSUB.FSub <> T_Abs constr
+R52279:52283 FSUB.FSub <> T_App constr
+R52381:52385 FSUB.FSub <> T_App constr
+R52526:52530 FSUB.FSub <> T_App constr
+R52691:52696 FSUB.FSub <> T_Tabs constr
+R52809:52814 FSUB.FSub <> T_Tapp constr
+R52908:52913 FSUB.FSub <> T_Tapp constr
+R52992:52996 FSUB.FSub <> T_Sub constr
+R53053:53059 FSUB.FSub <> ctx_app def
+R51812:51818 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R51822:51823 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 51819:51821 <> t'':481
+R51827:51829 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R51824:51826 FSUB.FSub <> t'':481 var
+R51830:51836 FSUB.FSub <> ctx_app def
+R52038:52042 FSUB.FSub <> T_Var constr
+R52157:52161 FSUB.FSub <> T_Abs constr
+R52279:52283 FSUB.FSub <> T_App constr
+R52381:52385 FSUB.FSub <> T_App constr
+R52526:52530 FSUB.FSub <> T_App constr
+R52691:52696 FSUB.FSub <> T_Tabs constr
+R52809:52814 FSUB.FSub <> T_Tapp constr
+R52908:52913 FSUB.FSub <> T_Tapp constr
+R52992:52996 FSUB.FSub <> T_Sub constr
+R53053:53059 FSUB.FSub <> ctx_app def
+prf 53123:53144 <> local_preservation_app
+R53162:53164 FSUB.FSub <> env ind
+binder 53158:53158 <> e:482
+R53177:53180 FSUB.FSub <> term ind
+binder 53168:53170 <> t12:483
+binder 53172:53173 <> t2:484
+R53192:53194 FSUB.FSub <> typ ind
+binder 53184:53186 <> T11:485
+binder 53188:53188 <> U:486
+R53235:53238 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R53202:53207 FSUB.FSub <> typing ind
+R53234:53234 FSUB.FSub <> U:486 var
+R53212:53214 FSUB.FSub <> app constr
+R53230:53231 FSUB.FSub <> t2:484 var
+R53217:53219 FSUB.FSub <> abs constr
+R53225:53227 FSUB.FSub <> t12:483 var
+R53221:53223 FSUB.FSub <> T11:485 var
+R53209:53209 FSUB.FSub <> e:482 var
+R53239:53244 FSUB.FSub <> typing ind
+R53265:53265 FSUB.FSub <> U:486 var
+R53249:53253 FSUB.FSub <> subst def
+R53261:53262 FSUB.FSub <> t2:484 var
+R53255:53257 FSUB.FSub <> t12:483 var
+R53246:53246 FSUB.FSub <> e:482 var
+R53300:53306 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R53308:53309 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 53307:53307 <> t:487
+R53311:53313 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R53310:53310 FSUB.FSub <> t:487 var
+R53314:53316 FSUB.FSub <> app constr
+R53319:53321 FSUB.FSub <> abs constr
+R53491:53495 Coq.Init.Logic <> proj1 thm
+R53498:53506 FSUB.FSub <> typing_wf thm
+R53535:53539 Coq.Init.Logic <> proj2 thm
+R53542:53546 Coq.Init.Logic <> proj2 thm
+R53549:53557 FSUB.FSub <> typing_wf thm
+R53585:53599 FSUB.FSub <> t_abs_inversion thm
+R53604:53618 FSUB.FSub <> sub_reflexivity thm
+R53672:53676 FSUB.FSub <> T_Sub constr
+R53709:53730 FSUB.FSub <> subst_preserves_typing thm
+R53813:53817 FSUB.FSub <> T_Sub constr
+R53840:53844 FSUB.FSub <> T_Sub constr
+R53883:53885 FSUB.FSub <> app constr
+R53888:53890 FSUB.FSub <> abs constr
+R53300:53306 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R53308:53309 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 53307:53307 <> t:488
+R53311:53313 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R53310:53310 FSUB.FSub <> t:488 var
+R53314:53316 FSUB.FSub <> app constr
+R53319:53321 FSUB.FSub <> abs constr
+R53491:53495 Coq.Init.Logic <> proj1 thm
+R53498:53506 FSUB.FSub <> typing_wf thm
+R53535:53539 Coq.Init.Logic <> proj2 thm
+R53542:53546 Coq.Init.Logic <> proj2 thm
+R53549:53557 FSUB.FSub <> typing_wf thm
+R53585:53599 FSUB.FSub <> t_abs_inversion thm
+R53604:53618 FSUB.FSub <> sub_reflexivity thm
+R53672:53676 FSUB.FSub <> T_Sub constr
+R53709:53730 FSUB.FSub <> subst_preserves_typing thm
+R53813:53817 FSUB.FSub <> T_Sub constr
+R53840:53844 FSUB.FSub <> T_Sub constr
+R53883:53885 FSUB.FSub <> app constr
+R53888:53890 FSUB.FSub <> abs constr
+prf 53929:53951 <> local_preservation_tapp
+R53969:53971 FSUB.FSub <> env ind
+binder 53965:53965 <> e:489
+R53981:53984 FSUB.FSub <> term ind
+binder 53975:53977 <> t12:490
+R53999:54001 FSUB.FSub <> typ ind
+binder 53988:53990 <> T11:491
+binder 53992:53993 <> T2:492
+binder 53995:53995 <> U:493
+R54044:54047 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R54009:54014 FSUB.FSub <> typing ind
+R54043:54043 FSUB.FSub <> U:493 var
+R54019:54022 FSUB.FSub <> tapp constr
+R54039:54040 FSUB.FSub <> T2:492 var
+R54025:54028 FSUB.FSub <> tabs constr
+R54034:54036 FSUB.FSub <> t12:490 var
+R54030:54032 FSUB.FSub <> T11:491 var
+R54016:54016 FSUB.FSub <> e:489 var
+R54048:54053 FSUB.FSub <> typing ind
+R54078:54078 FSUB.FSub <> U:493 var
+R54058:54066 FSUB.FSub <> subst_typ def
+R54074:54075 FSUB.FSub <> T2:492 var
+R54068:54070 FSUB.FSub <> t12:490 var
+R54055:54055 FSUB.FSub <> e:489 var
+R54113:54119 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R54121:54122 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 54120:54120 <> t:494
+R54124:54126 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R54123:54123 FSUB.FSub <> t:494 var
+R54127:54130 FSUB.FSub <> tapp constr
+R54133:54136 FSUB.FSub <> tabs constr
+R54306:54310 Coq.Init.Logic <> proj1 thm
+R54313:54321 FSUB.FSub <> typing_wf thm
+R54350:54354 Coq.Init.Logic <> proj2 thm
+R54357:54361 Coq.Init.Logic <> proj2 thm
+R54364:54372 FSUB.FSub <> typing_wf thm
+R54400:54415 FSUB.FSub <> t_tabs_inversion thm
+R54420:54434 FSUB.FSub <> sub_reflexivity thm
+R54496:54500 FSUB.FSub <> T_Sub constr
+R54540:54565 FSUB.FSub <> subst_typ_preserves_typing thm
+R54588:54592 FSUB.FSub <> T_Sub constr
+R54631:54634 FSUB.FSub <> tapp constr
+R54637:54640 FSUB.FSub <> tabs constr
+R54113:54119 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R54121:54122 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 54120:54120 <> t:495
+R54124:54126 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R54123:54123 FSUB.FSub <> t:495 var
+R54127:54130 FSUB.FSub <> tapp constr
+R54133:54136 FSUB.FSub <> tabs constr
+R54306:54310 Coq.Init.Logic <> proj1 thm
+R54313:54321 FSUB.FSub <> typing_wf thm
+R54350:54354 Coq.Init.Logic <> proj2 thm
+R54357:54361 Coq.Init.Logic <> proj2 thm
+R54364:54372 FSUB.FSub <> typing_wf thm
+R54400:54415 FSUB.FSub <> t_tabs_inversion thm
+R54420:54434 FSUB.FSub <> sub_reflexivity thm
+R54496:54500 FSUB.FSub <> T_Sub constr
+R54540:54565 FSUB.FSub <> subst_typ_preserves_typing thm
+R54588:54592 FSUB.FSub <> T_Sub constr
+R54631:54634 FSUB.FSub <> tapp constr
+R54637:54640 FSUB.FSub <> tabs constr
+prf 54731:54742 <> preservation
+R54760:54762 FSUB.FSub <> env ind
+binder 54756:54756 <> e:496
+R54773:54776 FSUB.FSub <> term ind
+binder 54766:54766 <> t:497
+binder 54768:54769 <> t':498
+R54784:54786 FSUB.FSub <> typ ind
+binder 54780:54780 <> U:499
+R54806:54809 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R54794:54799 FSUB.FSub <> typing ind
+R54805:54805 FSUB.FSub <> U:499 var
+R54803:54803 FSUB.FSub <> t:497 var
+R54801:54801 FSUB.FSub <> e:496 var
+R54818:54821 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R54810:54812 FSUB.FSub <> red ind
+R54816:54817 FSUB.FSub <> t':498 var
+R54814:54814 FSUB.FSub <> t:497 var
+R54822:54827 FSUB.FSub <> typing ind
+R54834:54834 FSUB.FSub <> U:499 var
+R54831:54832 FSUB.FSub <> t':498 var
+R54829:54829 FSUB.FSub <> e:496 var
+R54931:54952 FSUB.FSub <> local_preservation_app thm
+R54971:54993 FSUB.FSub <> local_preservation_tapp thm
+R55012:55030 FSUB.FSub <> context_replacement thm
+R54931:54952 FSUB.FSub <> local_preservation_app thm
+R54971:54993 FSUB.FSub <> local_preservation_tapp thm
+R55012:55030 FSUB.FSub <> context_replacement thm
+ind 55292:55295 <> red'
+constr 55325:55330 <> appabs
+constr 55435:55442 <> tapptabs
+constr 55541:55546 <> appfun
+constr 55624:55629 <> apparg
+constr 55723:55729 <> typefun
+R55303:55306 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R55299:55302 FSUB.FSub <> term ind
+R55311:55314 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R55307:55310 FSUB.FSub <> term ind
+R55350:55352 FSUB.FSub <> typ ind
+binder 55344:55346 <> t11:502
+R55365:55368 FSUB.FSub <> term ind
+binder 55356:55358 <> t12:503
+binder 55360:55361 <> t2:504
+R55384:55387 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R55376:55380 FSUB.FSub <> value def
+R55382:55383 FSUB.FSub <> t2:504 var
+R55388:55391 FSUB.FSub <> red':500 ind
+R55417:55421 FSUB.FSub <> subst def
+R55429:55430 FSUB.FSub <> t2:504 var
+R55423:55425 FSUB.FSub <> t12:503 var
+R55394:55396 FSUB.FSub <> app constr
+R55412:55413 FSUB.FSub <> t2:504 var
+R55399:55401 FSUB.FSub <> abs constr
+R55407:55409 FSUB.FSub <> t12:503 var
+R55403:55405 FSUB.FSub <> t11:502 var
+R55465:55467 FSUB.FSub <> typ ind
+binder 55456:55458 <> t11:505
+binder 55460:55461 <> t2:506
+R55477:55480 FSUB.FSub <> term ind
+binder 55471:55473 <> t12:507
+R55488:55491 FSUB.FSub <> red':500 ind
+R55519:55527 FSUB.FSub <> subst_typ def
+R55535:55536 FSUB.FSub <> t2:506 var
+R55529:55531 FSUB.FSub <> t12:507 var
+R55494:55497 FSUB.FSub <> tapp constr
+R55514:55515 FSUB.FSub <> t2:506 var
+R55500:55503 FSUB.FSub <> tabs constr
+R55509:55511 FSUB.FSub <> t12:507 var
+R55505:55507 FSUB.FSub <> t11:505 var
+R55571:55574 FSUB.FSub <> term ind
+binder 55559:55560 <> t1:508
+binder 55562:55564 <> t1':509
+binder 55566:55567 <> t2:510
+R55588:55591 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R55577:55580 FSUB.FSub <> red':500 ind
+R55585:55587 FSUB.FSub <> t1':509 var
+R55582:55583 FSUB.FSub <> t1:508 var
+R55592:55595 FSUB.FSub <> red':500 ind
+R55610:55612 FSUB.FSub <> app constr
+R55618:55619 FSUB.FSub <> t2:510 var
+R55614:55616 FSUB.FSub <> t1':509 var
+R55598:55600 FSUB.FSub <> app constr
+R55605:55606 FSUB.FSub <> t2:510 var
+R55602:55603 FSUB.FSub <> t1:508 var
+R55654:55657 FSUB.FSub <> term ind
+binder 55642:55643 <> t1:511
+binder 55645:55646 <> t2:512
+binder 55648:55650 <> t2':513
+R55672:55675 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R55664:55668 FSUB.FSub <> value def
+R55670:55671 FSUB.FSub <> t1:511 var
+R55687:55690 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R55676:55679 FSUB.FSub <> red':500 ind
+R55684:55686 FSUB.FSub <> t2':513 var
+R55681:55682 FSUB.FSub <> t2:512 var
+R55691:55694 FSUB.FSub <> red':500 ind
+R55709:55711 FSUB.FSub <> app constr
+R55716:55718 FSUB.FSub <> t2':513 var
+R55713:55714 FSUB.FSub <> t1:511 var
+R55697:55699 FSUB.FSub <> app constr
+R55704:55705 FSUB.FSub <> t2:512 var
+R55701:55702 FSUB.FSub <> t1:511 var
+R55752:55755 FSUB.FSub <> term ind
+binder 55743:55744 <> t1:514
+binder 55746:55748 <> t1':515
+R55764:55766 FSUB.FSub <> typ ind
+binder 55759:55760 <> t2:516
+R55785:55788 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R55774:55777 FSUB.FSub <> red':500 ind
+R55782:55784 FSUB.FSub <> t1':515 var
+R55779:55780 FSUB.FSub <> t1:514 var
+R55789:55792 FSUB.FSub <> red':500 ind
+R55808:55811 FSUB.FSub <> tapp constr
+R55817:55818 FSUB.FSub <> t2:516 var
+R55813:55815 FSUB.FSub <> t1':515 var
+R55795:55798 FSUB.FSub <> tapp constr
+R55803:55804 FSUB.FSub <> t2:516 var
+R55800:55801 FSUB.FSub <> t1:514 var
+prf 55831:55839 <> progress'
+R55857:55860 FSUB.FSub <> term ind
+binder 55853:55853 <> t:517
+R55868:55870 FSUB.FSub <> typ ind
+binder 55864:55864 <> U:518
+R55894:55897 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R55878:55883 FSUB.FSub <> typing ind
+R55893:55893 FSUB.FSub <> U:518 var
+R55891:55891 FSUB.FSub <> t:517 var
+R55885:55889 FSUB.FSub <> empty constr
+R55905:55908 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R55898:55902 FSUB.FSub <> value def
+R55904:55904 FSUB.FSub <> t:517 var
+R55909:55915 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R55918:55919 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 55916:55917 <> t':519
+R55920:55923 FSUB.FSub <> red' ind
+R55927:55928 FSUB.FSub <> t':519 var
+R55925:55925 FSUB.FSub <> t:517 var
+R55952:55958 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R55960:55961 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 55959:55959 <> e:520
+R55963:55965 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R55962:55962 FSUB.FSub <> e:520 var
+R55966:55970 FSUB.FSub <> empty constr
+R56229:56237 FSUB.FSub <> fun_value thm
+R56302:56306 FSUB.FSub <> subst def
+R56336:56341 FSUB.FSub <> appabs constr
+R56390:56392 FSUB.FSub <> app constr
+R56409:56414 FSUB.FSub <> apparg constr
+R56463:56465 FSUB.FSub <> app constr
+R56482:56487 FSUB.FSub <> appfun constr
+R56602:56614 FSUB.FSub <> typefun_value thm
+R56677:56685 FSUB.FSub <> subst_typ def
+R56713:56720 FSUB.FSub <> tapptabs constr
+R56767:56770 FSUB.FSub <> tapp constr
+R56787:56793 FSUB.FSub <> typefun constr
+R56834:56838 FSUB.FSub <> empty constr
+R55952:55958 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R55960:55961 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 55959:55959 <> e:521
+R55963:55965 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R55962:55962 FSUB.FSub <> e:521 var
+R55966:55970 FSUB.FSub <> empty constr
+R56229:56237 FSUB.FSub <> fun_value thm
+R56302:56306 FSUB.FSub <> subst def
+R56336:56341 FSUB.FSub <> appabs constr
+R56390:56392 FSUB.FSub <> app constr
+R56409:56414 FSUB.FSub <> apparg constr
+R56463:56465 FSUB.FSub <> app constr
+R56482:56487 FSUB.FSub <> appfun constr
+R56602:56614 FSUB.FSub <> typefun_value thm
+R56677:56685 FSUB.FSub <> subst_typ def
+R56713:56720 FSUB.FSub <> tapptabs constr
+R56767:56770 FSUB.FSub <> tapp constr
+R56787:56793 FSUB.FSub <> typefun constr
+R56834:56838 FSUB.FSub <> empty constr
+prf 56866:56878 <> preservation'
+R56896:56898 FSUB.FSub <> env ind
+binder 56892:56892 <> e:522
+R56909:56912 FSUB.FSub <> term ind
+binder 56902:56902 <> t:523
+binder 56904:56905 <> t':524
+R56920:56922 FSUB.FSub <> typ ind
+binder 56916:56916 <> U:525
+R56942:56945 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R56930:56935 FSUB.FSub <> typing ind
+R56941:56941 FSUB.FSub <> U:525 var
+R56939:56939 FSUB.FSub <> t:523 var
+R56937:56937 FSUB.FSub <> e:522 var
+R56955:56958 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R56946:56949 FSUB.FSub <> red' ind
+R56953:56954 FSUB.FSub <> t':524 var
+R56951:56951 FSUB.FSub <> t:523 var
+R56959:56964 FSUB.FSub <> typing ind
+R56971:56971 FSUB.FSub <> U:525 var
+R56968:56969 FSUB.FSub <> t':524 var
+R56966:56966 FSUB.FSub <> e:522 var
+R57257:57261 Coq.Init.Logic <> proj1 thm
+R57264:57272 FSUB.FSub <> typing_wf thm
+R57302:57306 Coq.Init.Logic <> proj2 thm
+R57309:57313 Coq.Init.Logic <> proj2 thm
+R57316:57324 FSUB.FSub <> typing_wf thm
+R57353:57367 FSUB.FSub <> t_abs_inversion thm
+R57373:57387 FSUB.FSub <> sub_reflexivity thm
+R57441:57445 FSUB.FSub <> T_Sub constr
+R57478:57499 FSUB.FSub <> subst_preserves_typing thm
+R57567:57571 FSUB.FSub <> T_Sub constr
+R57617:57621 FSUB.FSub <> T_App constr
+R57693:57697 FSUB.FSub <> T_App constr
+R57907:57911 Coq.Init.Logic <> proj1 thm
+R57914:57922 FSUB.FSub <> typing_wf thm
+R57952:57956 Coq.Init.Logic <> proj2 thm
+R57959:57963 Coq.Init.Logic <> proj2 thm
+R57966:57974 FSUB.FSub <> typing_wf thm
+R58003:58018 FSUB.FSub <> t_tabs_inversion thm
+R58024:58038 FSUB.FSub <> sub_reflexivity thm
+R58100:58104 FSUB.FSub <> T_Sub constr
+R58129:58154 FSUB.FSub <> subst_typ_preserves_typing thm
+R58176:58181 FSUB.FSub <> T_Tapp constr
+R58247:58251 FSUB.FSub <> T_Sub constr
+R57257:57261 Coq.Init.Logic <> proj1 thm
+R57264:57272 FSUB.FSub <> typing_wf thm
+R57302:57306 Coq.Init.Logic <> proj2 thm
+R57309:57313 Coq.Init.Logic <> proj2 thm
+R57316:57324 FSUB.FSub <> typing_wf thm
+R57353:57367 FSUB.FSub <> t_abs_inversion thm
+R57373:57387 FSUB.FSub <> sub_reflexivity thm
+R57441:57445 FSUB.FSub <> T_Sub constr
+R57478:57499 FSUB.FSub <> subst_preserves_typing thm
+R57567:57571 FSUB.FSub <> T_Sub constr
+R57617:57621 FSUB.FSub <> T_App constr
+R57693:57697 FSUB.FSub <> T_App constr
+R57907:57911 Coq.Init.Logic <> proj1 thm
+R57914:57922 FSUB.FSub <> typing_wf thm
+R57952:57956 Coq.Init.Logic <> proj2 thm
+R57959:57963 Coq.Init.Logic <> proj2 thm
+R57966:57974 FSUB.FSub <> typing_wf thm
+R58003:58018 FSUB.FSub <> t_tabs_inversion thm
+R58024:58038 FSUB.FSub <> sub_reflexivity thm
+R58100:58104 FSUB.FSub <> T_Sub constr
+R58129:58154 FSUB.FSub <> subst_typ_preserves_typing thm
+R58176:58181 FSUB.FSub <> T_Tapp constr
+R58247:58251 FSUB.FSub <> T_Sub constr
