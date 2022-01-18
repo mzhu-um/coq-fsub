@@ -1,47 +1,8 @@
-From FSUB Require Import QCLibs.
-From FSUB Require Import FSub.
-From FSUB Require Import Decidable.
-From FSUB Require Import Reduction.
-
+From FSUB Require Import
+     QCLibs
+     FSub
+     Decidable.
 (** * Generator: System F<: Random Generators *)
-
-(** ** Utilities *)
-(** Shorthands : only care about true or false. *)
-Definition type_check' :=
-  fun E t T =>
-    match type_check E t T 100 with
-    | Result true => true
-    | _ => false
-    end. 
-
-Definition get_typ' :=
-  fun E t =>
-    match get_typ E t 100 with
-    | Result o => o
-    | _ => None
-    end. 
-
-Definition sub_check' :=
-  fun e T1 T2 => match sub_check e T1 T2 100 with
-                 | Result true => true
-                 | _ => false
-                 end.
-
-
-Fixpoint count_tvar (e : env) : nat :=
-  match e with
-  | empty => O
-  | evar e _ => count_tvar e
-  | ebound e _ => S (count_tvar e)
-  end.
-
-Fixpoint count_var (E : env) : nat :=
-  match E with
-  | empty => 0
-  | evar E _ => S (count_var E)
-  | ebound E _ => (count_var E)
-  end.
-
 (** ** Generate System F <:
     
     - Generate a type to be used as the super type of the program
@@ -49,8 +10,9 @@ Fixpoint count_var (E : env) : nat :=
 *)
 
 (** *** Generate [typ] *)
-
-(** collect all bound var typs *)
+(** [fetch_var_typs] : 
+    collect types of all [var]s in the context 
+ *)
 Definition fetch_var_typs (E : env) : list typ :=
   let nvar := count_var E in
   let fix f n :=
@@ -64,8 +26,11 @@ Definition fetch_var_typs (E : env) : list typ :=
     end in
   f nvar.
 
-(** collect super bound var types 
-    - for each [var] in the env, perform "upcast" to it 
+(** [fetch_good_typs] : 
+    collect types of all [vars]s and all [tvar]s that occur as suptype of
+    some [var]s
+
+    - for each [var n = T] in the env, check if [T] <: [tvar n]
  *)
 Definition fetch_good_typs (E : env) : list typ :=
   let vars := fetch_var_typs E in
@@ -76,61 +41,46 @@ Definition fetch_good_typs (E : env) : list typ :=
     | S n => (tvar n) :: f n
     end in
   let tvars := f ntvars in 
-  List.fold_right
-    (fun v acc =>
-       acc ++ match v with
-              | tvar n =>
-                  v ::          (** bound var itself *)
-                    match get_bound E n with
-                    | Some T => (** upcast to its super *)
-                        List.filter (sub_check' E T) tvars
-                    | None => []
-                    end
-              (** More can be done here: analyze structure of the typ *)
-              | _ => [v]
-              end)
-    [] vars.
+  List.fold_left
+    (fun acc vT =>
+       List.filter (sub_check' E vT) tvars ++ vars)
+    vars vars .
     
-(** Motivation: 
-
-    ∀ top. ∀ <0>. ∀ <0>. <0> -> ◻ *)
-Example env_with_sub :=
-  (evar
-     (ebound
-        (ebound
-           (ebound empty
-                   top)
-           (tvar 0))
-        (tvar 1))
-     (tvar 0)). 
-
-Eval cbv in fetch_var_typs env_with_sub. 
-Eval cbv in fetch_good_typs env_with_sub. 
-
 (** Reworked [gen_typ] : allow bare [top]s and [arrow]s *)
-Definition gen_typ0 (E : env) (r : bool) : G typ := 
-  if r
-  then                          (** Restricted: must be sub bound [var] *)
-    freq [(1, ret top);
-          let Ts := fetch_good_typs E in
-          (List.length Ts, elems_ top Ts)]
-  else                          (** Any bound [var] or [tvar] suffice *)
-    freq [(1, ret top);
-          let n'' := count_tvar E in
-          (n'', n' <- choose(0, n'' - 1);; ret (tvar n'));
-          let vs := fetch_var_typs E in
-          (List.length vs, elems_ top vs)].
 
+(** [gen_typ0] : 
+    generate types from the type context
+ *)
+Definition gen_typ0 (E : env) (r : bool) : G typ :=
+  let g' :=
+    if r
+    then                        (** Restricted: must be sub bound [var] *)
+      freq [(1, ret top);
+            let n'' := count_tvar E in
+            (n'', n' <- choose(0, n'' - 1);; ret (arrow (tvar n') (tvar n')));
+            let Ts := fetch_good_typs E in
+            (List.length Ts, elems_ top Ts)]
+    else                        (** Any bound [var] or [tvar] suffice *)
+      freq [(1, ret top);
+            let n'' := count_tvar E in
+            (n'', n' <- choose(0, n'' - 1);; ret (tvar n'));
+            let vs := fetch_var_typs E in
+            (List.length vs, elems_ top vs)] in
+  T <- g' ;; elems [T; (arrow T T)].
+
+(** [gen_typ0] : 
+    generate types from the type context
+ *)
 Fixpoint gen_typ (n : nat) (E : env) (r : bool) {struct n} : G typ :=
   match n with
   | O =>
       gen_typ0 E r
   | S n =>
       freq [(1, gen_typ0 E r) ;
-            (1, T1 <- gen_typ (n - 1) E false ;;
+            (1, T1 <- gen_typ n E false ;;
                 T2 <- gen_typ n (ebound E T1) r ;;
                 ret (all T1 T2)) ; 
-            (1, T1 <- gen_typ (n - 1) E false ;;
+            (1, T1 <- gen_typ n E false ;;
                 T2 <- gen_typ n (evar E T1) r ;;
                 ret (arrow T1 T2))]
   end.
@@ -183,7 +133,7 @@ Fixpoint gen_sub_typ (n : nat) (E : env) (T : typ) {struct n} : G typ :=
       let g2 :=
         elems_ T ((find_sub_var_typs E T) ++ (find_sub_tvar_typs E T)) in
       let g2' := T <- g2 ;; gen_sub_typ n E T in
-      oneOf [ret T; g1; g2']
+      oneOf [ret T; g1; g2; g2']
   end
 with
 gen_sup_typ (n : nat) (E : env) (T : typ) {struct n} : G typ :=
@@ -209,7 +159,7 @@ gen_sup_typ (n : nat) (E : env) (T : typ) {struct n} : G typ :=
         end in
       let g2 := elems_ top (find_sup_var_typs E T) in
       let g2' := T <- g2 ;; gen_sup_typ n E T in 
-      oneOf [ret T; g1; g2']
+      oneOf [ret T; g1; g2; g2']
   end
 .
 
@@ -242,17 +192,30 @@ Definition fetch_sub_vars (E : env) (T : typ) : list term :=
 Definition gen_sub_vars E T : G (option term) :=
   elems_ None (map Some (fetch_sub_vars E T)).
 
-(** generate operands to functions in the context *)
+(** [michalsub] :
+
+    generate good operands when generating [app]
+    - generate arguments for functions in the context
+    - generate arguments for the type to appear in [T]
+*)
 Definition michalsub (E : env) (T : typ) : list typ :=
   let n := count_var E in
+  let fix g0 T :=
+    match T with
+    | arrow T1 T2 => T2 :: g0 T2
+    (* all _ T2 => ? *)
+    | _ => []
+    end in
   let fix f2 T' :=
     match T' with
     | arrow T1 T2 =>
-        (** don't need to shift type here: no intro of tvar *)
-        match f2 T2 with
-        | [] => if sub_check' E T2 T then [T1] else []
-        | rst => T1 :: rst
-        end
+        (* don't need to shift type here: no intro of [tvar] *)
+        (* ??? : is [T'] <: [T2] correct? *)
+        if sub_check' E T' T2 then [T1] else f2 T2
+        (* match f2 T2 with *)
+        (* | [] => if sub_check' E T2 T then [T1] else [] *)
+        (* | rst => T1 :: rst *)
+        (* end *)
     | _ => []
     end in
   let fix f n1 :=
@@ -264,7 +227,7 @@ Definition michalsub (E : env) (T : typ) : list typ :=
         | None => []
         end ++ f n1
     end in
-  f n.
+  (g0 T) ++ (f n).
 
 (** not useful? *)
 Definition c_michalsub (g : G (option typ)) (E : env) (T : typ)
@@ -325,7 +288,7 @@ Definition gen_cand (T : typ) : G (option typ) :=
 
 Fixpoint replace_typ T T' n : G typ :=
   (** more likely to generate replacement *)
-  let g1 := (if T = T' ? then [(3, ret (tvar n))] else [(1, ret T)])  in
+  let g1 := (if T = T' ? then [(2 + n, ret (tvar n))] else [(1, ret T)])  in
   let g2 :=
     match T with
     | arrow T1 T2 =>
@@ -336,9 +299,9 @@ Fixpoint replace_typ T T' n : G typ :=
         T1' <- replace_typ T1 T' n ;;
         T2' <- replace_typ T2 (tshift 0 T') (S n) ;;
         ret (all T1' T2')
-    | _ => ret T
+    | _ => freq_ (ret T) g1
     end in
-   freq_ (ret T) ((2, g2) :: g1).
+   freq_ (ret T) ((2 + n, g2) :: g1).
 
 Definition gen_replace T : G (option (typ * typ)) :=
   oT1 <- gen_cand T ;;
@@ -350,25 +313,39 @@ Definition gen_replace T : G (option (typ * typ)) :=
   end. 
 
 
-Example repl_ty :=
-  (arrow (tvar 0) (arrow (tvar 1) (all top (arrow (tvar 1) (tvar 0))))).
-
-Sample (gen_replace repl_ty).
-
-Fixpoint gen_sub_term0 (E : env) (T : typ) : G (option term) :=
+(** [gen_sub_term] *)
+Fixpoint gen_sub_term0' (E : env) (T : typ) : G (option term) :=
   let g : (G (option term)) :=
     match T with
     | arrow T1 T2 =>
-        liftM (abs T1) (gen_sub_term0 (evar E T1) T2)
+        liftM (abs T1) (gen_sub_term0' (evar E T1) T2)
     | all T1 T2 =>
         liftM (tabs T1)
-              (gen_sub_term0 (ebound E T1) T2)
+              (gen_sub_term0' (ebound E T1) T2)
     | tvar n =>                 (** guarded by [gen_typ] *)
         gen_sub_vars E T
-    | top => ret (abs top (var 0)) (** random stuff *)
+    | top =>
+        (** random stuff *)
+        elems
+          [Some (abs top (var 0));
+           Some (tabs top (abs (tvar 0) (var 0))) ] 
     end
   in     
-  backtrack [(1, g); (1, (gen_sub_vars E T))].
+  freq [(1, g); 
+        let vars := fetch_sub_vars E T in
+        (List.length vars, elems_ None (map Some vars))].
+
+Definition gen_sub_term0 (E : env) (T : typ) : G (option term) :=
+  let g := 
+    match T with
+    | top => 
+        T' <- gen_opt_typ 0 E true;; gen_sub_term0' E T
+    | _ => gen_sub_term0' E T
+    end in
+  freq [(1, g); 
+        let vars := fetch_sub_vars E T in
+        (List.length vars, elems_ None (map Some vars))].
+
 
 
 (** Generate a term of a subtype of [T] *)
@@ -376,18 +353,15 @@ Fixpoint gen_sub_term (n : nat) (E : env) (T : typ) : G (option term) :=
   match n with
   | O => gen_sub_term0 E T
   | S n =>
-      (* let n' := n - 2 in (* n - n / 2 in *) *)
-      (** Mutate the type based on bound [typ]'s *)
-      
       let n' := n in
       (** Base Case *)
       let g0 := gen_sub_term0 E T in
-      (** Generate by typ *)
+      (** Generate by [typ] *)
       let g1 := 
         match T with
         | arrow T1 T2 =>
             T1' <- gen_opt_sup_typ n E T1 ;;
-            t2 <- gen_sub_term n (evar E T1') T2 ;;
+            t2 <- gen_sub_term n (evar E T1') T2 ;; (* change back to [T1] ? *)
             ret (abs T1' t2)
         | all T1 T2 =>
             T1' <- gen_opt_sup_typ n E T1 ;;
@@ -395,9 +369,9 @@ Fixpoint gen_sub_term (n : nat) (E : env) (T : typ) : G (option term) :=
             ret (tabs T1' t2)
         | _ => g0
         end in
-      (** Generate App *)
+      (** Generate [app] *)
       let g2 :=
-        (** restricted: to generate the operand term *)
+        (** restricted: generate the operand term *)
         T1 <- c_michalsub (gen_opt_typ n' E true) E T;;
         (** generate [t1] of a subtype of [T1 -> T] *)
         t1 <- gen_sub_term n' E (arrow T1 T);;
@@ -405,7 +379,7 @@ Fixpoint gen_sub_term (n : nat) (E : env) (T : typ) : G (option term) :=
         t2 <- gen_sub_term n' E T1;;
         returnGen (Some (app t1 t2))
       in
-      (** Generate TApp : [t1'] is [(tabs T1 t1) T2] <: [T] *)
+      (** Generate [tapp] : [t1'] is [(tabs T1 t1) T2] <: [T] *)
       let g3 :=
         (** unrestricted: typ can be any *)
         T1 <- gen_opt_typ n' E false;; 
@@ -413,6 +387,7 @@ Fixpoint gen_sub_term (n : nat) (E : env) (T : typ) : G (option term) :=
         t1' <- gen_sub_term n' E (all T1 (tshift 0 T)) ;;
         returnGen (Some (tapp t1' T2))
       in
+      (** Generate [tapp] by replacing some types with a new [tvar] *)
       let g4 :=
         (** unrestricted: typ can be any *)
         '(T2, T12) <- gen_replace T ;;

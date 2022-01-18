@@ -32,8 +32,6 @@ Inductive Mutant :=
 (** [subst_typ] bugs *)
 | SubstTypTAbsNoIncr
 | SubstTypTAbsNoShift
-(** [get_bound] bugs *)
-(** [get_var] bugs *)
 .
 
 Instance dec_eq_Mutant (m1 m2 : Mutant) : Dec (m1 = m2).

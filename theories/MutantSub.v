@@ -34,31 +34,31 @@ Definition prop_gen_progress_nf_f  (fuel_type : nat) (m : Mutant) :=
                end))%bool))).
 
 
-Definition prop_gen_progress_nf := prop_gen_progress_nf_f 5.
-(* QuickChick (prop_gen_progress_nf NoMutant). (* Correct ! *) *)
+Definition prop_gen_progress_nf := prop_gen_progress_nf_f 4.
+QuickChick (prop_gen_progress_nf NoMutant). (* Correct ! *)
 
 (** Okay for WHNF *)
-(* QuickChick (prop_gen_progress_nf TShiftTVarAll).       (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf TSubstTVarFlip).      (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf TSubstTVarOverShift). (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf SubstVarFlip).        (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf SubstAbsNoIncr).      (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf ShiftVarAll).         (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf ShiftAbsNoIncr).      (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf ShiftTypTAbsNoIncr).  (* 4 *) *)
+QuickChick (prop_gen_progress_nf TShiftTVarAll).       (* 4 *)
+QuickChick (prop_gen_progress_nf TSubstTVarFlip).      (* 4 *)
+QuickChick (prop_gen_progress_nf TSubstTVarOverShift). (* 4 *)
+QuickChick (prop_gen_progress_nf SubstVarFlip).        (* 4 *)
+QuickChick (prop_gen_progress_nf SubstAbsNoIncr).      (* 4 *)
+QuickChick (prop_gen_progress_nf ShiftVarAll).         (* 4 *)
+QuickChick (prop_gen_progress_nf ShiftAbsNoIncr).      (* 4 *)
+QuickChick (prop_gen_progress_nf ShiftTypTAbsNoIncr).  (* 4 *)
 
 (** Okay for NF *)
-(* QuickChick (prop_gen_progress_nf TShiftTVarNoIncr).  (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf TSubstTVarNoShift). (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf SubstVarNoDecr).    (* 4 *) *)
+QuickChick (prop_gen_progress_nf TShiftTVarNoIncr).  (* 4 *)
+QuickChick (prop_gen_progress_nf TSubstTVarNoShift). (* 4 *)
+QuickChick (prop_gen_progress_nf SubstVarNoDecr).    (* 4 *)
 
 (* Definition prop_gen_progress_nf' := prop_gen_progress_nf_f 6. *)
 (** Need Luck for NF *)
-(* QuickChick (prop_gen_progress_nf SubstAbsNoShift).   (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf TShiftAllNoIncr).   (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf ShiftVarNoIncr).    (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf SubstTAbsNoShift).  (* 4 *) *)
-(* QuickChick (prop_gen_progress_nf TSubstAllNoTShift). (* Nope *) *)
+QuickChick (prop_gen_progress_nf SubstAbsNoShift).   (* 4 *)
+QuickChick (prop_gen_progress_nf TShiftAllNoIncr).   (* 4 *)
+QuickChick (prop_gen_progress_nf ShiftVarNoIncr).    (* 4 *)
+QuickChick (prop_gen_progress_nf SubstTAbsNoShift).  (* 4 *)
+QuickChick (prop_gen_progress_nf TSubstAllNoTShift). (* Nope *)
 
 
 (** ** [C7] Weak Progress *)
