@@ -1,5 +1,6 @@
-From FSUB Require Import QCLibs.
-From FSUB Require Import FSub.
+From FSUB Require Import
+     QCLibs
+     FSub.
 
 (** ** Printer *)
 

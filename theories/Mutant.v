@@ -34,7 +34,7 @@ Definition prop_gen_progress_nf (m : Mutant) :=
                | _ => false
                end))%bool))).
 
-QuickChick (prop_gen_progress_nf NoMutant). (* Correct ! *)
+(* QuickChick (prop_gen_progress_nf NoMutant). (* Correct ! *) *)
 
 (* (** Okay for WHNF *) *)
 QuickChick (prop_gen_progress_nf TShiftTVarAll).       (* 4 *)
